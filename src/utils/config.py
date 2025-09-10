@@ -9,6 +9,7 @@ import json
 import logging
 import locale
 import os
+import sys
 from pathlib import Path
 from typing import Dict, Any, Optional
 from dataclasses import dataclass, asdict
@@ -126,7 +127,14 @@ class ConfigManager:
     def __init__(self, config_file: str = "config.json"):
         self.logger = logging.getLogger(__name__)
         self.config_file = Path(config_file)
-        self.locales_dir = Path("locales")
+        
+        # Get the correct locales directory for both dev and executable
+        if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
+            # Running as PyInstaller executable
+            self.locales_dir = Path(sys._MEIPASS) / "locales"
+        else:
+            # Running in development
+            self.locales_dir = Path("locales")
         
         # Default configuration
         self.translation_settings = TranslationSettings()
@@ -144,17 +152,44 @@ class ConfigManager:
     def _load_language_files(self):
         """Load language JSON files from locales directory."""
         try:
+            self.logger.debug(f"Loading language files from: {self.locales_dir}")
+            self.logger.debug(f"Locales directory exists: {self.locales_dir.exists()}")
+            
             # Load Turkish
             tr_file = self.locales_dir / "turkish.json"
+            self.logger.debug(f"Turkish file path: {tr_file}")
             if tr_file.exists():
                 with open(tr_file, 'r', encoding='utf-8') as f:
                     self._language_data['tr'] = json.load(f)
+                self.logger.debug("Turkish language data loaded successfully")
+            else:
+                self.logger.warning(f"Turkish language file not found: {tr_file}")
             
             # Load English
             en_file = self.locales_dir / "english.json"
+            self.logger.debug(f"English file path: {en_file}")
             if en_file.exists():
                 with open(en_file, 'r', encoding='utf-8') as f:
                     self._language_data['en'] = json.load(f)
+                self.logger.debug("English language data loaded successfully")
+            else:
+                self.logger.warning(f"English language file not found: {en_file}")
+                
+        except Exception as e:
+            self.logger.error(f"Error loading language files: {e}")
+            # Fallback to minimal English text
+            self._language_data = {
+                'en': {
+                    'app_title': 'RenLocalizer V2',
+                    'start_translation': 'Start Translation',
+                    'stop_translation': 'Stop Translation'
+                },
+                'tr': {
+                    'app_title': 'RenLocalizer V2',
+                    'start_translation': 'Çeviriyi Başlat',
+                    'stop_translation': 'Çeviriyi Durdur'
+                }
+            }
                     
             self.logger.info(f"Loaded {len(self._language_data)} language files")
         except Exception as e:

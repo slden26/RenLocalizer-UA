@@ -121,6 +121,9 @@ LICENSE
 ## 🔐 API Keys
 Currently only DeepL key meaningful; others activate when engines arrive.
 
+## 📦 Building Executable
+See `BUILD.md` for detailed instructions on creating standalone executables.
+
 ## 🧪 Test & Contribute
 Pull Requests welcome. Suggested improvements:
 - New engine integration
