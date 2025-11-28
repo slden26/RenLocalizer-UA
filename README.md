@@ -2,17 +2,18 @@
 
 # RenLocalizer
 
-**RenLocalizer** is a modern desktop application designed to automatically translate Ren'Py visual novel (.rpy) files with high accuracy and performance. Features multiple translation engines, smart text filtering, and a professional user interface.
+**RenLocalizer** is a modern desktop application built to unpack, decompile and translate Ren'Py visual novel (.rpy) files with high accuracy and performance. It now includes a guided UnRen workflow (automatic or manual), multi-engine translation, smart text filtering and a professional bilingual interface.
 
 ## ✨ Key Features
 
 ### 🎯 Smart Translation
 - **Multiple engines**: Google Translate (web), DeepL API, Deep-Translator (multi-engine) support
-- **RenPy-aware parsing**: Correctly handles menu choices, dialogues, UI elements
+- **Context-aware parser**: Indentation-based block tracking distinguishes dialogue, menus, screen/UI text and Ren'Py helper calls with metadata
+- **Structured extraction**: Each text now ships with `text`, `processed_text`, `context_path`, `text_type`, `character` and `placeholder_map` fields for smarter filtering
 - **Conditional menu support**: Handles `"choice" if condition:` syntax
 - **Technical filtering**: Automatically excludes color codes, font files, performance metrics
-- **Character preservation**: Maintains `[character_name]` variables and placeholders
--- **Offline translation**: Offline engines may be available via third-party packages (optional)
+- **Placeholder pipeline**: Parser caches `{color}`, `[player]`, `{variable}` placeholders ahead of MT and restores them afterwards
+- **Offline translation**: Offline engines may be available via third-party packages (optional)
 
 ### 🚀 High Performance  
 - **Concurrent processing**: Configurable thread count (1-256)
@@ -25,9 +26,16 @@
 ### 🎨 Modern Interface
 - **Professional themes**: Dark and Solarized themes
 - **Minimal main screen**: Only folder selection, basic translation settings and progress bar
+- **Dedicated Info Center**: `Help → Info` now includes UnRen quick reference, troubleshooting steps and workflow tips
 - **Separate settings dialog**: Advanced performance / proxy / logging options in the `Settings` menu
-- **Bilingual UI**: English and Turkish interface support
-- **Auto-save**: Timestamped output with proper RenPy structure
+- **Bilingual UI**: English and Turkish interface support with automatic system-language detection (Turkic locales open in Turkish by default)
+- **Auto-save**: Timestamped output with proper Ren'Py structure
+
+### 🧰 UnRen Workflow
+- **Embedded UnRen launcher**: Download, cache and launch Lurmel's UnRen-forall scripts directly from the app (Windows)
+- **Automatic vs manual choice**: New UnRen Mode dialog asks whether to run a hands-off decompile pass or open UnRen in a console window
+- **Automation script**: Automatic mode now sends only the menu option `2` (decompile `.rpyc` → `.rpy`), skips long archive extraction, shows a modal progress bar, and displays a reminder to re-select the folder if no texts appear afterwards
+- **Project hints**: When `.rpyc/.rpa` files are detected, the app offers to run UnRen for you and links to the info tab for guidance
 
 ### 🔧 RenPy Integration
 - **Correct format output**: Individual `translate strings` blocks as required by RenPy
@@ -76,11 +84,20 @@ Or on Windows, you can double-click `run.bat`
 
 ## 🚀 Quick Start
 1. Launch the app (`python run.py`)
-2. Select the folder containing `.rpy` files
-3. Select source & target language (e.g. EN → TR)
-4. Configure engine & batch settings
-5. Start translation – watch live progress
-6. Translations auto-save (or you can save manually)
+2. Select the folder containing your Ren'Py project
+3. If prompted, choose whether to run UnRen automatically or manually (Windows only). Automatic mode performs a quick `.rpyc` → `.rpy` decompile and shows a progress dialog until it finishes
+4. Select source & target language (e.g. EN → TR)
+5. Configure engine & batch settings
+6. Start translation – watch live progress
+7. Translations auto-save (or you can save manually)
+
+### Automatic vs Manual UnRen
+| Mode | When to use | What happens |
+|------|-------------|--------------|
+| **Automatic** | You prefer a hands-off workflow with recommended defaults | RenLocalizer feeds UnRen only menu option `2` (decompile `.rpyc` into `.rpy`), shows a blocking progress dialog, and pops up a reminder to re-select the folder if text parsing still says "No texts found". |
+| **Manual** | You want to pick specific menu items or use experimental UnRen modes | A separate console opens with UnRen so you can interact with it directly. |
+
+You can re-launch UnRen anytime via `Tools → Run UnRen` or force a re-download of the package via `Tools → Redownload UnRen`.
 
 ## ⚙️ Settings
 - Concurrent threads (1–256)
@@ -92,6 +109,7 @@ Or on Windows, you can double-click `run.bat`
 
 ### 🌍 Language Support
 - Auto-detect source language
+- UI language now auto-detects the operating system locale: English systems start in English; Turkish and other Turkic locales (Azerbaijani, Kazakh, Uzbek, etc.) start in Turkish
 - Extended source/target language list covering most major world languages
 - Recent additions include Czech, Romanian, Hungarian, Greek, Bulgarian, Ukrainian, Indonesian, Malay and Hebrew
 
@@ -110,16 +128,19 @@ Or on Windows, you can double-click `run.bat`
 Offline engines may support a variable set of language pairs depending on installed packages.
 
 ## 🧠 Parsing Logic
-- Excludes code blocks, label definitions, python blocks
-- Only real dialogue & user-visible strings extracted
-- File paths, variables, `%s`, `{name}` etc. preserved
+- Tracks indentation-based contexts so `label`, `menu`, `screen` and `python` scopes are respected
+- Multi-line dialogue, narrator blocks and `extend` statements are captured as a single entry with original line range
+- Excludes technical code, label definitions and Python blocks while retaining user-facing strings
+- Emits structured entries with context path + type hints to drive translation decisions and UI previews
+- Placeholder preservation happens at parse time, ensuring `%s`, `{name}`, `{color}` or `[player]` tokens survive machine translation intact
 
 ## 📁 Project Structure
 ```
 src/
 	core/ (translation, parser, proxy)
-	gui/  (interface & themes)
-	utils/ (config)
+	gui/  (interface, themes, dialogs)
+	utils/ (config, UnRen manager)
+docs/ (detailed walkthroughs)
 run.py (launcher)
 README.md / README.tr.md
 LICENSE
@@ -153,4 +174,4 @@ This project is licensed under **GPL-3.0-or-later**. See `LICENSE`.
 Open an issue or contribute. Community contributions welcome.
 
 ---
-**RenLocalizer v2.0.3** – Professional translation accelerator for Ren'Py projects.
+**RenLocalizer v2.0.7** – Professional translation accelerator for Ren'Py projects.

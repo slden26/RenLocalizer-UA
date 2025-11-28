@@ -1,5 +1,29 @@
 # Changelog
 
+## [2.0.7] - 2025-11-27
+
+### 🧠 Parser & Extraction
+- **Context-aware parser core:** Rebuilt `src/core/parser.py` with an indentation-based context stack so dialogue, menus, screen text and inline Ren'Py helpers are classified with their structural metadata.
+- **Multiline + extend handling:** Triple-quoted dialogue, narrator blocks and `extend` statements are now captured as a single entry with accurate line ranges, preventing duplicate/partial translations.
+- **Placeholder preservation:** Placeholders such as `{color}` tags, `[player]` variables and interpolation markers are cached before translation and re-applied after, reducing accidental corruption during MT runs.
+- **Structured entry output:** Downstream consumers now receive `text`, `processed_text`, `context_path`, `text_type`, `character` and `placeholder_map`, unlocking smarter filtering and future glossary tooling.
+
+### 🎛️ UnRen Automation & UX
+- **UnRen Mode dialog:** Added `UnRenModeDialog` that guides users through automatic vs manual UnRen runs with localized descriptions.
+- **Automation script:** `_build_unren_auto_script()` now streams a deterministic command sequence (`extract → decompile → exit`, keep `.rpa`, extract all, no overwrite) so unattended runs just work.
+- **Embedded logging:** Automatic runs capture stdout and present completion feedback inside the GUI instead of leaving users guessing.
+- **UnRen re-download tooling:** `Tools → Redownload UnRen` forces a fresh package fetch when corruption or updates are detected.
+- **Info dialog update:** The multi-page Info Center now ships with an UnRen tab explaining when/why to use automatic vs manual flows.
+- **Version chooser guidance:** Help → Info → UnRen now tells users exactly when to launch `UnRen-current.bat` versus `UnRen-legacy.bat`, synchronized across English and Turkish locales.
+
+### 🌍 Localization
+- **Turkic language detection:** `detect_system_language()` now treats Turkish plus Azeri, Kazakh, Uzbek, Kyrgyz, Turkmen, Tatar (and similar locales) as “Turkish UI” defaults, while other systems stay English.
+- **README refresh:** Both English and Turkish READMEs were rewritten to cover the new UnRen workflow, Info Center, and language defaults.
+
+### 🧪 Regression Safety
+- **Legacy compatibility shim:** `extract_translatable_text()` still exposes the historical `Set[str]` interface so existing tests/scripts continue to work while the GUI migrates to structured entries.
+- **Logging & diagnostics:** Parser errors now include file and block context, making it easier to triage problematic `.rpy` files reported by users.
+
 ## [2.0.6] - 2025-11-26
 
 ### 🎨 UI Simplification & UX

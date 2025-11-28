@@ -2,7 +2,7 @@
 
 # RenLocalizer
 
-**RenLocalizer**, Ren'Py görsel roman (.rpy) dosyalarını yüksek doğruluk ve performansla otomatik olarak çevirmek için tasarlanmış modern bir masaüstü uygulamasıdır. Birden fazla çeviri motoru, akıllı metin filtreleme ve profesyonel bir kullanıcı arayüzü sunar.
+**RenLocalizer**, Ren'Py görsel roman (.rpy) dosyalarını otomatik olarak açmak, UnRen ile çıkarmak/decompile etmek ve yüksek doğrulukla çevirmek için tasarlanmış modern bir masaüstü uygulamasıdır. Birden fazla çeviri motoru, akıllı metin filtreleme, yeni UnRen çalışma sihirbazı ve profesyonel bir iki dilli arayüz sunar.
 
 ## ✨ Temel Özellikler
 
@@ -24,9 +24,16 @@
 ### 🎨 Modern Arayüz
 - **Profesyonel temalar**: Koyu ve Solarized temalar
 - **Basit ana ekran**: Sadece klasör seçimi, temel çeviri ayarları ve ilerleme çubuğu
-- **Ayrı ayarlar penceresi**: Gelişmiş performans / proxy / günlük ayarları `Ayarlar` menüsünde
-- **İki dilli kullanıcı arayüzü**: İngilizce ve Türkçe arayüz desteği
+- **Bilgi merkezi**: `Yardım → Bilgi` penceresi UnRen hızlı rehberi, sorun giderme ipuçları ve iş akışı özetleri içerir
+- **Ayrı ayarlar penceresi**: Gelişmiş performans / proxy / günlük ayarları `Ayarlar` menüsünden yönetilir
+- **İki dilli arayüz**: Sistem dili İngilizce veya farklıysa uygulama İngilizce açılır; Türkçe ve diğer Türk dilleri (Azerbaycan, Kazak, Özbek vb.) ise otomatik olarak Türkçe başlatılır
 - **Otomatik kaydetme**: Uygun RenPy yapısı ile zaman damgalı çıktı
+
+### 🧰 UnRen İş Akışı
+- **Dahili UnRen başlatıcısı**: Lurmel'in UnRen-forall scriptlerini indirir, önbelleğe alır ve Windows üzerinde doğrudan başlatır
+- **Otomatik vs manuel seçim**: Yeni UnRen Modu diyalogu, hızlı bir decompile turu veya manuel konsol çalıştırma seçeneklerini sunar
+- **Otomasyon scripti**: Otomatik mod artık sadece menüdeki `2` ( `.rpyc` → `.rpy` decompile) seçeneğini çalıştırır, uzun `.rpa` çıkarma adımlarını atlar, modal bir ilerleme çubuğu gösterir ve işlem sonunda "metin bulunamadı" görürseniz klasörü yeniden seçmenizi hatırlatır
+- **Proje ipuçları**: `.rpyc/.rpa` içeren klasörler algılandığında uygulama UnRen çalıştırmanızı önerir ve bilgi sayfasını açabileceğiniz bir bağlantı sunar
 
 ### 🔧 RenPy Entegrasyonu
 - **Doğru formatlı çıktı**: RenPy'nin gerektirdiği şekilde ayrı ayrı `çeviri dizeleri` blokları
@@ -75,11 +82,20 @@ Veya Windows'ta, `run.bat` dosyasını çift tıklayabilirsiniz.
 
 ## 🚀 Hızlı Başlangıç
 1. Uygulamayı başlatın (`python run.py`)
-2. `.rpy` dosyalarını içeren klasörü seçin
-3. Kaynak ve hedef dili seçin (ör. EN → TR)
-4. Motor ve toplu iş ayarlarını yapılandırın
-5. Çeviriyi başlatın – canlı ilerlemeyi izleyin
-6. Çeviriler otomatik olarak kaydedilir (veya manuel olarak kaydedebilirsiniz)
+2. Ren'Py projenizi içeren klasörü seçin
+3. İstendiğinde UnRen'i otomatik veya manuel çalıştırmayı seçin (Windows). Otomatik mod hızlı bir `.rpyc` → `.rpy` decompile yapar ve bitene kadar ilerleme diyalogu gösterir
+4. Kaynak ve hedef dili seçin (ör. EN → TR)
+5. Motor ve toplu iş ayarlarını yapılandırın
+6. Çeviriyi başlatın – canlı ilerlemeyi izleyin
+7. Çeviriler otomatik olarak kaydedilir (isterseniz manuel olarak kaydedebilirsiniz)
+
+### Otomatik vs Manuel UnRen
+| Mod | Ne zaman tercih edilmeli | Ne olur |
+|-----|-------------------------|---------|
+| **Otomatik** | Önerilen varsayılanlarla eller serbest çalışmak istediğinizde | RenLocalizer yalnızca menüdeki `2` seçeneğini ( `.rpyc` dosyalarını `.rpy`ye decompile et) çalıştırır, bloklayıcı bir ilerleme diyalogu gösterir ve hâlâ "Çevrilecek metin bulunamadı" görürseniz klasörü yeniden seçmenizi isteyen bir uyarı açar. |
+| **Manuel** | UnRen menüsünde farklı seçenekler denemek istediğinizde | Ayrı bir konsol açılır, UnRen ile etkileşimi siz yönetirsiniz. |
+
+UnRen'i istediğiniz an `Araçlar → UnRen'i Çalıştır` seçeneğiyle tekrar başlatabilir veya `Araçlar → UnRen'i Yeniden İndir` komutuyla paketi güncelleyebilirsiniz.
 
 ## ⚙️ Ayarlar
 - Eşzamanlı iş parçacıkları (1–256)
@@ -91,6 +107,7 @@ Veya Windows'ta, `run.bat` dosyasını çift tıklayabilirsiniz.
 
 ### 🌍 Dil Desteği
 - Otomatik kaynak dil algılama
+- Arayüz dili artık sistem diline göre belirlenir: İngilizce veya diğer dillerde İngilizce, Türkçe ve diğer Türk dillerinde otomatik olarak Türkçe açılır
 - Çoğu yaygın dünya dilini kapsayan genişletilmiş kaynak/hedef dil listesi
 - Son eklemeler arasında Çekçe, Rumence, Macarca, Yunanca, Bulgarca, Ukraynaca, Endonezce, Malayca ve İbranice bulunur
 
@@ -114,11 +131,12 @@ Veya Windows'ta, `run.bat` dosyasını çift tıklayabilirsiniz.
 ```
 src/
     core/ (çeviri, ayrıştırıcı, proxy)
-    gui/  (arayüz ve temalar)
-    utils/ (yapılandırma)
+    gui/  (arayüz, temalar, yeni diyaloglar)
+    utils/ (yapılandırma, UnRen yöneticisi)
+docs/ (detaylı rehberler)
 run.py (başlatıcı)
 README.md / README.tr.md
-LİSANS
+LICENSE
 ```
 
 ## 🔐 API Anahtarları
@@ -157,4 +175,7 @@ python tools/parser_smoke.py
 | Yavaş çeviri | İş parçacığı ve toplu iş sayısını artırın, gecikmeyi azaltın |
 | Hız sınırı | Proxy'yi etkinleştirin veya motoru değiştirin |
 | Bozuk etiket | Yer tutucu korumasının etkinleştirildiğinden emin olun |
+
+---
+**RenLocalizer v2.0.7** – Ren'Py projeleri için profesyonel çeviri hızlandırıcısı.
 

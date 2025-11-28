@@ -27,15 +27,19 @@
     "app_settings": {
         "ui_language": "tr",
         "theme": "solarized",
-        "window_width": 1536,
-        "window_height": 793,
-        "last_input_directory": "C:/Users/User/Desktop/Programlar/Renpy/game/FromTheEclipse-0.4.4p-pc/game",
-        "last_output_directory": "C:\\Users\\User\\Desktop\\Programlar\\Renpy\\game\\FromTheEclipse-0.4.4p-pc",
+        "window_width": 1200,
+        "window_height": 800,
+        "last_input_directory": "C:/Users/User/Desktop/Programlar/Renpy/game/BacktotheRoots-0.43",
+        "last_output_directory": "",
         "auto_save_settings": true,
         "auto_save_translations": true,
         "check_for_updates": true,
-        "output_format": "simple",
-        "parser_workers": 8
+        "output_format": "old_new",
+        "parser_workers": 4,
+        "unren_auto_download": true,
+        "unren_custom_path": "",
+        "unren_cached_version": "",
+        "unren_last_checked": ""
     },
     "proxy_settings": {
         "enabled": true,

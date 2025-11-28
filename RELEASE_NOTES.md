@@ -1,5 +1,16 @@
 # Release Notes
 
+## Version 2.0.6 - 2025-11-28
+
+### ✨ UX Improvements
+- **Faster automatic UnRen**: Automatic mode now feeds only menu option `2` (decompile `.rpyc` → `.rpy`) and exits immediately, avoiding long archive extractions that previously kept the dialog open.
+- **Deterministic progress dialog**: The UnRen progress window now hides and closes reliably as soon as automation completes, followed by a success dialog that reminds the user to re-select the project folder if parsing still finds no texts.
+- **Instant mode selection**: The Automatic/Manual UnRen selector dialog closes the moment an option is clicked so it no longer lingers or reappears while automation is running.
+
+### 🐛 Fixes
+- Resolved cases where automatic UnRen appeared to hang because extraction and decompile steps were chained together.
+- Prevented the UnRen mode dialog from becoming stuck in front of the main window after choosing a mode.
+
 ## Version 2.0.1 - RenPy Integration Update (2025-09-11)
 
 ### 🎯 New Features
