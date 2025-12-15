@@ -1,0 +1,1614 @@
+{
+  "target": "summertimesaga",
+  "stats": {
+    "files_scanned": 309,
+    "total_extracted": 40509,
+    "with_raw_text": 40509,
+    "translation_id_present": 40509,
+    "translation_id_none": 0,
+    "unique_translation_ids": 40509,
+    "potential_false_positives": 0
+  },
+  "samples": [
+    {
+      "file": "summertimesaga\\game\\src\\+config.rpy",
+      "text": "Summertime Saga",
+      "raw_text": "'Summertime Saga'",
+      "line_number": 5,
+      "translation_id": "id_f79828334d742acc",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\+wip.rpy",
+      "text": "WORK IN PROGRESS",
+      "raw_text": "'WORK IN PROGRESS'",
+      "line_number": 14,
+      "translation_id": "id_a718e49e9e8fcb82",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\+wip.rpy",
+      "text": "Sorry, this section of the game is still under construction! Please check back in future updates.\\n{size=-5}\\n{color=4287f5}ref:{/color} [label]{/size}",
+      "raw_text": "\"Sorry, this section of the game is still under construction! Please check back in future updates.\\n{size=-5}\\n{color=4287f5}ref:{/color} [label]{/size}\"",
+      "line_number": 24,
+      "translation_id": "id_e80b0a0227709669",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\+wip.rpy",
+      "text": "WORK IN PROGRESS",
+      "raw_text": "'WORK IN PROGRESS'",
+      "line_number": 14,
+      "translation_id": "id_9baf4d5c9aebc328",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\+wip.rpy",
+      "text": "Sorry, this section of the game is still under construction! Please check back in future updates.\n{size=-5}\n{color=4287f5}ref:{/color} [label]{/size}",
+      "raw_text": "\"Sorry, this section of the game is still under construction! Please check back in future updates.\\n{size=-5}\\n{color=4287f5}ref:{/color} [label]{/size}\"",
+      "line_number": 24,
+      "translation_id": "id_2e74dceb414c6a23",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\fx.rpy",
+      "text": "*Beep*",
+      "raw_text": "\"*Beep*\"",
+      "line_number": 15,
+      "translation_id": "id_5f70984288644e39",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\fx.rpy",
+      "text": "*Beep*",
+      "raw_text": "\"*Beep*\"",
+      "line_number": 34,
+      "translation_id": "id_82f1c559e11164fe",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\fx.rpy",
+      "text": "*Beep*",
+      "raw_text": "\"*Beep*\"",
+      "line_number": 15,
+      "translation_id": "id_9d663d7068765245",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\fx.rpy",
+      "text": "*Beep*",
+      "raw_text": "\"*Beep*\"",
+      "line_number": 34,
+      "translation_id": "id_56acb95dffb36b79",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\game.rpy",
+      "text": "Anon",
+      "raw_text": "'Anon'",
+      "line_number": 2,
+      "translation_id": "id_1be0f431ef876f03",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mini.rpy",
+      "text": "This mini game is still under construction! Please check back in future updates.\\nIn the meantime, what outcome would you like to simulate?",
+      "raw_text": "\"This mini game is still under construction! Please check back in future updates.\\nIn the meantime, what outcome would you like to simulate?\"",
+      "line_number": 108,
+      "translation_id": "id_20e3d23a3824d509",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mini.rpy",
+      "text": "Pass",
+      "raw_text": "\"Pass\"",
+      "line_number": 109,
+      "translation_id": "id_9e25067de8c66c5b",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mini.rpy",
+      "text": "Fail",
+      "raw_text": "\"Fail\"",
+      "line_number": 112,
+      "translation_id": "id_c426e1e5c92cf9dc",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mini.rpy",
+      "text": "This mini game is still under construction! Please check back in future updates.\\nIn the meantime, what outcome would you like to simulate?",
+      "raw_text": "\"This mini game is still under construction! Please check back in future updates.\\nIn the meantime, what outcome would you like to simulate?\"",
+      "line_number": 165,
+      "translation_id": "id_67f6e719de47da64",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mini.rpy",
+      "text": "Pass",
+      "raw_text": "\"Pass\"",
+      "line_number": 166,
+      "translation_id": "id_306f3974102a8df9",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mini.rpy",
+      "text": "Fail",
+      "raw_text": "\"Fail\"",
+      "line_number": 169,
+      "translation_id": "id_5f1b74384481d3e3",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mini.rpy",
+      "text": "This mini game is still under construction! Please check back in future updates.\nIn the meantime, what outcome would you like to simulate?",
+      "raw_text": "\"This mini game is still under construction! Please check back in future updates.\\nIn the meantime, what outcome would you like to simulate?\"",
+      "line_number": 108,
+      "translation_id": "id_aaad5146cf9e4981",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mini.rpy",
+      "text": "Pass",
+      "raw_text": "\"Pass\"",
+      "line_number": 109,
+      "translation_id": "id_6f04042a04e405b0",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mini.rpy",
+      "text": "Fail",
+      "raw_text": "\"Fail\"",
+      "line_number": 112,
+      "translation_id": "id_64f7de1317a12ace",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mini.rpy",
+      "text": "This mini game is still under construction! Please check back in future updates.\nIn the meantime, what outcome would you like to simulate?",
+      "raw_text": "\"This mini game is still under construction! Please check back in future updates.\\nIn the meantime, what outcome would you like to simulate?\"",
+      "line_number": 165,
+      "translation_id": "id_39525899d98615f7",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mini.rpy",
+      "text": "Pass",
+      "raw_text": "\"Pass\"",
+      "line_number": 166,
+      "translation_id": "id_0e684ab0918cd14d",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mini.rpy",
+      "text": "Fail",
+      "raw_text": "\"Fail\"",
+      "line_number": 169,
+      "translation_id": "id_39c07cc7436e3d86",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mini.rpy",
+      "text": "Minigame skipped due to easy difficulty.",
+      "raw_text": "\"Minigame skipped due to easy difficulty.\"",
+      "line_number": 195,
+      "translation_id": "id_ba6ac905d1bf001e",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\hud.rpy",
+      "text": "Back",
+      "raw_text": "'Back'",
+      "line_number": 18,
+      "translation_id": "id_c3db8a06ac54a37a",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\hud.rpy",
+      "text": "Toggle Fullscreen",
+      "raw_text": "'Toggle Fullscreen'",
+      "line_number": 32,
+      "translation_id": "id_ae26b997add8798e",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\hud.rpy",
+      "text": "Pause Menu",
+      "raw_text": "'Pause Menu'",
+      "line_number": 69,
+      "translation_id": "id_a893f4027cf274f4",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\hud.rpy",
+      "text": "Back",
+      "raw_text": "'Back'",
+      "line_number": 126,
+      "translation_id": "id_c947c341eb7f19aa",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\inv.rpy",
+      "text": "Hover over an item to see more information.",
+      "raw_text": "'Hover over an item to see more information.'",
+      "line_number": 59,
+      "translation_id": "id_e6493a56234a41b6",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\inv.rpy",
+      "text": "Hover over an item to see more information.",
+      "raw_text": "'Hover over an item to see more information.'",
+      "line_number": 59,
+      "translation_id": "id_691eac4b3ba47e76",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\inv.rpy",
+      "text": "Previous page",
+      "raw_text": "'Previous page'",
+      "line_number": 64,
+      "translation_id": "id_fdaf81d5d3e2d8ee",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\inv.rpy",
+      "text": "Next page",
+      "raw_text": "'Next page'",
+      "line_number": 72,
+      "translation_id": "id_30b198b98c6c18ef",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "tl t l c",
+      "raw_text": "'tl t l c'",
+      "line_number": 264,
+      "translation_id": "id_5c4fd637a3412fb3",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Just now",
+      "raw_text": "'Just now'",
+      "line_number": 593,
+      "translation_id": "id_e8f7ed54d20f2fde",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Earlier today",
+      "raw_text": "'Earlier today'",
+      "line_number": 595,
+      "translation_id": "id_4dbc0287bcbec277",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Yesterday",
+      "raw_text": "'Yesterday'",
+      "line_number": 597,
+      "translation_id": "id_b00b95ee966a996d",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "[t] days ago",
+      "raw_text": "'[t] days ago'",
+      "line_number": 599,
+      "translation_id": "id_d15a0451d6df8c0e",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Babies",
+      "raw_text": "'Babies'",
+      "line_number": 608,
+      "translation_id": "id_f1a0f13d2b08b212",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Dates",
+      "raw_text": "'Dates'",
+      "line_number": 612,
+      "translation_id": "id_7e942ceeb62ae4b6",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Story",
+      "raw_text": "'Story'",
+      "line_number": 620,
+      "translation_id": "id_9a34385e77573ad3",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "TBD",
+      "raw_text": "'TBD'",
+      "line_number": 621,
+      "translation_id": "id_fc4cc5361c8919a8",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Harem",
+      "raw_text": "'Harem'",
+      "line_number": 624,
+      "translation_id": "id_53c10324c4680e15",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Route",
+      "raw_text": "'Route'",
+      "line_number": 628,
+      "translation_id": "id_e47584949700e911",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "TBD",
+      "raw_text": "'TBD'",
+      "line_number": 629,
+      "translation_id": "id_e92a9b9540c04577",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Prom Date",
+      "raw_text": "'Prom Date'",
+      "line_number": 632,
+      "translation_id": "id_f53a5360c4c4f04c",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Wifi Settings",
+      "raw_text": "'Wifi Settings'",
+      "line_number": 15,
+      "translation_id": "id_68a2972c5226fe71",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "tl t l c",
+      "raw_text": "'tl t l c'",
+      "line_number": 264,
+      "translation_id": "id_2a57887f4241c152",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Age: [who.age]",
+      "raw_text": "'Age: [who.age]'",
+      "line_number": 295,
+      "translation_id": "id_4707dffbddd133fe",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Bust: [who.size]",
+      "raw_text": "'Bust: [who.size]'",
+      "line_number": 298,
+      "translation_id": "id_c0684ce7aae64a28",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Size: ???",
+      "raw_text": "'Size: ???'",
+      "line_number": 300,
+      "translation_id": "id_c93fbc5ebf94796f",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Background",
+      "raw_text": "'Background'",
+      "line_number": 331,
+      "translation_id": "id_dd7c15c72379fc60",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Next",
+      "raw_text": "'Next'",
+      "line_number": 337,
+      "translation_id": "id_51b688e861358bb3",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "No messages.",
+      "raw_text": "'No messages.'",
+      "line_number": 426,
+      "translation_id": "id_4dc81fa91c192c8e",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Unread",
+      "raw_text": "'Unread'",
+      "line_number": 449,
+      "translation_id": "id_f5522ef380b140c8",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Wait.",
+      "raw_text": "'Wait.'",
+      "line_number": 533,
+      "translation_id": "id_f38c6641b0d19f89",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "No hint.",
+      "raw_text": "'No hint.'",
+      "line_number": 535,
+      "translation_id": "id_608e931035008fdb",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Just now",
+      "raw_text": "'Just now'",
+      "line_number": 595,
+      "translation_id": "id_6967bedf7a27ec1d",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Earlier today",
+      "raw_text": "'Earlier today'",
+      "line_number": 597,
+      "translation_id": "id_ebff1748751813a4",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Yesterday",
+      "raw_text": "'Yesterday'",
+      "line_number": 599,
+      "translation_id": "id_bb6ac1290af8f4cc",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "[t] days ago",
+      "raw_text": "'[t] days ago'",
+      "line_number": 601,
+      "translation_id": "id_4744afcbec8ee820",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Babies",
+      "raw_text": "'Babies'",
+      "line_number": 610,
+      "translation_id": "id_b579c689d2eab96e",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Dates",
+      "raw_text": "'Dates'",
+      "line_number": 614,
+      "translation_id": "id_89275131c62cbfd1",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Story",
+      "raw_text": "'Story'",
+      "line_number": 622,
+      "translation_id": "id_3ee1b7594f874803",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "TBD",
+      "raw_text": "'TBD'",
+      "line_number": 623,
+      "translation_id": "id_3f7c804a3e35d1ef",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Harem",
+      "raw_text": "'Harem'",
+      "line_number": 626,
+      "translation_id": "id_595197dea93f69ac",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Route",
+      "raw_text": "'Route'",
+      "line_number": 630,
+      "translation_id": "id_a95363fa756cd469",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "TBD",
+      "raw_text": "'TBD'",
+      "line_number": 631,
+      "translation_id": "id_2e8bcd5cef6d9739",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\gui\\tel.rpy",
+      "text": "Prom Date",
+      "raw_text": "'Prom Date'",
+      "line_number": 634,
+      "translation_id": "id_32180fdf418e78ae",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "Shower.",
+      "raw_text": "\"Shower.\"",
+      "line_number": 13,
+      "translation_id": "id_5607dd69c70b52d7",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "Sink.",
+      "raw_text": "\"Sink.\"",
+      "line_number": 16,
+      "translation_id": "id_1089723b896a7eea",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "Idle.",
+      "raw_text": "\"Idle.\"",
+      "line_number": 22,
+      "translation_id": "id_7663f3133a9ba87d",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "Lewd.",
+      "raw_text": "\"Lewd.\"",
+      "line_number": 25,
+      "translation_id": "id_22dcf337a099f096",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "[saga.cast.debbie] is not pregnant.",
+      "raw_text": "\"[saga.cast.debbie] is not pregnant.\"",
+      "line_number": 29,
+      "translation_id": "id_13126b8ff910fe77",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "[saga.cast.debbie] is in her second trimester.",
+      "raw_text": "\"[saga.cast.debbie] is in her second trimester.\"",
+      "line_number": 32,
+      "translation_id": "id_76a241cc3771dba0",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "[saga.cast.debbie] is in her third trimester.",
+      "raw_text": "\"[saga.cast.debbie] is in her third trimester.\"",
+      "line_number": 35,
+      "translation_id": "id_3f1673f17ec68b69",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "After spending several days helping [saga.cast.debbie] around the house, I began to get the feeling that no one had ever really taken the time help her much before.",
+      "raw_text": "\"After spending several days helping [saga.cast.debbie] around the house, I began to get the feeling that no one had ever really taken the time help her much before.\"",
+      "line_number": 60,
+      "translation_id": "id_0566ef9a8bcef75d",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "She was very appreciative of the assistance and chatting to her while working was surprisingly fun. I'm so lucky to be living with her.",
+      "raw_text": "\"She was very appreciative of the assistance and chatting to her while working was surprisingly fun. I'm so lucky to be living with her.\"",
+      "line_number": 65,
+      "translation_id": "id_df6bd735fe3252de",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "One day, while helping her with the laundry, she asked me to carry a basket of clean clothes up to her bedroom...",
+      "raw_text": "\"One day, while helping her with the laundry, she asked me to carry a basket of clean clothes up to her bedroom...\"",
+      "line_number": 70,
+      "translation_id": "id_e418b610621d6a36",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "... And, well... one thing lead to another...",
+      "raw_text": "\"... And, well... one thing lead to another...\"",
+      "line_number": 72,
+      "translation_id": "id_081e2a10afc8a6bf",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "Shower.",
+      "raw_text": "\"Shower.\"",
+      "line_number": 13,
+      "translation_id": "id_019f7ad56b71664b",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "Sink.",
+      "raw_text": "\"Sink.\"",
+      "line_number": 16,
+      "translation_id": "id_1ac2018294a690a5",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "Idle.",
+      "raw_text": "\"Idle.\"",
+      "line_number": 22,
+      "translation_id": "id_1165559755fdf09f",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "Lewd.",
+      "raw_text": "\"Lewd.\"",
+      "line_number": 25,
+      "translation_id": "id_3715b737f08a76e5",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "[saga.cast.debbie] is not pregnant.",
+      "raw_text": "\"[saga.cast.debbie] is not pregnant.\"",
+      "line_number": 29,
+      "translation_id": "id_a1d38aece83daf8d",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "[saga.cast.debbie] is in her second trimester.",
+      "raw_text": "\"[saga.cast.debbie] is in her second trimester.\"",
+      "line_number": 32,
+      "translation_id": "id_d0eb15bd8bff9b31",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "[saga.cast.debbie] is in her third trimester.",
+      "raw_text": "\"[saga.cast.debbie] is in her third trimester.\"",
+      "line_number": 35,
+      "translation_id": "id_b6b0808095133254",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "After spending several days helping [saga.cast.debbie] around the house, I began to get the feeling that no one had ever really taken the time help her much before.",
+      "raw_text": "\"After spending several days helping [saga.cast.debbie] around the house, I began to get the feeling that no one had ever really taken the time help her much before.\"",
+      "line_number": 60,
+      "translation_id": "id_baefb1b870274df0",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "She was very appreciative of the assistance and chatting to her while working was surprisingly fun. I'm so lucky to be living with her.",
+      "raw_text": "\"She was very appreciative of the assistance and chatting to her while working was surprisingly fun. I'm so lucky to be living with her.\"",
+      "line_number": 65,
+      "translation_id": "id_ebb1abe21017a96f",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "One day, while helping her with the laundry, she asked me to carry a basket of clean clothes up to her bedroom...",
+      "raw_text": "\"One day, while helping her with the laundry, she asked me to carry a basket of clean clothes up to her bedroom...\"",
+      "line_number": 70,
+      "translation_id": "id_98e4a6d1efe8548d",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\debbie.rpy",
+      "text": "... And, well... one thing lead to another...",
+      "raw_text": "\"... And, well... one thing lead to another...\"",
+      "line_number": 72,
+      "translation_id": "id_3a0b8a4a29fd3bde",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "\\\"Daddy\\\".",
+      "raw_text": "\"\\\"Daddy\\\".\"",
+      "line_number": 26,
+      "translation_id": "id_fa01afdbc11e4a7f",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "[saga.cast.jenny] has {i}not{/i} seen [saga.cast.anon]'s dick.",
+      "raw_text": "\"[saga.cast.jenny] has {i}not{/i} seen [saga.cast.anon]'s dick.\"",
+      "line_number": 77,
+      "translation_id": "id_71b3221cf22a9a7c",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "[saga.cast.jenny] has seen [saga.cast.anon]'s dick.",
+      "raw_text": "\"[saga.cast.jenny] has seen [saga.cast.anon]'s dick.\"",
+      "line_number": 80,
+      "translation_id": "id_ae216c4928f1f325",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "[saga.cast.anon] catches [saga.cast.jenny].",
+      "raw_text": "\"[saga.cast.anon] catches [saga.cast.jenny].\"",
+      "line_number": 158,
+      "translation_id": "id_13654b43cb0fcb83",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "[saga.cast.jenny] catches [saga.cast.anon].",
+      "raw_text": "\"[saga.cast.jenny] catches [saga.cast.anon].\"",
+      "line_number": 162,
+      "translation_id": "id_fece16cf76f77899",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "[saga.cast.jenny] is not pregnant.",
+      "raw_text": "\"[saga.cast.jenny] is not pregnant.\"",
+      "line_number": 237,
+      "translation_id": "id_3d3caec0fe724d74",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "[saga.cast.jenny] is in her second trimester.",
+      "raw_text": "\"[saga.cast.jenny] is in her second trimester.\"",
+      "line_number": 240,
+      "translation_id": "id_e0690288936dfc78",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "[saga.cast.jenny] is in her third trimester.",
+      "raw_text": "\"[saga.cast.jenny] is in her third trimester.\"",
+      "line_number": 243,
+      "translation_id": "id_3b65828f577943a7",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "[saga.cast.anon] is {color=7ff7}submissive{/color}.",
+      "raw_text": "\"[saga.cast.anon] is {color=7ff7}submissive{/color}.\"",
+      "line_number": 315,
+      "translation_id": "id_ccc58a6c08c5556d",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "[saga.cast.anon] is {color=f77b}dominant{/color}.",
+      "raw_text": "\"[saga.cast.anon] is {color=f77b}dominant{/color}.\"",
+      "line_number": 318,
+      "translation_id": "id_ada99e8882efdfd6",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "\"Daddy\".",
+      "raw_text": "\"\\\"Daddy\\\".\"",
+      "line_number": 26,
+      "translation_id": "id_dbc7171c006bfa1e",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "[saga.cast.jenny] has {i}not{/i} seen [saga.cast.anon]'s dick.",
+      "raw_text": "\"[saga.cast.jenny] has {i}not{/i} seen [saga.cast.anon]'s dick.\"",
+      "line_number": 77,
+      "translation_id": "id_aee5775fc2806c20",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "[saga.cast.jenny] has seen [saga.cast.anon]'s dick.",
+      "raw_text": "\"[saga.cast.jenny] has seen [saga.cast.anon]'s dick.\"",
+      "line_number": 80,
+      "translation_id": "id_800bb99a28e4f342",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "[saga.cast.anon] catches [saga.cast.jenny].",
+      "raw_text": "\"[saga.cast.anon] catches [saga.cast.jenny].\"",
+      "line_number": 158,
+      "translation_id": "id_56d850756733fdca",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "[saga.cast.jenny] catches [saga.cast.anon].",
+      "raw_text": "\"[saga.cast.jenny] catches [saga.cast.anon].\"",
+      "line_number": 162,
+      "translation_id": "id_aa8e1a267e74bd3d",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "[saga.cast.jenny] is not pregnant.",
+      "raw_text": "\"[saga.cast.jenny] is not pregnant.\"",
+      "line_number": 237,
+      "translation_id": "id_d4505d4adf7c5570",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "[saga.cast.jenny] is in her second trimester.",
+      "raw_text": "\"[saga.cast.jenny] is in her second trimester.\"",
+      "line_number": 240,
+      "translation_id": "id_5e08cfcc3069a354",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "[saga.cast.jenny] is in her third trimester.",
+      "raw_text": "\"[saga.cast.jenny] is in her third trimester.\"",
+      "line_number": 243,
+      "translation_id": "id_9eea2b856df5a003",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "[saga.cast.anon] is {color=7ff7}submissive{/color}.",
+      "raw_text": "\"[saga.cast.anon] is {color=7ff7}submissive{/color}.\"",
+      "line_number": 315,
+      "translation_id": "id_46e2857c519c2ad5",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\lewd\\jenny.rpy",
+      "text": "[saga.cast.anon] is {color=f77b}dominant{/color}.",
+      "raw_text": "\"[saga.cast.anon] is {color=f77b}dominant{/color}.\"",
+      "line_number": 318,
+      "translation_id": "id_95cad51c5cb32df6",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Keep browsing.",
+      "raw_text": "\"Keep browsing.\"",
+      "line_number": 12,
+      "translation_id": "id_a3d679a48b672e8d",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Abandon [saga.gui.buy!lt] and continue.",
+      "raw_text": "\"Abandon [saga.gui.buy!lt] and continue.\"",
+      "line_number": 14,
+      "translation_id": "id_1508d4853fb09ff2",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Buy items for $[cash].",
+      "raw_text": "\"Buy items for $[cash].\"",
+      "line_number": 23,
+      "translation_id": "id_277e8b489222ffdd",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Borrow [saga.gui.buy!lt].",
+      "raw_text": "\"Borrow [saga.gui.buy!lt].\"",
+      "line_number": 26,
+      "translation_id": "id_d82bd3bfaa9ad5c5",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Keep browsing.",
+      "raw_text": "\"Keep browsing.\"",
+      "line_number": 28,
+      "translation_id": "id_6b32937a8a5efab6",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Abandon [saga.gui.buy!lt].",
+      "raw_text": "\"Abandon [saga.gui.buy!lt].\"",
+      "line_number": 31,
+      "translation_id": "id_34883bc04ec52a2e",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Add to [what.cart!lt].",
+      "raw_text": "\"Add to [what.cart!lt].\"",
+      "line_number": 56,
+      "translation_id": "id_1302c39367729fed",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Put it back.",
+      "raw_text": "\"Put it back.\"",
+      "line_number": 59,
+      "translation_id": "id_3ff6008fae64a049",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Leave it.",
+      "raw_text": "\"Leave it.\"",
+      "line_number": 62,
+      "translation_id": "id_740eaa5a93bb192f",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Hi, [saga.cast.anon]. What have you got in that basket today?",
+      "raw_text": "\"Hi, [saga.cast.anon]. What have you got in that basket today?\"",
+      "line_number": 71,
+      "translation_id": "id_483e3b041020fdf5",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "That'll be $[cash], please.",
+      "raw_text": "\"That'll be $[cash], please.\"",
+      "line_number": 73,
+      "translation_id": "id_a1932b224746c4ff",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Hi, [saga.cast.anon]. Checking something out?",
+      "raw_text": "\"Hi, [saga.cast.anon]. Checking something out?\"",
+      "line_number": 80,
+      "translation_id": "id_db63ecf385b60efa",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Hi, [saga.cast.anon]. What have you got in that basket today?",
+      "raw_text": "\"Hi, [saga.cast.anon]. What have you got in that basket today?\"",
+      "line_number": 87,
+      "translation_id": "id_f1808fc725ba9436",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "That'll be $[cash], please.",
+      "raw_text": "\"That'll be $[cash], please.\"",
+      "line_number": 89,
+      "translation_id": "id_b290867f2bcfaf96",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Hi, [saga.cast.anon]. What have you got in that basket today?",
+      "raw_text": "\"Hi, [saga.cast.anon]. What have you got in that basket today?\"",
+      "line_number": 96,
+      "translation_id": "id_200dc846616bd70d",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "That'll be $[cash], please.",
+      "raw_text": "\"That'll be $[cash], please.\"",
+      "line_number": 98,
+      "translation_id": "id_93393dfd11679cb9",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Hi, [saga.cast.anon]. What have you got in that basket today?",
+      "raw_text": "\"Hi, [saga.cast.anon]. What have you got in that basket today?\"",
+      "line_number": 105,
+      "translation_id": "id_fb2d2b653ec16fcf",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "That'll be $[cash], please.",
+      "raw_text": "\"That'll be $[cash], please.\"",
+      "line_number": 107,
+      "translation_id": "id_0c850e0ad0aec961",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Keep browsing.",
+      "raw_text": "\"Keep browsing.\"",
+      "line_number": 12,
+      "translation_id": "id_3fcdce4e79207320",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Abandon [saga.gui.buy!lt] and continue.",
+      "raw_text": "\"Abandon [saga.gui.buy!lt] and continue.\"",
+      "line_number": 14,
+      "translation_id": "id_3f6f4ca11da5c65c",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Buy items for $[cash].",
+      "raw_text": "\"Buy items for $[cash].\"",
+      "line_number": 23,
+      "translation_id": "id_cc7b96c8fab07cf2",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Borrow [saga.gui.buy!lt].",
+      "raw_text": "\"Borrow [saga.gui.buy!lt].\"",
+      "line_number": 26,
+      "translation_id": "id_5304b8f0a0283c73",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Keep browsing.",
+      "raw_text": "\"Keep browsing.\"",
+      "line_number": 28,
+      "translation_id": "id_8a33a338bbbee136",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Abandon [saga.gui.buy!lt].",
+      "raw_text": "\"Abandon [saga.gui.buy!lt].\"",
+      "line_number": 31,
+      "translation_id": "id_b96a15db3721242d",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Add to [what.cart!lt].",
+      "raw_text": "\"Add to [what.cart!lt].\"",
+      "line_number": 56,
+      "translation_id": "id_f0041cc43fa5f4a5",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Put it back.",
+      "raw_text": "\"Put it back.\"",
+      "line_number": 59,
+      "translation_id": "id_299ef8e34eb48fd4",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Leave it.",
+      "raw_text": "\"Leave it.\"",
+      "line_number": 62,
+      "translation_id": "id_696f30e2db78dd33",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Hi, [saga.cast.anon]. What have you got in that basket today?",
+      "raw_text": "\"Hi, [saga.cast.anon]. What have you got in that basket today?\"",
+      "line_number": 71,
+      "translation_id": "id_fa118b28275116ea",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "That'll be $[cash], please.",
+      "raw_text": "\"That'll be $[cash], please.\"",
+      "line_number": 73,
+      "translation_id": "id_413e2066d550115c",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Hi, [saga.cast.anon]. Checking something out?",
+      "raw_text": "\"Hi, [saga.cast.anon]. Checking something out?\"",
+      "line_number": 80,
+      "translation_id": "id_a854e0ab9ed6af5c",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Hi, [saga.cast.anon]. What have you got in that basket today?",
+      "raw_text": "\"Hi, [saga.cast.anon]. What have you got in that basket today?\"",
+      "line_number": 87,
+      "translation_id": "id_7251633856ff6583",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "That'll be $[cash], please.",
+      "raw_text": "\"That'll be $[cash], please.\"",
+      "line_number": 89,
+      "translation_id": "id_f0789a63b0109222",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Hi, [saga.cast.anon]. What have you got in that basket today?",
+      "raw_text": "\"Hi, [saga.cast.anon]. What have you got in that basket today?\"",
+      "line_number": 96,
+      "translation_id": "id_be63bc9fa5c096f7",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "That'll be $[cash], please.",
+      "raw_text": "\"That'll be $[cash], please.\"",
+      "line_number": 98,
+      "translation_id": "id_3ebad6e363d29d5a",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "Hi, [saga.cast.anon]. What have you got in that basket today?",
+      "raw_text": "\"Hi, [saga.cast.anon]. What have you got in that basket today?\"",
+      "line_number": 105,
+      "translation_id": "id_86ecdb0cd85ea399",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\mech\\shop.rpy",
+      "text": "That'll be $[cash], please.",
+      "raw_text": "\"That'll be $[cash], please.\"",
+      "line_number": 107,
+      "translation_id": "id_c0d87117f1c94fe9",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\base.rpy",
+      "text": "Back",
+      "raw_text": "'Back'",
+      "line_number": 27,
+      "translation_id": "id_92271d5ebf82908a",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\cast.rpy",
+      "text": "t c",
+      "raw_text": "'t c'",
+      "line_number": 6,
+      "translation_id": "id_a5302b9f9cf89ad0",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\cast.rpy",
+      "text": "t c",
+      "raw_text": "'t c'",
+      "line_number": 6,
+      "translation_id": "id_25173a16948ba39c",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\cast.rpy",
+      "text": "Cookie Jar",
+      "raw_text": "'Cookie Jar'",
+      "line_number": 8,
+      "translation_id": "id_6315d521110ac31b",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Start",
+      "raw_text": "'Start'",
+      "line_number": 4,
+      "translation_id": "id_388846505ee05dc6",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Resume",
+      "raw_text": "'Resume'",
+      "line_number": 7,
+      "translation_id": "id_53752afe85f1a625",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "End Replay",
+      "raw_text": "'End Replay'",
+      "line_number": 10,
+      "translation_id": "id_f83e2a515d30bd47",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Save",
+      "raw_text": "'Save'",
+      "line_number": 12,
+      "translation_id": "id_824fe186a52abd79",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Load",
+      "raw_text": "'Load'",
+      "line_number": 15,
+      "translation_id": "id_c43b326ad07c8ed6",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Settings",
+      "raw_text": "'Settings'",
+      "line_number": 17,
+      "translation_id": "id_cc185b10cdca198f",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Cookie Jar",
+      "raw_text": "'Cookie Jar'",
+      "line_number": 20,
+      "translation_id": "id_6b91e95fb0d4095a",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Credits",
+      "raw_text": "'Credits'",
+      "line_number": 21,
+      "translation_id": "id_7306f9dfee81b133",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Changelog",
+      "raw_text": "'Changelog'",
+      "line_number": 22,
+      "translation_id": "id_aea79bc32d416eb5",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Main Menu",
+      "raw_text": "'Main Menu'",
+      "line_number": 25,
+      "translation_id": "id_d7bf2e41d00ae1ca",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Quit",
+      "raw_text": "'Quit'",
+      "line_number": 28,
+      "translation_id": "id_6c1309071b669cd3",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Resume",
+      "raw_text": "'Resume'",
+      "line_number": 7,
+      "translation_id": "id_0be0ce477a3217f3",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "End Replay",
+      "raw_text": "'End Replay'",
+      "line_number": 10,
+      "translation_id": "id_73090246142e12f4",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Save",
+      "raw_text": "'Save'",
+      "line_number": 12,
+      "translation_id": "id_43b5c00db764a739",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Load",
+      "raw_text": "'Load'",
+      "line_number": 15,
+      "translation_id": "id_4c4d64c0fbd1430e",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Settings",
+      "raw_text": "'Settings'",
+      "line_number": 17,
+      "translation_id": "id_5e5c496ccc1d1f49",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Cookie Jar",
+      "raw_text": "'Cookie Jar'",
+      "line_number": 20,
+      "translation_id": "id_cb3991a409788505",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Credits",
+      "raw_text": "'Credits'",
+      "line_number": 21,
+      "translation_id": "id_99b69985bc6642a7",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Changelog",
+      "raw_text": "'Changelog'",
+      "line_number": 22,
+      "translation_id": "id_672c82412d14ca99",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Main Menu",
+      "raw_text": "'Main Menu'",
+      "line_number": 25,
+      "translation_id": "id_8ca403f5fe510843",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\core.rpy",
+      "text": "Quit",
+      "raw_text": "'Quit'",
+      "line_number": 28,
+      "translation_id": "id_2ec0da3f851533c5",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\gate.rpy",
+      "text": "MATURE CONTENT",
+      "raw_text": "'MATURE CONTENT'",
+      "line_number": 14,
+      "translation_id": "id_0a418f9af42946b6",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\gate.rpy",
+      "text": "l c",
+      "raw_text": "'l c'",
+      "line_number": 9,
+      "translation_id": "id_74ff6e040821bda6",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\gate.rpy",
+      "text": "MATURE CONTENT",
+      "raw_text": "'MATURE CONTENT'",
+      "line_number": 14,
+      "translation_id": "id_0319bd61625a50cb",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\gate.rpy",
+      "text": "I am 18 years of age or older.",
+      "raw_text": "'I am 18 years of age or older.'",
+      "line_number": 17,
+      "translation_id": "id_da4d84d7baf76f59",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\gate.rpy",
+      "text": "Yes",
+      "raw_text": "'Yes'",
+      "line_number": 20,
+      "translation_id": "id_53ef7a635a7826c4",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\gate.rpy",
+      "text": "No",
+      "raw_text": "'No'",
+      "line_number": 21,
+      "translation_id": "id_552b9cb75cca4b43",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\lewd.rpy",
+      "text": "t b c",
+      "raw_text": "'t b c'",
+      "line_number": 6,
+      "translation_id": "id_6c3820b0cc51ad64",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\lewd.rpy",
+      "text": "t b c",
+      "raw_text": "'t b c'",
+      "line_number": 6,
+      "translation_id": "id_dda171baf03c8249",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\lewd.rpy",
+      "text": "Replay ",
+      "raw_text": "'Replay '",
+      "line_number": 22,
+      "translation_id": "id_7b3614f4c000cf8a",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\logs.rpy",
+      "text": "t c",
+      "raw_text": "'t c'",
+      "line_number": 10,
+      "translation_id": "id_caa617d72c58b77d",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\logs.rpy",
+      "text": "Older",
+      "raw_text": "'Older'",
+      "line_number": 19,
+      "translation_id": "id_124550f0b20a6caa",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\logs.rpy",
+      "text": "Older changelog entries can be found on the ",
+      "raw_text": "'Older changelog entries can be found on the '",
+      "line_number": 30,
+      "translation_id": "id_bfdcf0f671f9740f",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\logs.rpy",
+      "text": "official wiki.",
+      "raw_text": "'official wiki.'",
+      "line_number": 31,
+      "translation_id": "id_99aa19db9ec8dd05",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\logs.rpy",
+      "text": "t c",
+      "raw_text": "'t c'",
+      "line_number": 10,
+      "translation_id": "id_575acf50e23e977e",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\logs.rpy",
+      "text": "Changelog",
+      "raw_text": "'Changelog'",
+      "line_number": 12,
+      "translation_id": "id_fd9471fb27dbd37a",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\logs.rpy",
+      "text": "Older",
+      "raw_text": "'Older'",
+      "line_number": 19,
+      "translation_id": "id_cc56e21ba6a8012d",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\logs.rpy",
+      "text": "Older changelog entries can be found on the ",
+      "raw_text": "'Older changelog entries can be found on the '",
+      "line_number": 30,
+      "translation_id": "id_676cd0b9caeb57c2",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\logs.rpy",
+      "text": "official wiki.",
+      "raw_text": "'official wiki.'",
+      "line_number": 31,
+      "translation_id": "id_59bd8c3ad264b2e8",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\mode.rpy",
+      "text": "t c",
+      "raw_text": "'t c'",
+      "line_number": 6,
+      "translation_id": "id_05056397565991e8",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\mode.rpy",
+      "text": "way to earn them yet. Extra money can be found in the ",
+      "raw_text": "'way to earn them yet. Extra money can be found in the '",
+      "line_number": 18,
+      "translation_id": "id_a59388c90b26c60e",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\mode.rpy",
+      "text": "ATM in the bank. More content will be restored in ",
+      "raw_text": "'ATM in the bank. More content will be restored in '",
+      "line_number": 19,
+      "translation_id": "id_640b8992c83d8bd1",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\mode.rpy",
+      "text": "future releases.",
+      "raw_text": "'future releases.'",
+      "line_number": 20,
+      "translation_id": "id_da93fb5754c53b0b",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\mode.rpy",
+      "text": "t c",
+      "raw_text": "'t c'",
+      "line_number": 6,
+      "translation_id": "id_09422e489ee4a88b",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\mode.rpy",
+      "text": "Mode Select",
+      "raw_text": "'Mode Select'",
+      "line_number": 8,
+      "translation_id": "id_3677e31d0fd10a8f",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\mode.rpy",
+      "text": "Preview",
+      "raw_text": "'Preview'",
+      "line_number": 16,
+      "translation_id": "id_a67d64344db48791",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\mode.rpy",
+      "text": "Start with money and stats as there is no ",
+      "raw_text": "'Start with money and stats as there is no '",
+      "line_number": 17,
+      "translation_id": "id_489d1a10a01ea17c",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\mode.rpy",
+      "text": "way to earn them yet. Extra money can be found in the ",
+      "raw_text": "'way to earn them yet. Extra money can be found in the '",
+      "line_number": 18,
+      "translation_id": "id_bacf971a3c954a66",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\mode.rpy",
+      "text": "ATM in the bank. More content will be restored in ",
+      "raw_text": "'ATM in the bank. More content will be restored in '",
+      "line_number": 19,
+      "translation_id": "id_948058f69b73e81f",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\mode.rpy",
+      "text": "future releases.",
+      "raw_text": "'future releases.'",
+      "line_number": 20,
+      "translation_id": "id_886b9d884e4d9a5e",
+      "potential_false_positive": false
+    },
+    {
+      "file": "summertimesaga\\game\\src\\menu\\mode.rpy",
+      "text": "Normal",
+      "raw_text": "'Normal'",
+      "line_number": 27,
+      "translation_id": "id_0d30d85aab32e4fd",
+      "potential_false_positive": false
+    }
+  ]
+}

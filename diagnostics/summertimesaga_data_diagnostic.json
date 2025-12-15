@@ -1,0 +1,3016 @@
+{
+  "target": "summertimesaga",
+  "stats": {
+    "csv_files": 0,
+    "json_files": 1,
+    "txt_files": 15,
+    "csv_extracted": 0,
+    "json_extracted": 2,
+    "txt_extracted": 3086,
+    "csv_fp": 0,
+    "json_fp": 0,
+    "txt_fp": 0
+  },
+  "samples": [
+    {
+      "file": "summertimesaga\\game\\cache\\build_info.json",
+      "text": "Summertime Saga",
+      "line_number": 0,
+      "source": "json"
+    },
+    {
+      "file": "summertimesaga\\game\\cache\\build_info.json",
+      "text": "21.0.0-wip.6705",
+      "line_number": 0,
+      "source": "json"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "2025-12-13 14:29:55 UTC",
+      "line_number": 1,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Windows-11-10.0.26200-SP0",
+      "line_number": 2,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Ren'Py 8.5.0.25111603",
+      "line_number": 3,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Summertime Saga",
+      "line_number": 5,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "21.0.0-wip.6705",
+      "line_number": 6,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Built at 2025-12-01 02:55:52 UTC",
+      "line_number": 7,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Early init took 3968 ms",
+      "line_number": 9,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Loading error handling took 148 ms",
+      "line_number": 10,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Loading script took 6600 ms",
+      "line_number": 11,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Loading save slot metadata took 76 ms",
+      "line_number": 12,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Loading persistent took 3 ms",
+      "line_number": 13,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Set script version to: (8, 5, 0)",
+      "line_number": 14,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Running init code took 1192 ms",
+      "line_number": 15,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Loading analysis data took 15 ms",
+      "line_number": 16,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Analyze and compile ATL took 17 ms",
+      "line_number": 17,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Reloading save slot metadata took 39 ms",
+      "line_number": 18,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Dump and make backups took 4 ms",
+      "line_number": 19,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Cleaning cache took 0 ms",
+      "line_number": 20,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Making clean stores took 3 ms",
+      "line_number": 21,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Initial gc took 157 ms",
+      "line_number": 22,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "DPI scale factor: 1.250000",
+      "line_number": 23,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "nvdrs: Loaded, about to disable thread optimizations.",
+      "line_number": 24,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "nvdrs: Disabled thread optimizations.",
+      "line_number": 25,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Creating interface object took 381 ms",
+      "line_number": 26,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Init translation took 17 ms",
+      "line_number": 27,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Cleaning stores took 2 ms",
+      "line_number": 28,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Load screen analysis took 1 ms",
+      "line_number": 29,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Analyze screens took 21 ms",
+      "line_number": 30,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Save screen analysis took 33 ms",
+      "line_number": 31,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Save pyanalysis took 0 ms",
+      "line_number": 32,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Save bytecode took 187 ms",
+      "line_number": 33,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Running _start took 6 ms",
+      "line_number": 34,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Interface start took 1805 ms",
+      "line_number": 35,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Initializing gl2 renderer:",
+      "line_number": 37,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "primary display bounds: (0, 0, 1920, 1080)",
+      "line_number": 38,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "swap interval: 1 frames",
+      "line_number": 39,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Windowed mode.",
+      "line_number": 40,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Vendor: 'ATI Technologies Inc.'",
+      "line_number": 41,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Renderer: 'AMD Radeon(TM) Graphics'",
+      "line_number": 42,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Version: '4.6.0 Compatibility Profile Context 25.12.1.251128'",
+      "line_number": 43,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 144, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>",
+      "line_number": 44,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)",
+      "line_number": 45,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Maximum texture size: 4096x4096",
+      "line_number": 46,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Could not open 'cache/shaders.txt':",
+      "line_number": 47,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Screen sizes: virtual=(1920, 1080) physical=(1920, 991) drawable=(1920, 991)",
+      "line_number": 48,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\log.txt",
+      "text": "Maximum texture size: 4096x4096",
+      "line_number": 49,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "I'm sorry, but an uncaught exception occurred.",
+      "line_number": 1,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "While running game code:",
+      "line_number": 3,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/loop.rpy\", line 4, in script call",
+      "line_number": 4,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "call expression f'gui.{saga.gui.step.ref}' from loop.emit",
+      "line_number": 5,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/loop.rpy\", line 32, in script",
+      "line_number": 6,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "call screen use(saga.camera.focus, _with_none=False)",
+      "line_number": 7,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/use.rpy\", line 1, in execute",
+      "line_number": 8,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "screen use(what, _sensitive=renpy.get_mode() == 'screen'):",
+      "line_number": 9,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/use.rpy\", line 1, in execute",
+      "line_number": 10,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "screen use(what, _sensitive=renpy.get_mode() == 'screen'):",
+      "line_number": 11,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/use.rpy\", line 5, in execute",
+      "line_number": 12,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "use expression what.screen pass (what, _sensitive)",
+      "line_number": 13,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 1, in execute",
+      "line_number": 14,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "screen tel(what, _sensitive=renpy.get_mode() == 'screen'):",
+      "line_number": 15,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 1, in execute",
+      "line_number": 16,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "screen tel(what, _sensitive=renpy.get_mode() == 'screen'):",
+      "line_number": 17,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 8, in execute",
+      "line_number": 18,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "fixed:",
+      "line_number": 19,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 9, in execute",
+      "line_number": 20,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "use expression 'tel_' + what.app.ref pass (what, what.app)",
+      "line_number": 21,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 247, in execute",
+      "line_number": 22,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "screen tel_info(what, app):",
+      "line_number": 23,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 247, in execute",
+      "line_number": 24,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "screen tel_info(what, app):",
+      "line_number": 25,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 261, in execute",
+      "line_number": 26,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "hbox:",
+      "line_number": 27,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 264, in execute",
+      "line_number": 28,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "side 'tl t l c':",
+      "line_number": 29,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 272, in execute",
+      "line_number": 30,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "vbox:",
+      "line_number": 31,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 295, in execute",
+      "line_number": 32,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "label 'Age: [who.age]'",
+      "line_number": 33,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "NameError: name 'kim' is not defined. Did you mean: 'im'?",
+      "line_number": 34,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "-- Full Traceback ------------------------------------------------------------",
+      "line_number": 36,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "Traceback (most recent call last):",
+      "line_number": 38,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/loop.rpy\", line 4, in script call",
+      "line_number": 39,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "call expression f'gui.{saga.gui.step.ref}' from loop.emit",
+      "line_number": 40,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/loop.rpy\", line 32, in script",
+      "line_number": 41,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "call screen use(saga.camera.focus, _with_none=False)",
+      "line_number": 42,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/ast.py\", line 2241, in execute",
+      "line_number": 43,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/ast.py\", line 2195, in call",
+      "line_number": 44,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/statements.py\", line 381, in call",
+      "line_number": 45,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/common/000statements.rpy\", line 695, in execute_call_screen",
+      "line_number": 46,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/exports/statementexports.py\", line 348, in call_screen",
+      "line_number": 47,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/ui.py\", line 304, in interact",
+      "line_number": 48,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/display/core.py\", line 2117, in interact",
+      "line_number": 49,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/display/core.py\", line 2655, in interact_core",
+      "line_number": 50,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/display/displayable.py\", line 457, in visit_all",
+      "line_number": 51,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/display/displayable.py\", line 457, in visit_all",
+      "line_number": 52,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/display/displayable.py\", line 457, in visit_all",
+      "line_number": 53,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/display/screen.py\", line 503, in visit_all",
+      "line_number": 54,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/display/core.py\", line 2655, in <lambda>",
+      "line_number": 55,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/display/screen.py\", line 514, in per_interact",
+      "line_number": 56,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/display/screen.py\", line 715, in update",
+      "line_number": 57,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/use.rpy\", line 1, in execute",
+      "line_number": 58,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "screen use(what, _sensitive=renpy.get_mode() == 'screen'):",
+      "line_number": 59,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/use.rpy\", line 1, in execute",
+      "line_number": 60,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "screen use(what, _sensitive=renpy.get_mode() == 'screen'):",
+      "line_number": 61,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/use.rpy\", line 5, in execute",
+      "line_number": 62,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "use expression what.screen pass (what, _sensitive)",
+      "line_number": 63,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 1, in execute",
+      "line_number": 64,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "screen tel(what, _sensitive=renpy.get_mode() == 'screen'):",
+      "line_number": 65,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 1, in execute",
+      "line_number": 66,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "screen tel(what, _sensitive=renpy.get_mode() == 'screen'):",
+      "line_number": 67,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 8, in execute",
+      "line_number": 68,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "fixed:",
+      "line_number": 69,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 9, in execute",
+      "line_number": 70,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "use expression 'tel_' + what.app.ref pass (what, what.app)",
+      "line_number": 71,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 247, in execute",
+      "line_number": 72,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "screen tel_info(what, app):",
+      "line_number": 73,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 247, in execute",
+      "line_number": 74,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "screen tel_info(what, app):",
+      "line_number": 75,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 261, in execute",
+      "line_number": 76,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "hbox:",
+      "line_number": 77,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 264, in execute",
+      "line_number": 78,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "side 'tl t l c':",
+      "line_number": 79,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 272, in execute",
+      "line_number": 80,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "vbox:",
+      "line_number": 81,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"game/src/gui/tel.rpy\", line 295, in execute",
+      "line_number": 82,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "label 'Age: [who.age]'",
+      "line_number": 83,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/ui.py\", line 1021, in _label",
+      "line_number": 84,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/text/text.py\", line 2198, in __init__",
+      "line_number": 85,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/text/text.py\", line 2332, in set_text",
+      "line_number": 86,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/substitutions.py\", line 355, in substitute",
+      "line_number": 87,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/substitutions.py\", line 89, in interpolate",
+      "line_number": 88,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/substitutions.py\", line 81, in interpolate",
+      "line_number": 89,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/python.py\", line 1305, in py_eval",
+      "line_number": 90,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"renpy/python.py\", line 1298, in py_eval_bytecode",
+      "line_number": 91,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "File \"<none>\", line 1, in <module>",
+      "line_number": 92,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "NameError: name 'kim' is not defined. Did you mean: 'im'?",
+      "line_number": 93,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "Windows-11-10.0.26200-SP0 AMD64",
+      "line_number": 95,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "Ren'Py 8.5.0.25111603",
+      "line_number": 96,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "Summertime Saga 21.0.0-wip.6705",
+      "line_number": 97,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\traceback.txt",
+      "text": "Sat Dec 13 14:48:40 2025",
+      "line_number": 98,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "## [config.version] - Preview 10",
+      "line_number": 3,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Reimagined and added back the Debbie leaning on the counter scene.",
+      "line_number": 5,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Rewrote and added a new animation to the evening scene with Debbie.",
+      "line_number": 6,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Introduced a new random encounter with Debbie in the basement.",
+      "line_number": 7,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Rebuilt Debbie's progressive shower events and added to cookie jar.",
+      "line_number": 8,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Reimplemented main story up to and including buying vehicles.",
+      "line_number": 9,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Added the repeatable version of getting caught with Debbie's pants.",
+      "line_number": 10,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Enabled hand-holding in Debbie's mall visits, including when pregnant.",
+      "line_number": 11,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Developed capability to prevent unwanted visitors to Anon's bedroom.",
+      "line_number": 12,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Inadvertently caused playtest team to found _The Cult of the Chair_.",
+      "line_number": 13,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Rolled meeting Maria into the quest where Anon is hired as a delivery boy.",
+      "line_number": 14,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Split out Maria's hair flower so it can be oriented correctly.",
+      "line_number": 15,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Established the base for Maria's button dialogue options.",
+      "line_number": 16,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Updated the repairing Debbie's car quest to support visiting Josie in person.",
+      "line_number": 17,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Installed basic functionality for the car dealership.",
+      "line_number": 18,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Improved Josephine face art, especially lighting of her teeth.",
+      "line_number": 19,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Hooked up buttons and schedules for the various dealership employees.",
+      "line_number": 20,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Published \"Muffdiver\" magazine and allowed it to be viewed in the inventory.",
+      "line_number": 21,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Implemented easy difficulty to automatically skip some mini games.",
+      "line_number": 22,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Changed the tutorial to only trigger if it has already been seen.",
+      "line_number": 23,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Restaged Debbie's kitchen dialogue to better reflect button position.",
+      "line_number": 24,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Touched up art for some of the pizzeria and dealership locations.",
+      "line_number": 25,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Finished removing old Anon art from Jenny's photo quest.",
+      "line_number": 26,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Tweaked a couple of Debbie quest reminders to not block her button.",
+      "line_number": 27,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Addressed Jenny referencing payment that may never have occurred.",
+      "line_number": 28,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Stopped Debbie trying to cook during the helping around the house quest.",
+      "line_number": 29,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Ensured Anon eventually gets wet when showering with Jenny.",
+      "line_number": 30,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Optimised rig attribute preprocessing and added a feature to aid organisation.",
+      "line_number": 31,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Made it much easier to share sets of assets between rig poses.",
+      "line_number": 32,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Fixed soft-lock in Debbie pool quest to when Jenny was using the bathroom.",
+      "line_number": 33,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Prevented bad player state after first Jenny telescope quest.",
+      "line_number": 34,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Repaired posing for Debbie drying her breasts just outside the shower.",
+      "line_number": 35,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Cleaned up scene previews that may now be unlocked normally.",
+      "line_number": 36,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Upgraded Ren'Py to version 8.5.0.",
+      "line_number": 37,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Various metadata additions, typo fixes, and consistency tweaks.",
+      "line_number": 38,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "## 21.0.0-wip.6440 - Preview 9, Hotfix 2",
+      "line_number": 41,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Fixed save migrations for saves made prior to 21.0.0-wip.5252.",
+      "line_number": 43,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Added missing dialogue arm asset for Debbie while pregnant.",
+      "line_number": 44,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "## 21.0.0-wip.6433 - Preview 9, Hotfix 1",
+      "line_number": 47,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Repaired import chain that caused bad virtual screen size and broken rigs.",
+      "line_number": 49,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Fixed exception being thrown the first time Jenny's GFE event is played.",
+      "line_number": 50,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "## 21.0.0-wip.6428 - Preview 9",
+      "line_number": 53,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Capped off Debbie's route with her new original finale quest.",
+      "line_number": 55,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Added a pregnancy cycle for Debbie, including a various new dialogue scenes.",
+      "line_number": 56,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Created a new Japanese restaurant location and two new workers within.",
+      "line_number": 57,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Introduced two new characters in restaurant with button dialogue.",
+      "line_number": 58,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Expanded art for Jenny and Debbie to support cross route pregnancy.",
+      "line_number": 59,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Made assets for characters sleeping in recovery rooms at night.",
+      "line_number": 60,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Installed cribs in character bedrooms for when they are nursing.",
+      "line_number": 61,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Introduced simulation mechanics to support dynamic motion in aquarium.",
+      "line_number": 62,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Upgraded animation support in sets for smoother restaurant water feature.",
+      "line_number": 63,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Cleaned up some dynamic shot definitions to make them more composable.",
+      "line_number": 64,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Prevented pregnancies stalling indefinitely in some edge cases.",
+      "line_number": 65,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Wrote a custom mesh generator to support warping in restaurant menu.",
+      "line_number": 66,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Stopped teleport effect in some unforeseen scene trigger scenarios.",
+      "line_number": 67,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Optimised button routing for characters to make them more extensible.",
+      "line_number": 68,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Fixed Jenny becoming invisible in cam show videos while pregnant.",
+      "line_number": 69,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Inserted missing rails dialogue in trip to Pink with Jenny.",
+      "line_number": 70,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Tweaked Kassy's button dialogue to support choosing a topic.",
+      "line_number": 71,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Addressed misplaced basket abandonment prompt in Cupid.",
+      "line_number": 72,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Ensured Diane's shovel quest cannot leave Jenny in a broken state.",
+      "line_number": 73,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Corrected clipping of frames when using screen shake effects.",
+      "line_number": 74,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Various typo corrections, presence checks, and context consistency fixes.",
+      "line_number": 75,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "## 21.0.0-wip.6155 - Preview 8",
+      "line_number": 78,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Continued Debbie's route with one original, and one reworked quest.",
+      "line_number": 80,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Inserted missing diary entry after Jenny catches Anon during Debbie boobjob.",
+      "line_number": 81,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Fixed issue with some blurred assets being cut-off too early.",
+      "line_number": 82,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Expanded replay of Debbie's boobjob scene to include more of the lewd preamble.",
+      "line_number": 83,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Added hide button to quick menu on touch devices where other options are unavailable.",
+      "line_number": 84,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Restored Debbie's bush in lotion massage animation.",
+      "line_number": 85,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Wrote new shader in order to visually communicate flashbacks.",
+      "line_number": 86,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Reworked Debbie's bedroom location with improved art.",
+      "line_number": 87,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Updated art of Debbie hovering at the door when entering Anon's room.",
+      "line_number": 88,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Improved character art for Lily and Judith.",
+      "line_number": 89,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Drew new TV channel variant in order to better match narrative use.",
+      "line_number": 90,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Created several new variant UI assets.",
+      "line_number": 91,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Blocked a teleportation bug when speaking to Annie during Miss Okita's serum quest.",
+      "line_number": 92,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Corrected oversight in pizza mini game where zero deliveries would cause crash.",
+      "line_number": 93,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Resolved conflict between Miss Dewitt and Miss Ross routes when collecting planks.",
+      "line_number": 94,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Ensured replay of Debbie blowjob scene in Anon's room correctly unlocks.",
+      "line_number": 95,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Applied correct tint to Anon's bedsheets during Debbie's visits.",
+      "line_number": 96,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Attempted to support two-decade old hardware in equirectangular projection shader.",
+      "line_number": 97,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Upgraded Ren'Py to version 8.4.1, and made new accessibility options available.",
+      "line_number": 98,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Various minor posing improvements, metadata adjustments, and asset tweaks.",
+      "line_number": 99,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "## 21.0.0-wip.6011 - Preview 7",
+      "line_number": 102,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Added one original, one reworked, and one upgraded quest to Debbie's route.",
+      "line_number": 104,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Continued the main story with two more upgraded quests and pizza mini game.",
+      "line_number": 105,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Expanded Debbie's recurring shower event with another level of escalation.",
+      "line_number": 106,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Included two new animations, for future quests, in shower previews section.",
+      "line_number": 107,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Made previewable animations available, already unlocked, to the cookie jar.",
+      "line_number": 108,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Moved rig system over to new positioning system.",
+      "line_number": 109,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Overhauled how transitions are managed to better facilitate future usage.",
+      "line_number": 110,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Drew many more art assets for Anon, Debbie, Dimitri, Igor, and Kassy.",
+      "line_number": 111,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Revisited Jenny cam show handjob animation and added more frames.",
+      "line_number": 112,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Enhanced Jenny shower blowjob scene with more cum frames and other tweaks.",
+      "line_number": 113,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Worked on adding variety to Summerville in the form of More crowd variants.",
+      "line_number": 114,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Reworked washroom and second floor concourse of the mall with more details.",
+      "line_number": 115,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Created art for a new TV show for use in Debbie's route.",
+      "line_number": 116,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Extended the Cupid store location with a new storage room.",
+      "line_number": 117,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Plumbed in the next stage of Debbie's pool button.",
+      "line_number": 118,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Installed water VFX for shower preview animation.",
+      "line_number": 119,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Fixed part of Jenny's initial sex camshow quest being accidentally skipped.",
+      "line_number": 120,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Tweaked second dream sequence in Debbie's route to be more performant.",
+      "line_number": 121,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Allowed photo booth to be interacted with once again.",
+      "line_number": 122,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Prevented minor state corruption when clearing the shower at night.",
+      "line_number": 123,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Guarded against pathological player behaviour in Roxxy visit quest.",
+      "line_number": 124,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Various minor posing improvements.",
+      "line_number": 125,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "## 21.0.0-wip.5791 - Preview 6, Hotfix 1",
+      "line_number": 128,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Fixed crash in Debbie's mall trip event if Anon was busy the night prior.",
+      "line_number": 130,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Corrected minor typo in reminder dialogue for Debbie's mall trip event.",
+      "line_number": 131,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "## 21.0.0-wip.5787 - Preview 6",
+      "line_number": 134,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Continued Debbie's route with one original, two reworked, and two upgraded quests.",
+      "line_number": 136,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Added another level of escalation into Debbie's recurring shower event.",
+      "line_number": 137,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Allowed three new animations, intended for future quests, to be previewed early.",
+      "line_number": 138,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Restored the first two quests of Diane's route, including gardening mini game.",
+      "line_number": 139,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Wired up Diane's early game button in her garden.",
+      "line_number": 140,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Overhauled a large number of assets and scenes that occur on Debbie's couch.",
+      "line_number": 141,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Expanded the forest slightly. Don't worry about it, nothing see there. >_>;;",
+      "line_number": 142,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Created a new blend mode to help simulate dimming of light sources.",
+      "line_number": 143,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Combined some cutscene assets, allowing art to be upgraded while saving space.",
+      "line_number": 144,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Slowed speed of vertical pan the first time Anon dreams of Debbie.",
+      "line_number": 145,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Mitigated issue impacting cancellation of auto-nav in deferred events.",
+      "line_number": 146,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Adjusted some character information in the contacts app, and added Diane.",
+      "line_number": 147,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Spaced out the timeline between a couple of existing Debbie quests.",
+      "line_number": 148,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Made a minor cutscene variation for the lotion variant of Deb's Mall event.",
+      "line_number": 149,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Applied patch to prevent incorrect rendering of some visual effects on Android.",
+      "line_number": 150,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Tweaked the positioning system to work better with nested character rigs.",
+      "line_number": 151,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Factored out some magic numbers to aid readability as the codebase further expands.",
+      "line_number": 152,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Updated some nighttime Jenny scenes with a tint to better fit the time of day.",
+      "line_number": 153,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Fixed incorrect zoning of Diane's house which could break some quests.",
+      "line_number": 154,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Resolved a soft-lock in Miss Okita's route concerning Mrs. Smith's office.",
+      "line_number": 155,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Altered projection shader to circumvent very rare bug in some graphics drivers.",
+      "line_number": 156,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Improved text layout of background information in contacts app.",
+      "line_number": 157,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Corrected various typos in existing dialogue.",
+      "line_number": 158,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "## 21.0.0-wip.5605 - Preview 5, Hotfix 2",
+      "line_number": 161,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Increased resolution of assets used in Anon's nightmare.",
+      "line_number": 163,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Fixed Jenny not always rendering correctly during Anon's nightmare.",
+      "line_number": 164,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Restored translation support in choice menus.",
+      "line_number": 165,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Hid duplicate Debbie that could appear in background of a few scenes.",
+      "line_number": 166,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "## 21.0.0-wip.5597 - Preview 5, Hotfix 1",
+      "line_number": 169,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Fixed Debbie not always rendering correctly during Anon's panty flashback.",
+      "line_number": 171,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "## 21.0.0-wip.5595 - Preview 5",
+      "line_number": 174,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Expanded Debbie's route with one original, three reworked, and six upgraded quests.",
+      "line_number": 176,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Created a new mall trip event with Debbie that evolves with her story.",
+      "line_number": 177,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Moved over to using Debbie's new art when she appears in other routes.",
+      "line_number": 178,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Updated Debbie's art in her button dialogue, including sleeping Debbie.",
+      "line_number": 179,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Rebuilt peeking on Debbie in the shower event with more new art.",
+      "line_number": 180,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Extended Debbie's schedule to rarely place her by the pool of an evening.",
+      "line_number": 181,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Built new x-ray system and began adding it to existing scenes.",
+      "line_number": 182,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Wrote up Frank and Bridget's background information for the phone.",
+      "line_number": 183,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Improved dialogue hint when clicking on exterior garage door with key.",
+      "line_number": 184,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Locked that lotion bottle in Debbie's drawer. For now.",
+      "line_number": 185,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Restored correct hover effect to quick menu.",
+      "line_number": 186,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Prevented quick load feature attempting to load incompatible saves.",
+      "line_number": 187,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Removed non-functional options from quick menu when viewing a replay.",
+      "line_number": 188,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Revisited animation system to improve stability, most notably during rollback.",
+      "line_number": 189,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Retooled mimic system to be more reliable and prediction friendly.",
+      "line_number": 190,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Fixed edge-case migration issue when loading some saves from Preview 1.",
+      "line_number": 191,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Guarded against Judith being able to break a Miss Ross quest.",
+      "line_number": 192,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Various small posing improvements to Debbie content from last preview.",
+      "line_number": 193,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Ensured consistent view of hallway in Debbie's house during navigation.",
+      "line_number": 194,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Adjusted timings of some ambient sounds to avoid hard cuts as they loop.",
+      "line_number": 195,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Addressed issue where map music could linger into rails dialogue.",
+      "line_number": 196,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Dealt with flip-flop continuity issues in Jenny's telescope scenes.",
+      "line_number": 197,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Made sure the fake guitar is added to the wall properly in Melody's route.",
+      "line_number": 198,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Cobbled together a new shader to support equirectangular projection.",
+      "line_number": 199,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Optimised some hot code paths to keep navigation snappy.",
+      "line_number": 200,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Resolved issue where using spot metadata would prevent asset prediction.",
+      "line_number": 201,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Added a basic bloom visual effect to help distinguish daydreams.",
+      "line_number": 202,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Helped rails to feel a little more natural when multiple paths may be taken.",
+      "line_number": 203,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Enabled visible cues for choices that require unmet stat checks.",
+      "line_number": 204,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Developed many new rig assets for both Jiang and Kassy.",
+      "line_number": 205,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Upgraded Ren'Py to version 8.3.4.",
+      "line_number": 206,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Touched up art of Anon using telescope in Jenny's route.",
+      "line_number": 207,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Redrew telescope shot from Jenny's route to bring its quality up to par.",
+      "line_number": 208,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Produced new assets for Jenny to reflect her pregnancy in Debbie's route.",
+      "line_number": 209,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Revamped various cutscenes and created multiple new ones.",
+      "line_number": 210,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Put together a new translatable module to help with expressing time periods.",
+      "line_number": 211,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Tweaked layer management logic to prevent Jenny's laptop appearing twice.",
+      "line_number": 212,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Integrated meeting Tammy outside Debbie's house with new mall trip event.",
+      "line_number": 213,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Found and fixed a latent bug in how metadata scaling was being applied.",
+      "line_number": 214,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Solved problem that would cause some sounds to play sooner than intended.",
+      "line_number": 215,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Tackled various other continuity and posing issues in earlier Debbie quests.",
+      "line_number": 216,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Stopped Jenny's first sex toy quest from interfering with the timeline.",
+      "line_number": 217,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Remedied various issues when Jenny showered at night.",
+      "line_number": 218,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Introduced small dialogue variations to account for when Deb is at the mall.",
+      "line_number": 219,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Inserted variant for claiming glasses from Judith during art class.",
+      "line_number": 220,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Many small asset changes to adjust expressions and smooth arm joints.",
+      "line_number": 221,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Reduced the use of magic numbers throughout the priority system.",
+      "line_number": 222,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Prepared and cleaned up the codebase for a future move to Python 3.12.",
+      "line_number": 223,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Eliminated various other minor bugs in existing quests.",
+      "line_number": 224,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "## 21.0.0-wip.5258 - Preview 4, Hotfix 1",
+      "line_number": 227,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Resolved Debbie's route failing to re-activate correctly in some migrated saves.",
+      "line_number": 229,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Fixed soft-lock in Judith's locker when reclaiming library book from Camila.",
+      "line_number": 230,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "## 21.0.0-wip.5252 - Preview 4",
+      "line_number": 233,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Added all new event early in Debbie's story.",
+      "line_number": 235,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Upgraded four of Debbie's existing quests with new art and dialogue.",
+      "line_number": 236,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Improved existing cutscenes and added new ones.",
+      "line_number": 237,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Updated home location backgrounds and closeups.",
+      "line_number": 238,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Added multiple new bodies, arms and facial assets for Debbie and Anon.",
+      "line_number": 239,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Changed Debbie's default buttons to use new art.",
+      "line_number": 240,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Expanded and improved the Cupid store to allow more space, rooms and variety.",
+      "line_number": 241,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Upgraded Ren'Py to version 8.3.3.",
+      "line_number": 242,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Wrote a save migration to fully reset Debbie progress in preparation for her rework.",
+      "line_number": 243,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Added support for multi-asset cutscenes to easier include dynamic details such as pregnancy.",
+      "line_number": 244,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Revisited attribute management to allow for more flexibility in when displaying backgrounds.",
+      "line_number": 245,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Tweaked focus management on initial name screen to be more mobile friendly.",
+      "line_number": 246,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Flipped the hallway between the entrance and living room.",
+      "line_number": 247,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Fixed soft-lock with Annie outside Mrs. Smith's office.",
+      "line_number": 248,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Resolved a problem with older saves causing problems accessing the phone.",
+      "line_number": 249,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Various art metadata additions and typo corrections.",
+      "line_number": 250,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Addressed minor posing issues relating to mouth movement in teacher routes.",
+      "line_number": 251,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Stopped the sink breaking prematurely in Debbie's route when sleeping in the beach house.",
+      "line_number": 252,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "## 21.0.0-wip.5091 - Preview 3",
+      "line_number": 255,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Upgraded visuals and user experience of the in-game phone.",
+      "line_number": 257,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Added a character directory in the form of a contacts app on the phone.",
+      "line_number": 258,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Introduced the ability to rename characters via the phone.",
+      "line_number": 259,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Redesigned the look and feel of the game menus.",
+      "line_number": 260,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Mall crowd art improved and unique for each time tick.",
+      "line_number": 261,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Beach crowd art improved and unique for each time tick.",
+      "line_number": 262,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Debbie cutscenes improved.",
+      "line_number": 263,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- New consistent art for Debbie's laundry basket.",
+      "line_number": 264,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Mini game art now matches quality and styling of new UI.",
+      "line_number": 265,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Jenny body assets slight improvements such as arms and shoulders.",
+      "line_number": 266,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "## 21.0.0-wip.5003 - Preview 2",
+      "line_number": 269,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Reimplemented routes for Miss Bissette, Miss Okita, and Miss Ross.",
+      "line_number": 271,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Partially completed route for Miss Dewitt, with the rest due back in a future update.",
+      "line_number": 272,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Restored Judith mini-route, with fully updated character art.",
+      "line_number": 273,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Added a new event for Debbie in the kitchen at the end of her route.",
+      "line_number": 274,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Introduced a second Jenny cunnilingus animation (for submissive Anon).",
+      "line_number": 275,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Reworked Jenny GFE ending with dominant and submissive variants and new animations.",
+      "line_number": 276,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Added back remaining Debbie events including laundry, garage, movie, panties, and bedroom.",
+      "line_number": 277,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Enabled most of the NPCs usually found at and around the college.",
+      "line_number": 278,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Restored Jenny confrontation about sleeping with Debbie.",
+      "line_number": 279,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Connected up menu and location music as well as ambient sounds.",
+      "line_number": 280,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Allowed pregnant variations of Jenny's visit scene to be unlocked in cookie jar.",
+      "line_number": 281,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Updated crowd art for various locations, mainly around the college.",
+      "line_number": 282,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Expanded the available replays to include all currently playable lewd content.",
+      "line_number": 283,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Updated quick menu placement, and made it always available when enabled in settings.",
+      "line_number": 284,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- By popular demand, re-introduced a cheat menu. Yes, you still tap the wifi icon. Be persistent.",
+      "line_number": 285,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Restored some missing dialogues, including Debbie's shower scene.",
+      "line_number": 286,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Prevented some conflicts between Jenny and Debbie quests.",
+      "line_number": 287,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Addressed transition timing issue in old art animations.",
+      "line_number": 288,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Prevented scenario in which the wrench could be purchased more than once.",
+      "line_number": 289,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Fixed potential for unintentional save deletion when using the delete key.",
+      "line_number": 290,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Improved a few prop descriptions to avoid accidental spoilers.",
+      "line_number": 291,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Added better names for some locations when being displayed on the back button.",
+      "line_number": 292,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Clarified wording on mode select screen around why only one mode is currently available.",
+      "line_number": 293,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Updated to Ren'Py version 8.2.3.",
+      "line_number": 294,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Fixed various spelling, transition, and staging oversights.",
+      "line_number": 295,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "## 21.0.0-wip.4468 - Preview 1",
+      "line_number": 298,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Expanded and re-exported all art assets at a much higher widescreen resolution.",
+      "line_number": 300,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Rebuilt the entire codebase from scratch to improve performance and better support planned features.",
+      "line_number": 301,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\changelog.txt",
+      "text": "- Updated the posing to take advantage of new codebase, and the higher resolution assets.",
+      "line_number": 302,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\mvps.txt",
+      "text": "{color=c5fffb}Henry, SkeetaBite, Mister, Rene, Utrun90, Scomf13, Reamus, blackrise4, Jan, Jeremy, LargeHawaiian, Josmar, Major, Eddie, Daniel, Sgt.Pepper, rick1801, Rob, slowbro, walter, 柏木仁, Raven, Michael,{/color} {color=c5fefb}Michael, Ansenna,{/color} {color=c4fefb}ShadTre, Feralshivan, Charles, Fergus, Manuel, aehentai, Allan, Cmdr., Duncan, Voidalancian, Zefferen, MalavS, Darkening, Don, Giant2117, StarRacer42, Supra_Sam, Joseph, Ramnezka, Eric, Age, Adam, Jens, viaz, James, John, James, WolfPack78, Daniel, Kevin, Pteramisu, Stampede89, Ruleram, Drax008, Gostlame, John, Rheija, GWeevil3, kenneth, KoPLeader, Fabian, Dark, GARY,{/color} {color=c4fdfb}Jestur, Joshua, Kaimei, Kyle, Mastodon,{/color} {color=c3fdfb}Dre, kindridkin, Dude, Abominationham, Marc, alex6969, PudgySasquatch, Alder, HimeN, Jan-Henrik, kalab, Marian, ZeroShadow07, BattleBladeWar, Sean, Beastmode, Bradley, Silentwolfie62, ryan, Ockto, DriftDevil, Alec, Mohrlicious, Asuma, Chris, OneStone, RDXred, Verbis, corsair, Éric, grimshark, Javier, John, Patrick, Stahleis, Martin, Apophixas, mcdxxi, Nick, Bobhiller,{/color} {color=c3fcfb}just, Sentoria, Shane, startbuttonreview, Zlvesta, Diabloz, Hellborg, Darth_Chinran,{/color} {color=c2fcfb}Blackanimal, Jay, Joseph, Drew, Agla, GamerLegend09, MoD21k, Cdo26, EggsForBacon, Hunter, David, Fishsticks51, Kuningaspaska, BigHead88, Brian, Darththorn, halgo72, knightwings, Gen, RobertSilver, arboris, 2b1b4u, Aric, Joseph, chris, Clinton, Jonathan, CEREAL_YUM, alexwowder, Felix, Iceman28220, Swatkey, Steve, Dillion, MR, Elijah, Saitou,{/color} {color=c2fbfb}Micha, DieselCO2016, James, Rodney, breachwire, Wayne, Connor, 0aic0, GMAN, Night, Pip,{/color} {color=c1fbfb}Thomas, Twoste, vin, Mark, Malcolm, Justin, LtWolf20, Ravenest, anton, Farang67, Neph, Rivaavols, TheWhiteFoxGod, Valerio, Jadeskye, Hai, JEREMY, Quinlan, Thomas, Jorvis, ColSipp01, Christian, The, Logan, Nicholas, Viking_Raz, Michael, bill, PandaGamer85, Rick, Wuzemu, TANNtrum, LocLegend, Andrew,{/color} {color=c1fafb}Daniel, David, David, James, Paloberas, PaTyLe, W1HOLESALE, 勝閔, Jean-Philippe, Joshua, omegashrn, Dannith, lim, Rust, Djm0319,{/color} {color=c0fafb}SvasamCray, thorventure, Irashu, CherryXVII, Pumpkin, Christian, Randy, SolsticeClash, Tanner, Peco97, Korlac, Zephyr115, Per, chuuni__, Cristian, Daniel, Matt, K4b0ch, Lsteel4, tonygasta16, Moosel, Ramon, Livingston, Damien, DiffyX2, Gallus997, Jske, Kris, Rolando, WONDERBUS,{/color} {color=c0f9fb}Kiya, Steffen, DREWSKY, Markus, BigDong, Max, Thanatos, Tracy, Dissoo, Emilio, MCNorthwood, Ocelot, driz1979, MimicSix, BlueMonkeyBrothers, Deadsummer, Justin, Scithe,{/color} {color=bff9fb}Tazzman41, Doug, Volé, Zac, Kendall, nathanslayer, Twenty, Chris, Hector, Martin, Trey31, AbsentArmy, PinkFluffyTeddyBear, Manuel, War-Son, Teddii, InfiniLemon, PanchoTheBandit, Akilles, Alonzo, Darranged, jellybn, Meg, Michael, Raijin650, SpicyChicken, ToxicCrobat,{/color} {color=bff8fb}justin, Genericc616, Łukasz, Ron, Slugbaby, Timothy, NoahTNL, Fallen-king122, iethan, Jeff, Pacoooooo, Ghost, Heavymech, Sabastian, FallenAngelX00, Mike, Marquis, João-Marco, Jarrid, Justin, Xiao,{/color} {color=bef8fb}Michael, King, Kupler231, Benjamin, Class, Kaine, Michaela, Ron, rudy, Steve, Joshua, YTOCIAN, Daniel, PhantomKid, ytakus, Pekao713, Cloudstrif, Juan, Sujun, Matthias, Macon, Łukasz, Callmewood,{/color} {color=bef7fb}Frankie, Joel, Jonathan, Justin, Magnus, Mikkel, Nelson, Nic, Pat, shortymafia, Thomas, Edward, Tesserakt, Roger, Cory, Ruftey, SecretMischeif, Cole, Justin, Mike, Andoitz, Sebastians_hell, Kendall, DrewChief-267-, MARGUERITE,{/color} {color=bdf7fb}pablo, RedTovarich, S, Eric, goluckyedwards, Cancersaur, fabio, RDW45, SAIF, TheStigUS, Julio, René, digitalgingertv, BigRedBeast, Evdog24, Josh, netahlou, Thomas, William, Acedia,{/color} {color=bdf6fb}Rick, Project, Falsetto, Suppish_V, nicholas, AdultGamer, Caillou, Matthew, Kristian, Stéphane, R1C0SUAVE, Ben, Andrew, animations, Hjortur, Icy, James, miguel, Strakur, William, Yannick, Nevs, Count, Gamersoul, joosounggyu, SinisterMiniJDH, flamenessneel, garrett,{/color} {color=bcf6fb}Jesse, Trevor, Kainrid, mrbangarang, Bobby, Chewy, megamac, 영탁, Bo, Blyat, David, CJH2282, LC, bill, Tyler, Dark, Joshua,{/color} {color=bcf5fb}Daniel, Niko, BHillzebub, Mugiwara95, Christian, BLANK, Jared, Joseph, Traveler, Yamakasi2030, mark, Yggur, V, Ian, Cal, Krakatoa, Kebab, Hiram, Jonathan, Bradley, capitaineluffy03, Master, Matthew, Nick, Ryan, Christopher, atreyu, AcePhoenixOmega, AR, Icon, Vankar, Zimhip,{/color} {color=bbf5fb}TheKinkySon, OHE84, Teun, Alex, Armos, Avemafrun, John, Joshua, Philip, tommaso, Toonspew, YoursTruly916, James,{/color} {color=bbf4fb}tdojrp, Andie_Arbeit, Jordan, yoan, Lufasa_85, Aron, Racermw, Darth, Marc, Spectre-Ali, Irokatmw3977, Anfernee, liav, Jack, Jh, Mattgawl, Louis, Bjarne, Doc, Andy, Christopher, MrWhitestone, PainTrainPanda, TJ, Wagner, Hans, Glen, Gand98, vMavrickk, Metalerror, Rennent, Mustafabal1981, Jamie, CL_Overlord, lewis,{/color} {color=baf4fb}Don, SailinDave, Tóth, Attila, Disturbedfan077, Xeagorn, A, Jason, Tetsumax, dug,{/color} {color=baf3fb}Vincent, Mike, Ryan, ytrewq, Brandon, DarkDorpy, GTwSCEP, Jean-Benoit, Jon, Preslylewatson, عبدالله, Paweł, Matt, Hyperion, Pattarack, John, Red, krizor, colin, silentbob1321, SecularReason, Callum, Francisco, TBH, AceMaxwell, Cheshiregrin48, DIS_MadMan, groovy, Hagenius, Jacob, Mr, Nerciea, Stephen, Yann, Sami, Alex, Mastro91, Arthur,{/color} {color=b9f3fb}Coco-nati, Big_Money_223, Brian, Jacory, Shonite, S, Allen,{/color} {color=b9f2fb}Mdom27, Slave, Jonathon, Jorden, animeguy48, Ekkonis, Emperor, James, Sean, SuperPizza, Vector, Yu, Chevalier, brand12, EzMac, Perry, Kyle, Randall, William, stephen, Tobias, Fares, Ian, JasonParauka, DaBa, Daniel, Greg, Edwin, bang, BrotherDom, David, Doomflaverd, Jesus, Neubaum, Ninjaneer, Trooper, Dalton, Kane, Jrivera1986v3, Mr, Chiuan,{/color} {color=b8f2fb}David, Jill, Kayn, Killzone1123,{/color} {color=b8f1fb}Selix, Verynice, Lavele, Dieter, Jack, Sablerose, Simon, Chad, normand, Adrian, Eric, Foxton, HisameKnightmare, Jak, Macdrevious, Pe54Luc, PEACHY, pomskiis, Yan, Jay, RebelGamer, Einar, MDGoatman, Vestolord, Alain, Jafo, smanja, Christofer, mikequake, Sumbuddy, Jason, dreamteam67, Nicholas, Michael, John, Brett, TcKailliss, Perse93, armenki, Chris, Daniel, dante, Jack, Justin, Marcus,{/color} {color=b7f0fb}maskedguner, Red, Ross, SorryIAsked, Joël, misery,{/color} {color=b7f0fc}Lazaro, Guitarra, GB, Benchpress, Michael, Ricardo, Tyler, W, Joshua, mazterlith, Marcin, Kevin, Jonathan, Wolfsvain, ButterNut, michael, Spiderdadd, Revan, juan, Doctor, ForgottenOne, Francisco, I, javed, Not_Relevant, u6051134, Web_Outlaw, Smitty_Boi, mattmach1992, Dario, Link_Vinson, nate, KEITH, kyle, Lion, George, TabooMonger, John, Miguel2055159,{/color} {color=b7effc}baerr, Marquesas, Fandromir,{/color} {color=b6effc}kellySHOUT, AcerProHp, Dalton, Jason, MentallyDull, Robert, Wander, Dragonman83, Yung, Killjoy92, Sir_luii, Thunder, Dustin, Loren, heimdal, Gray, Ken, Austin, Blackdragon, Patrick, Antoine, dxd, edwardo, disc0llama, Arthur, Anfernee, james, Zachary, henrik-matthiesen, Xmaniac124816, Anth, Braden559, Brandon, Chosokabe, cwallace21, DarkHorse, Dowboi, GarudaOne, Ian, Kyle, KyleV, Larry,{/color} {color=b6eefc}Lelouch_Zero, Maarten, MisjoDK, Ninja1011, Scorpion_, thanos,{/color} {color=b5eefc}شموخ, Mr, theworldisalive, Alex, Dangerous, daniel, mico, Marcus, Rizzy, Cosmic32, Isaiah, Janyboy, Jeremy, Sergey, Damien, Comradio_Toxico, Heknowsnothing, Fablo, Tom_Wayne, Brad, robert, Denchik, Abhinay, Chris, Cody, cowngo, Edwin, Havok, Jorge, Kiere, kristian, Lazaro, levi, Max, Michael, Mjt!, Neon, Rabbit, Snow201134,{/color} {color=b5edfc}Unforgiven1, Corentin, Richard, Jacob, BunnyRabbit, alex1ryan, Dallas, Laz, Xuln,{/color} {color=b4edfc}Rogue370, monsieure, Andy, andy, jamzhate, jeffrey, Marco, mikuyei, Nathan, Shado444, TonyTomato, Shikono98, DreamCatcher, gabrildraven, Arno, marshal, Alexander, Stronkcrusader, Regnad05, Goofoff, BonaFortuna, Bryan, Ish, Jafhell, JFer3333, Jim, Michael, Pursuedcrowed86, TVŦØXƗȻWØŁF, 柏辰, Christofer, Fluxiation, Tommy, bmichael54, MiddleBlitzGaming, Miguel,{/color} {color=b4ecfc}Bo, DownForGood, ImmortalPickle78, Mist, Josh, Rein, Bauldenphatt, BlackFalconn, Niels, Night-Arimaku, NyoKyo, The, Vaclav,{/color} {color=b3ecfc}Duccio, Tom, beaglegaming14, OrbitJam, firesharkfang1, Knighten-Gale, Christian, James, ProfoundWhatever, GhostRabbit, Sanes, Declan, paul, Ibrahem, Andres, Bryant, Daniel, dragonlee, Hassan, Hederick, john, John, joshua, LostInIgnorance, mrscience, NerfNjuNkee12, Nick, RPGeezus, SwissAargau, thehobbler, Zeen, Will,{/color} {color=b3ebfc}Christopher, Hard, OnlyZuul, Sam, ArtNerevar, Gabeskee, Payton, Sarrhia, bob, Claudio, SuperSmokingSpy, Thomas, LordNootNoot, Sco77y, Unknown, andrew,{/color} {color=b2ebfc}Js, Peter, Pedro, Slaanesh, Sir, SirBerryBUNS, Duhswede, Jose, BaLLaS, Jake, -Taz, Matthew, BlightedTalon, Braydon, Charles, Clarice, Colten, D, David, Donavon, Grimalkin, John, Mike, Murphy, OniIzanagi, Peter, Tom, Victor, WESTEX,{/color} {color=b2eafc}Zachary, 邵廷, Floor, Stuart, Seth, Kryolinian, ModDemon, YeetDiqqa, Jason, Mr, ian, Jissou, liam, Carl, Michael, Dr.Pancakes, Tom, Tomas, Jörg,{/color} {color=b1eafc}GoHawks1840, ZombiePowerDK, Dalton, Daniel, Marcel, SammieDoo, Kumoko, Jonathan, Petzy33, Josh, tony, Jason, Doug, Arbathur, Ashraf, Chu, Dan, Fabien, Jaizen, Jesus, joe156, M15T3R_GL1TCH, Mike, rami, Roman, unkownkiller701,{/color} {color=b1e9fc}SirDeadpool, Symbol_Of_Evil, Hugo, AkaSenso, Scott, michael, Helldog134, Muffin, Skaer, Terrance, Tim, Arron, Timotej, ZHall, P, Duskblade, Joseph, Terry, Patrick, Daniel, Bryan, Jacob,{/color} {color=b0e9fc}Phil, Giovanni, Dave, Steven, Forrest, Paf, Calibos, Eternal04, Ian, Jeremiah, Alex, altairpearl, Anthony, billy, Brian, Bryan, Bryant, Cdaser, Charmaine, Dams207, Daniel, Five,{/color} {color=b0e8fc}Fungo, Herb665, Jairo, M1NDN1NJ4, Matthew, Michael, mitchell, Naga, Rei, Ricky, risingfate, Shawn, Todd, Medoch, DelinquentToad, Michael, joel, Ayo, Ippo, BlackIvan, Jeoggi, Matthew, TechnicolorAxolotl, Josh, Artem, Havon,{/color} {color=afe8fc}solstardust, GopnikDude, TrickVolt, Javed, Craven, Jay, OrangeSheep, OrangeWindextor, Seafaring, JD, Lexion13, Luke, Mathieu, Justin, s21gun, john, Robbie, Zeabow, thomas,{/color} {color=afe7fc}Christopher, Adam, Dan, micah, Mike, ShellAllanShoemake, HungryFeth, larry, Philipp-Johan, , Alfonso, Andre, Anthony, Count_Techno, Dark, Dayon, Enasni, Ernesto, GelatinGiant, Haggeo, Jacob, Joseph, Mag., Marin, Matthew, Mean, Michael, Michael, Nae, nicholas,{/color} {color=aee7fc}Osmanrivera, phildog05, Shaun, Tam, Touhue, TuBoris, Tyler, Zero67, Judo, Zbigniew, linjin, NonStopDisco, Martin, Mookalin, Lee,{/color} {color=aee6fc}Ralf, Milesdeep, Pavel, C.Nyx, SlowMan, 111Keiser, DeCar, Killian, LameDave, Zachery, Ivyneska, Mycuriousnature, Adrian, Ermog, sese, Jani, Abutosin, Nimrodlepord, Pure_Jake, Z4rth, balayar, sky, YaBoyTien, EmperorKing, Mr.beast, Nathaniel, Travis, Adam, Andukie, BillyMags, Chaquez, Cody, David,{/color} {color=ade6fc}Doby, Jakob, Jimmy, Kevin, Kyle, lm, malechei, Naru, nishan, Reaper661, Renegadebeetle, samthor,{/color} {color=ade5fc}Twistedjoystick, Kevin, Béla, Percy, zennahoy, Alc4tr4z13, Daniel, Geraldo, Christoffer, Angel, AlphaZrs, Dark, Katsuri, Jayjay, Andreas, Jeremy, warmonger, Brandon, Christian, David, Elderbobo, Federico, Joseph, maykol, Michael, Peacedragon55, ryun, Samuel, SK482024, Kinnaree, Lilsneaks1, William, AutumnSushi, Bill, Mios, crusnik_x,{/color} {color=ace5fc}Fabio, Ghalrog, Jason, Nora83, JohnSnow, Thomas, Clocks, Patrick, Wilson,{/color} {color=ace4fc}Alexis, Armando, Askard, BadKarmaKid, bookie, Chris, Dan, Dareem, Doug, Herman, Jean-Seb, Jesse, Jesselhoff, John, JOSE, Joseph, Joshua, Justin, Marius, Myach, Nathan, Randall, Ryan, Salvador, Steven, Tomas, Wayne, Zero_drakmol, Sasuke35, Aiden, Alonzo, Ronny, Juliano, Palor, Dino, Jose, Robert, Isaiah, Leviathan,{/color} {color=abe4fc}PlacidAcid, Þórir, Ibuiltamurderbot, Michael, KILLTROOP, Markus,{/color} {color=abe3fc}julien, OverLord, Turtle_time321, u80116303, marathone, Justin, Chris, Elijah, Frangel, Japanswoon, Salazar, tyler, xhaka, Mrfoster, jhhgffhg, Sean, sethiepoo, Daniel, Jemini, TheGalaxie01, Ben, dotjeal, questingfather, Thomas, Marc, Roger, DeerborneMoss, Fading, Kevin, Emmanuel, Ethan, Sargiz, Feekku, aaryan, adrian, Alex, Bennie, Big, Bunnybooze79, David, Eric, Eric, evolmenime,{/color} {color=aae3fc}jardar, Jayce,{/color} {color=aae2fc}Jessica, John, Juju, Kazel117, Kyle, Lions, Logus, Lonewanderer3197, Mark, Michael, Nathaniel, Nullified, Scout, Sebastien, Silver, slapgat, tom, Walter, William, Alan, Tai, Boomerkingjingo, Jimmie, Tavaors, fabio, Altear, Boris, Bodie, Drew, Jacob, Vivid, likeekil, iDropped, johnsnow, Arkanon_Darkblade, ivanhunter-, Denver, Ryan, muzze, Thomas, Bot101, Jenbamin, Joe, Miraron, Mommy,{/color} {color=aae1fc}MrPoker109,{/color} {color=a9e1fc}MTalbert2103, reese, Todd, BalorBot, Godfall, LordofShadows, Slickwhenwet, VVSCloud, Steeg, thomas, Tobias, Appuruman, ElcenSeraph, jeremie, Jester, Luis, Luke, Justin, WeRtY92, blah7500, Filipe, Rudeez, ronaldkrijger, Tomas, Smarty918, Duelcooler, Dario, foxd4, Adrian, Andreas, chefboiardee, Cillian, Cole, CrazyM, dan, darcon01, Donté, Emperor, Frank, hentaiheroes, James, James, JH, Kaz901z,{/color} {color=a9e0fc}littlekerr, Lord, Mobiles, Obeth,{/color} {color=a8e0fc}Ron, Sausages, Steve, Tokentaker1, Wicked, Xipz, Zachary, Zack, Zackoria, Zerbarus, Oscar, Melik, Joey, Andrew, Daniel, Gabriel, jimmy, MMT, Trent, ArtyPunkz, Darrel, Donald, GojoMcgoo, PabloRPGamer, Adrian, Alyssa, Setec, nas, Jeremiah, Lizard65, Tham, unluckyplate, vibelib, Lazy, mars, MadPops67, Ryan, Iseed, PioneerFlea0365, Vasius, Mango,{/color} {color=a8dffc}cestmir, SilentG, userunderuse, Lukas, Sweet, Robin, ShadowFell,{/color} {color=a7dffc}thanatos, Mathias, Aaron, Charles, Meatballs666, ScuffedTomeTales, David, Hillel, DarkWhiz, powerlines, Valcyrio, EmerorMu, frank, Flat_Hwy, Daniel, Alexander, alextrgnyn, Andris, Assassin1390, Awo, ClassyYeet, Connor, DDubs, dg, Egor, Elton, Felix, gunny, guru, Guy, hoodebdown, J, Jackson, jacob, Junior, Justin, Kaung, Kenneth,{/color} {color=a7defc}MangoMelons, MedicBot, MentalCase22, Michael, N30NC0WB0Y, Orion, poopyjc, Ryan, SdW, Trevor,{/color} {color=a6defc}UwU, Webster, wizard, 민, isaac, Donald, LowProfileGuy1, josh, jr-a, ssdd, Zerkrei, Saiyan's, Axios121, D702, Mac, Nacario, Dyldonious, steventa, Alvin, Davidgoodenoughfr, Clay, Cody, Nils, ERIC, toonzer, Fab, Benkő, Brady, Casper0173, Dylan, Jess, Hayden, Silvarus, UngSkiveTager, zeldris,{/color} {color=a6ddfc}Kevin, gabriel, Mizourou, GCAT, Echo, Not_So_Lucky, Zero, Shokushu, MADman1950, degilead, Boomer2708, Allen, durndal, Gäél,{/color} {color=a5ddfc}Vladik, a, ildefonso, Stigmartyr762, Terrance, Pierre, carl1000, Ike, Valtyr, Yourztruly, KingDre_22, Antwaun, LonlyRam, Nathaniel, Quentin, Hihoko, Brekz, Bryan, kazel117, kevin, Risenjima, william, h0kag37, kristopher, Sirhckane, Aiden, Aaron, Benjamin, beny62, billy, Carroll,{/color} {color=a5dcfc}charles, coachj2k, Daniel, Devon, dirthugger2000, Douglas, Ghostkiller1119, Heelsmaster, James, Jarrod, Jensen69, Jesper, Jonathan, jonathantheauth, Kage, Kara, Lewd,{/color} {color=a4dcfc}Lordez, Loveme12, Luis, Melvin, Nemo032, NinjaGara, Noah, Pablo, Philippe, Poopdevil, Puchero, Red, Romuald, Roy, Sameer, Santiago, Sean, SomethingSum1, TheOneTrueChewbaca, Travis, u6383340, Z, Zechariah, Hendrik, Xavier, Nick, Shawn, Xavier,{/color} {color=a4dbfc}Thomas, Juan, bagboy, Brendan, SPENCER, Ramkaesh, Loki, Boandlkramer87, Cg, Charles, enternalblaze, Krzys9812, Marc, philippe, Ríkharður, William, badbones, SalzBrezel, Florian, SixPoundsSoft89,{/color} {color=a3dbfc}Soviet420, Sadness., Cody, Darth, Nathan, Ewald, ultraraules, Diego, Aquis, Behram, Daniel, Joshua, Pierre, salomon, James, Justus, LovelyLenne, Shauny, Jonas, Tristan, William, Luke, Bjoern, Dusti_333, EVERGREENxAPOLLYON,{/color} {color=a3dafc}Inflictednote, Methos, Paul, Robert, Wolf11887, gerrit, Markus, Antonio, pongo1390, Jason, Reno, Bruce, Tor, nutriklor, Altskarr, Anthony, arcangel2, Averan, bigwhitemocha, billyraychivers, Black, Chris, Christian,{/color} {color=a2dafc}Christopher, Dailon, Dallas, Dapper, david, Devendra, Greg, Hylpher, J, Jackson, Jay, jonghapyeon, KAIN_GHoST, Keoni, Klackles, Knicksterr, LandofInsanity369, Lavier, lost_little_one, Miguel, minnymeenie,{/color} {color=a2d9fc}Mitch, peter, Quick, Raisler, Ramiel, Ratman1134, Robert, robin, Ross, ShadowFaceGaming, Sibu2, SimonS., Slavownr, Steffen, Tanno, TheZabs, Timothy, Tina, Welder96, Wellynton, Zane, 민기, Thibbs, Grant, Rodger, Antoine, Clement, Mayhem,{/color} {color=a1d9fc}Per, Geoffrey, Nomadic, ptitlu, CrossCoding, pharzuphmorax, Stewart, Sledneck96, Michael, Tobie, Kai, Paulo, Austin, zipp, Klapa, Apollyon, Noah,{/color} {color=a1d8fc}Ky, isaa, ScandinavianViking, Azazel, calin, CometRed06S, Furi, Hunter, Kiyoshi, NewKitchenMax, Stranger7074, Loki, Mac, Liam, DocShotgun, Enrique, Stephen, SterlingSnake, Timothy, Speedy, Rasputinthemonk, Robin, Black_Manta_1st, Christian, Eirex, Garett, John, Jose, Will, BassFlame, Pierre,{/color} {color=a0d8fc}Bennet, JBoe2012, Relampago10, Arthorias28, MasterRPG, Cardinal, Demiurge, King, mike, Bernardo, digitall, Jman, Nalpha2442, The,{/color} {color=a0d7fc}Matthew, SilverTechn, Troy, Metal, Andrew, Aqua, Artem, Big, blackraptor, Boatman, Boss, Chaudlap1, Darling, Dylan, FateGrandmaster, Frank, Freedom, Gabkiss30, Gainzo, John, jonaleth, JP, Justin, k3nny, Lil_B, Mac, Matthew, Michael, mkn, MoMo_Deviluke, Mr.Gnarly, nishan, Outcats, pdext,{/color} {color=9fd7fc}pedro, pen296, prodi_g101, QM2702, Robby, Soap, Tempestking, Timmy, VulgarXrated, Xan, Пыжа,{/color} {color=9fd6fc}marco, turd, Niclas, Dave, gathra, Jimmy, Macen, TempestatemX, MasterKoala, Linguss, Darko, Jayten, Richard, Alex, Johnny_Utah, MadAdam, Nigel, qmt76687, Sleepz, Tijeras231, Corey, mzklopyu, The_Om3ga, James, Gannon, Sebastian, CoNz1997, CuddlyOso, Mercy, Terry, 123456789, Vall, DistinktKnopf, Capac, Christopher, Gamerforlif, Hiddenblade4,{/color} {color=9ed6fc}JaQir, Knight, Nazareth, Tim, ZeroGrimm, K.W, Jason, Luke,{/color} {color=9ed5fc}Winter, Your_Pet_Worm, Alexandre, TDT_Games, FluffyVignale, Ethan, Lucian, Pyremir, Smooth211, Blake, MrKruger2002, klhi, mat, tito, Angel, campinginger65, Felipe, Pat, Der, FishFoodAddict, Hammerhead, JChaos, Justin, Leo, luis, Mike, TrafalgarLaw, VIVIDave, Xavier, Daniel, Dennis, mindyourbusiness, Arnaud, ARTautoGamer, Hovet, play, Mr.Morady, Carter, Dick, jon, Logan,{/color} {color=9dd5fc}Tony, Holdrio, WhyMyPPhard, fero,{/color} {color=9dd4fc}Man, oriheart, רביד, Aden, AGKNOS, Alejandro, Auhiie, Avatar51751, Azrael, blackjack161, blaqueOX, Blyatmaster, Brandon, C.J., CatTheNobody, cazanova, Christoffer, CurvedDustPR, Der, Dustin, Eric, Erick, fxb, gamerballs, Gerardo, Isaiah, Jason, Jeff, Joey, Jonny, Joshua, Josue, kennyjgamer1, Lars, Mac, Matt, Matthew, Matthew, Max, migg2525, Miguel, OneLoveInYourHeart, Payden, RedGuardx,{/color} {color=9cd4fc}Reece,{/color} {color=9cd3fc}Richard, ROBERT, Russell, Souyo, Steven, sultan, ThePr1meBolt, venu, wouter, Yader, Zachary, Zaeres, Zardoz1974, Michael, sigmanigma, Mark, Sebastian,{/color} {color=9cd3fd}ALLCAPS, AmanApp, DK, Michael, William, Sheenlong, Leukos, Andrew, Drake, GODLEFTMEUNFINISHED, Ignacio, jim, Ludwig, crashsculpts, Krunklin, nahid, Sasoti, bobbyaloplop, Jean-Francois, SGTBellend, Alex, Franco, Izzy, ncjjr, Bemon, Sky, Nikora, Christopher,{/color} {color=9cd2fd}Heitou, Thomas,{/color} {color=9bd2fd}Yousif, matt, Stefan, Fynn, Richard, Sattam, Ahmed, Aquarian27, Cesar, Damian, Henry, lasyoutu, Marvin, Michael, Parker, Phil, Nachtdrachesaduran, soopz8811, Jesus, Kev, Michele, Kro, Doc_Roe, Doszhan, Andrea, SaberZero, bennino1984, rick, RiJaKu, Tom, Gunzkillr_243, TyroneD, BrickTheThicc, Geralt, Jaden, Jelmer, NobodyImportant0000, PogOChampiones, rick, Simoty, Willie, Enubatan, Bruce,{/color} {color=9bd1fd}Jamie, Johnwood, RiffDog, Luuuka, Jason,{/color} {color=9ad1fd}Maurice, zRemedy, Bjørn, john, Deekay74, Matthew, MD_Fips_YT, Abi, Austin, Steven, Tobias, 伟杰, Bennet, Adrian, Ant, Battle123, Blank, BlankLit, Brian, Caine, CaptnSpoofi, Charles, Chase, Chris, Daniel, DarchAngel, darkgetzu, Deliah, Deschmeise, driskodude, Feng, gourdeau, GREEN, Isaac, Ismael, Jac, Jak, James, James, Javier,{/color} {color=9ad0fd}Jesus, Khaotik, Kris, Kriz, Laurence, Linus, Mark, mike,{/color} {color=99d0fd}Nate, Nebojsa, NOTE719, Ochy, Pateriv, Plan, Robert, Roshi, Ry, smith, Trey, Troop, tucker, Vighnesh, West1468, Willie, ZERO9000, 可愛信秀, Brutal, Mudaiishi, Amarock, artur, Mechis, _HaleX_, J, Louis, Major, MasteringTheBlaze, zhang, stevedan1234, Soul, Michael, Maroon, Ryva, TommoMode, Ash, blankman98,{/color} {color=99cffd}Chino121, Kill.Me, Raul, SilentRated, SShepard, The, WizardParasite, Jan, MadeUpMyName, Pecilic, Chamberlain, 5,{/color} {color=98cffd}Matthew, nicholas, John, Charles, Evan, bdbrdb, Ben, Damion, DANIEL, Dennes, Edd, Gaggleogoon, Kilroy, Logan, Matt, Prince, venu, Robert, Sadspaceman, alucard9661, Ethan, Soggy_Milk151, MahdiRavari, Romeo, Matheus, Dark23Knight, Logan, MarkieG, Christian, Balkan, Jakaa9, Andrés, Joker,{/color} {color=98cefd}Paul, Sebastian, Stephen, iben, Rayleex, MlElzb, Tony, M, marc, Dayy, Eugene, jpunn1, Landon, lonewolf, thatonesperm,{/color} {color=97cefd}XxswagboinationxX, Yurnero, Packced, Rémy, Aaron, Cordell, DemiDeityLink, Geld, igor, Itchiesr, J3227, lyonell, Mavinga, Ryan, Tenryu, KingOfTheOcean, Tim, Dewy, FatNinjas, kakarot, Patryk, Slagheap, Paul, BombenLP, Gouxe, Aries, John, RealMinsu, Tõnu, Aaron,{/color} {color=97cdfd}Anthony, Dee, Dorian, pookiemonster, Sean, Taboo, Troy, Vladzsy, ลุงหมี, Jack, alexandre, Puffieball, Jonathan, Gemu, George, Idgafos460, jalen, KDedrick,{/color} {color=96cdfd}Miguel, Pid, xZYAx, Muhammed, Dark-LYNN, Aaron19013, Aha, Alex, Anime, Anthony, ashocean, Ben, Ben, BestUsedCarSales, bjkink99, Blue, Boston, Caleb, Chad, Chris, Chris, Christoph, Christopher, CRiiS3o, Daníel, DarkArr0w210, Darnel,{/color} {color=96ccfd}Demon, Derrick, Deus, Donell, Edward, Edwin, ForegoneKnight, G4rry, GGLBLD0, Giponaca, Grand, Griffin, HandKANTenSchlag, Hanzo84, harlequin, Hector, Hsieh, J.Jiang, Jacob, James, Jason,{/color} {color=95ccfd}Jason, Jayun, Joshua, Justice, Keegan, kristoffer, Long, Lukáš, Matt, max, Michael, Michael, Monolyth, Nathan, Pablo, PilotOnEvo4, prince2126, Raft599, RC, ricky, Ryan, Samuel, Sean,{/color} {color=95cbfd}Sean, sebastian, Setzof, Stajpi, The, thefighter, Thomas, Toni, Travis, twistedjoystick, Valentino, Victor, Victor, Woolfell, 차, Gianthogarth, William, Thomas, DarthGerico, Julius, robert, SlytherinDeception, King, hOWLY, Kolos, Firedash1337,{/color} {color=94cbfd}Steven, YokhoKurama, alex, Jonathan, warlor12, jefferson, Thedutchgamer112, Bastian, Benjamin, James, JevisSL, Joshua, King, Lebizthehero, Rasmus, Sal, superbreadt, depresso, Kingmatty,{/color} {color=94cafd}Bobbygene, Brendan, Cody, DevinTheGinger, SERGEY, Daniel, Der, No, Ra, Salman, Patrik, Nico, CorvoBerlin, Chuckie26, Dallas, Havac, Maurice, Michael, marquell, *, Brian, Chris, Chris, Deathincarnat, Greg, James, Jessie, Killerspider19, Konstantinos,{/color} {color=93cafd}Marlin, Matthew, Mike, Night_Crawler, NSFW, Pagan, TanMan, Trey, Xiphidion, ZenXzKing, zomgabear, timmety, damjan, Connor, TommyR96, speedwagon,{/color} {color=93c9fd}Emily, ., Gary, João, Mike, drazik25, liam, Lucas, Benjelooi, mightyheeb, Sander, Zasuke, John, RichVon, Daniel, KeishanTV, Prototype, Charles, tom, Kalvin, Johannes, Andrew, Kevin, Temjin, GalaxyModz, Cameron, Dalton, Drakcon, ethan, Hiram, Houston, Iiro,{/color} {color=92c9fd}Maximilian, Michael, Nick, Rielious, Alvaro, Bradley, Rodney, GearsHeart26, Dance, JOHN, Roshi_x, T.O.D.D., PyroWLF,{/color} {color=92c8fd}Ryan, Hielo, Kody, lee, Marley, Nothing, sammy, Trey, Flakmoped5, animasouloss, D, DevilKing3579, SOVIEYEET, TACowGod, YourBest, Matt, AJ, Alejandro, althor, Andrew, Anon, Aria, ArtyomHeroOfMetro, Baltazar, Benjamin, BennyKing, BigBOdysOnly, Brandon, Brandon, Bryan, Casey, Cheeky, Cj, Clay25, Cody,{/color} {color=91c8fd}Craftatacke, Dan, Daniel, Daniel, Djdomz, Drewtan, Dyeripper, elite74, Emerey, Eric,{/color} {color=91c7fd}Haremofficianado, Harshit, Hunter, Icos, Jagerm0nster, Jake, jarrett, Jesus, Jordan, Juan, Justen, Kelley, Kenneth, Kuro0805, lefaucheur, Liam, Lost, m-330h, Marek, Mathias, Matthew, Meme, Michael, Michael, Miguel, Mohammed, MongWen, Mr, MrAntiFun, NeoGuyver, nicholas, Nightfang2012, Osher, Padilha, Pascal, Pavla26, Peter, Pramod, Richie,{/color} {color=90c7fd}RoosterFish, Saeed, SDBurton, SharpieTG, sheaheoni, Simon,{/color} {color=90c6fd}Sinpathy, Solahier, Stephan, Terrance, Terrence, The_Dark_Wanderer, TheBootyConnoisseur, Thomas, Timoteo, Tobias, Trevor, Unknown_Arts, Walter, zach, Lykos, João, Leonardo, Mr.Reinhardt, RedThunder, Wesley, VantaFox, Christian, Alan, No, Reigan, 守博, Leon, Ian, Trill, philipp, HUSTUR, Mathe_ist, iblos, Yael, lkoor, Liam, drinky, Reini97, Angel, Axick, Cory, Dillford,{/color} {color=8fc6fd}Greyman, James, Jason,{/color} {color=8fc5fd}joseph, Joshua, Ossirian23, Ruedi, SilentNerd, terry1dow, Dennis, FDV22, Lawrence, Michael, Rei, Thomas, Emilio, Fatherhoosie, jermon, Retro, Sandri, Rain, Zellpapin, Bill, Eh, Francesco, J., Jan, Austin, DaviDayz, Gonzo2120, Ninetails, saul, 7w7, Ateo, Brandon, Brian, CH, DH, GreyLonWolf65, Hanley, Jake, Jonquil, Josh, LitteMonkey, Mario, Pedro, PurplePhenom, Rational_Gaze,{/color} {color=8ec4fd}Rayshawn, Reb, Schnabeltierkrieger, Tony, ty, NeoInterval, Kenodoxia, Adrian, agallardo123, Jaroslav, JasonChance, Sean, Kalvin, Jermanie, jhshin, Z0MBIEKILLER607, Albionrare, Delson191, Craig, Dezamics, crepesoverpancakes, NBrorsen, Stoffer444, Ellie_117, Michael, Anthony, Jesse, MrOminousX, memers, Zitro, Demosthenes, Egor, TesanCytus, Ahmedaal9292, Aldin, Assarchivist, CJ, Derrick, Double-checked, Epsxe1991, fred, Gabriel, john, john, Jokez,{/color} {color=8ec3fd}Jon, Li, Nicholas,{/color} {color=8dc3fd}Robert, TimtheEnchanter, Shewshae, AKTRATV, bless, Cheyenne, Cuauhtemoc, David, Franjo, Niga_tive, Numeric, Ruby, Der, felix, Gianluca, Manfred, Aznprince, Hagen, Jeremiah, Joe, Markese, RazerVader, Sid, The, Daniel, Jacob, Marcos, Mark, Sheker, aden, Coda_118, Daresouma, James, mogensenmann, Gucio58, Ace, Adan, Alfredo, Andre, Anime, Billy, Bilo,{/color} {color=8dc2fd}BlingBlingBoy, Brandon, C, Carlos, Chris, Christian,{/color} {color=8cc2fd}Crimson, Culo, DafPanda, dale, dammitjim343, Daniel, Daniel, Dat, Delliron, Dominick, Donald, Doritobndito, douglas, Elijah, Elijah, Ethan, eugenio, fat, FeetMasterTenshi, Fogazzaster, FullmetalCloud7, gado, Gary, Gavin, GOD, Greyson, Hannah, Hopp, I, Idel66123, Independence, izah, Izzy, Jake, James, James, James, Jazz, Jenia,{/color} {color=8cc1fd}Jens, Jeremy, 𝕵𝖊𝖗𝖔𝖒𝖊, Jim, Jim, Joel, John, jonny, Josh, JoshuaNatiom,{/color} {color=8bc1fd}Josué, Juan, Jupiter77, Justin, KillaMonka, Kongo242, Kurate, Kyle, Laiper29, Landan, lAV, Leandro, LeonRiley1995, Leozaro45, Leroy, Lordlaxer, Luke, Lupin, LurkingArma, matei, Matthew, MeawMeaw, mega, Nathen, Noah, NoGameTag4Me, Patricio, Patrick, picklerick9346, Raf, Raphael, Ray, ricardo, Robert, Robert,{/color} {color=8bc0fd}Ruben, Ryan, Sagar, Scarletphantom, Scott, sebastian, SifuWaifu, Spectre1981, Stephen, Stephen, Sterling, Steve, SuiRoD,{/color} {color=8ac0fd}SylbaneINC, TehBlackFang, The_foxt, Thomas, TinkerJYC, trainblub, Tripeisawesome, Vicente, Vincent, Vincent, Voin, wakiki, William, XiaolongLi, yongkyukim, Zik, C.Schmitti, Yetis, Albert, CannibalMeal88, Enrique, Gamer, Jindřich, SaltySupport, Zarendahl, javier, Maggots00, own, Phobic, Retr0casT, TECHNOREK, vincent,{/color} {color=8abffd}Abdur, Darko, Angelo, Dr., HonorLee, smittskey, Steven, wildfox, yungmac418, JAKUB, Christian, Lord_Antonius, PSESO, Ron, sometimes, NOSLABS,{/color} {color=89bffd}Ross, Blake, Dave, Eddie, Emil, Evan, fates, humble, Jahaziel, James, Jose, OpTic, Ray, Robert, Stephen, TJ, Tristan, Unbreaded, Quentin, Jacko, Google, Ozcan, QTPiezzz, TheFightingYoshi, Peter, Ronny, Bären-Schnitzel24, Dre, Ventura,{/color} {color=89befd}Kirii, Dallas, Mekhi, Moroto, Panagiotis, Sturge, Trafton, CoolGuy187, dennis, J, Ryan, paul, bjarteao, Erik, Imperial, joe, kajeti, Michael, Psikujen,{/color} {color=88befd}Ramboman, SHlNOBl, Tamim, Niklas, Shay, boulish, BrawnySpring45, Brian, CrazyMowi, Dylan, Joe, LanzerSA, LostKingKenny, ShadowHunter1394, Ant, Florian, Pkkaan, Cyber_Xeon, Petr, Patrick, Anthony, Chandra, DevilDog2143, Donald, Epee, Felipe,{/color} {color=88bdfd}Gage, green, Isaac, Ken, Kjaviss84, Marino, Michael, Nathaniel, Nicholas, nightster, poopyheadass123, Pyrex, Regan, RexyHavoc, Russ, Samuel, Steve, thanosnephew, Trisch, VenGreance, vicman, Walter, william,{/color} {color=87bdfd}JAJ771, Mc, CaptainKrunch, Crunchyhuntsman, RagingCrabs, Sergio, Steez-, Ghostc19, Gerardoq17, Rafael, Nico, A-ru, Exxalt, jason, Michael, Ribas, Jordan, Trippy, Ajay, Dareus, Fabio,{/color} {color=87bcfd}Felar, Gabe, Logan, Paul, Wim, Dilksy1999, Lyan, Xarts3d, RedTopGames, Anthony, Dakota, Igor, Jakob, Javed, LoveDoctor, MCLoven96, Saud, shaun, Tom, Beast, Joel, Articho, David, Deven, DJINey, Dr, Dusty,{/color} {color=86bcfd}eliteslayer, Jonathan, Jonathan, Ksn1, Mike, Nidjosb1, Patrick, ProfE, saul, Scary, Solomon, ThompsonPhotos, UndyingWarlord, zackaria, DND9, TheGermanicRandom, Guillaume, Erlend,{/color} {color=86bbfd}Robert, Ariel, C3RB, Dale, Joe, Josue, Madmansavage, Obscurie, Soylentmatt, Antonio, Loff, Kasai, lantea, Leon, Orlando, Rak, Juan, MrWhite, Jammerohd, Diego, Apophis, Ethan, Fernando, jason, Keith, Mekelo, ScoutEXmachina, Sinny, IrviJai13, Jairo,{/color} {color=85bbfd}Quest0112, Poon, Aaron, Helicide, Josh, Justin, Michael, NoxusNotFound, PHaS3R, TheKessinger, Anton, Gorfa, ProGamer2020, Aaron, Aaron,{/color} {color=85bafd}Alex, Alexiz, Anders, andy3105, Anon, Anthony, Anthony, Antonio, Arthur, Auatin, awoogaawooga, benoit, BeyondChozen, Bolza, Brandon, Brandon, Bri, Brian, Bubba, CallMeDaddy, Cameron, carl, Carlos, Cheeky22, CHILDofTHEnite9, Chris, Christanf, Cj, CleoKujo, Clicx, Cliff, Cole, Cordell,{/color} {color=84bafd}Craig, Crim, Cristhian, Daniel, Daniel, danny, Deagle, Deathwysh88, djtaz, doctorwesten, Drakon, dylan,{/color} {color=84b9fd}Edson, Eisa, Eric, Fat, fatfatkac, Felix, Four, FrostBlade, Gabuten, Gary, Gary, GEORGE, Ghost, Gogo, Greyson, hendrik, Hk, Hunter, iOOO, Irationz, Isaiah, Jack, Jackking19, Jake, Jameslovescats1, jamie, Jeremiah, Joex, John, John, Jonah, Joseph, Josephi, juan, jules, Jurg, Justin,{/color} {color=83b9fd}Kevin, Kieran, KlausDeadBoi, Kristen, Kruxified, Lefa, Leonardo, Loknath,{/color} {color=83b8fd}Lucas, Luiz, Maddaraxx3, MAEL, mario, markg20_7, Matthew, Matthias, Michael, MOOFISH, N596, Nelson, NerdNational, Ole, oof_boi, Paulo, Popup, porkypiny, Pt3r0duct1l, Richard, Richard, Rob, ron, Ryan, Ryan, Ryland, salem, Sam, ScarceSynge, ScrubLordSupreme, ShadowLightningWolf, Shotoa, sK1Pa5kIp, StageIII, Steve, Swaagbroham, SyKo_APPLE, Taijon, Tarusar, the,{/color} {color=82b8fd}The, thef0x, Thomas, Timothy, TJ,{/color} {color=82b7fd}TobisNight, tommy, Trippy, Unothegod221, Weirdness, York, Zaven, zeus, Zxvey, Нiкiта, ᆞ, vasek, Conquistadors96, Bobi5myname, Divine, erick, Giovanni, LonesomeKnight1104, Tunnel, Wolfin, Francisco, Kristofer, Haamiah, emir, MagicMerlin, neoxs1, Paul, Lambert, mikkel, David, Janovi, mohtools, polish10, Steven, Arx18, LeGourmet, Geovane, Michael, Scott, grim, joshua, John, NPC_Ethan,{/color} {color=81b7fd}Simen, Ali,{/color} {color=81b6fd}Bell, Diabeeticus, EfKa, Ernesto, Glennon, Jonathan, Jordan, Luis, mangos, skeith9, Solutions, Mario, Eubaldemar, Jace, Kenneth, Lamar, Maori87, Wayne, My, LurkersTurkey, james, 2Bkills, A, Abednigo, mtlhd8605, Virgil, Hedley, Ben,{/color} {color=81b6fe}Guillaume, Nautikaiser, Cesar, jeffcutsgrass, Jonathan, kike, Logangster2578, Macdaddy6, PheasantKing, Laurent, Maître, The, JusCallmeWebb, jose, Blackbelt2297, Ahmed, Kintokid,{/color} {color=81b5fe}purefire,{/color} {color=80b5fe}Bobby, Cuckson, vetso, Dominik, Der_karls, sami, CONNOR, BnZ_ichibi, Alain, alva, Billy, Brandon, Casper, Chriskik9A23, Christine, Crewikk, crugh2112, CypherGB, Damian, Damien, David, Davy, Dead, deveion, Erick, Jac, Joaquín, Joe, Joshua, Kenneth, KillaTime, Loïc, Marumatsu, Michael, Mike, Ogma, Pat, Patrick, Patrick, Pocket, Renan, Shurron, Spiritual, Stptht,{/color} {color=80b4fe}TrasssssshPanda, TrevO, Tristan, Victor51,{/color} {color=7fb4fe}xLoneWolf001x, Zach, 楓葉, Theo, Joao, weine, David007, JimmyG7, Spooky_Milk_Life, The, Damien, DarkValor99, james, Logan, Lucas, Nick, Matteo, Gronag, KingFreedom, Niclas, Lukas, CRYO, Brett, Gustavo, Jason, joshua, rakkan135, Ryker0508, Taldrit, Guillaume, денис, Dominick, I, Keith, Ovielle, Roberto, djtwexx, Chris, Gerwin, Matthias, clifford,{/color} {color=7fb3fe}NJ, nick, Conner, Edwin, Elad, Gabriel, Graydon, Hans,{/color} {color=7eb3fe}Hessian, jeroen, Jordan, Justin, LeanandIce, melkor, Oaty, Raul, Shankapotomus, Squeeblordmcgee, Timothy, Nuc, Corrupt_Crimson, Symerna, Tobias, Brian, bbbiomass, Ajarey, Degen, Gladus20, Gunner, Ramon, thepotentialpodcast, Gilles, Ambrogio, BadLuckTobby, Yugure_Yuzu, Luca, Carlos, Reed, Soulgrape22, SuperSaiyanDino, trent, Jacques, Zylex, Alex, Super,{/color} {color=7eb2fe}Dante, Daniel, Dominic, ParadoxXx, Galaxycrusher88, quitscope, Billy, Bkfoot, Daniel, Hansolo233, PriestShadowDragon,{/color} {color=7db2fe}Seymour, Steven, WizRaymond, Martin, christopherbarecky, Crafty, Dustin, Enrique, Genaro, gillygillz, Gimlory, JohnHull, Joseph, link4213, mandrake, Mewtwo, mosha, NetoOne, ShyGuyAnimator, T6OD41, TheOMan1000, Willie, Kamel, BloodyTama, lachlan, MyLittlePengu, Edwin, Ab, Adrian, Aedth, Aidan, Alex, Alex, Alex,{/color} {color=7db1fe}Anas_zaka321, AnthonyWolf, Arthur, AsadGiraffe, Asmar, Atikaden, Audiace, Austin, Austin, Bat, bernardo.0975, Berserker2k15, Bezisbackbaby, bgmoore,{/color} {color=7cb1fe}Bian, Blazblue, Bo, Braiden, Brandon, brian, Bruce, Bubbles, Bunyarat, Burav, C., CalebWhite17, Carlie840, CBear152, Chad, ChaoticPikachu, Chase, Chill, Chris, Christopher, CIRLEUF, Colton, Conner, Connor, Cyb0Schlauch, Damian, Darkwing, David, David, David, David,{/color} {color=7cb0fe}Davidjr, Deavin, Devin, Diego, DigimaneTCG, Dimitri, Dominic, Dooms_y69, Dp, Dylan, Dylan, Elena, Enzo, Erik, Erwin, Executioner79, Fábio,{/color} {color=7bb0fe}Faceless, Facilus, federico, Fendy, Fergus, Feriking88, flaco_shinra, Francesco, Francisco, Franklin, game, Gary, GodAmongGods, Gordon, Grgg, Gunther, HappyHank, heckl, HEllCat, Izac, Jaciel, Jack, Jaden, Janis, Jay, Jaycob, JayzQ, Jeff,{/color} {color=7baffe}JEREMY, Jessi, JestersStreaming, Jikan, joaquin, Joe, John, John, Jon, Justin, Kassie, Keith, killer, Kindle, Kingu, Knorr, Lady, Lamonica, Lance, Lawrence, Lee,{/color} {color=7aaffe}LeRougePanda, leroy, level1nsfw, LostVagabond, Mackenzie, maghana, Markg207, Martin, Márton, matthew, Matthew, MGscott, Mohammad, Mood, Mormogil, moshe, Mr., mustafa, Mutee, Naka_, Nar, Nate, Nick,{/color} {color=7aaefe}Nick, Not_Telling, Okploide, Patrick, Patrick, PeePeePooPoo, Peyton, Potatoe, Pratik, pseasy, Pzoykoz, Queazy, qwerty, R, Rayaadzana2, Redneck, RedTerror, Riley, RM, ROTHENSTEIN, Rudi, Savokaz, Schuyler, Se, Shy,{/color} {color=79aefe}Spleez0rz, stephen, Stixx, Suhaimi, Supreme, Tanner, Ted, Tedmith-Live, Terrance, Terrik, 𝔗𝔥𝔢ℭ𝔬𝔡𝔢, Thomill, Timothy, Tomas, truthgamings, Tyler, Urizen, V, Valentin, Vambic,{/color} {color=79adfe}Venom8797, Very, Villainous, Vin, vinicius, warforthemoon, XanderKaiser, xxmlp5xx, Zach, Zaidragni90, Guillaume, anthony, Austin, Ralph, Sebastien, Luan, JorgeKiwi, Enisto, George, Lhooq, Mpeace, Gypsy, Downfalls, IdentityTheft, David, Davíd142, Eric, Cordel,{/color} {color=78adfe}LambosZ, YeetMan, ISUTrollCannon, KL, 02, Dániel, Daniel, M, Quas5, M, AcidCookieee, Adam, Bryan, EdwinBin012, Jason, JASON, Johnny,{/color} {color=78acfe}josue, kris, LickingYourTots, Matthewo, MrAnderson, Seth, Víctor, SLG, Alfonso, Bobaganoosh, FoxyCookie, Kade, Lucas, mohamed, MurderPuff, Shaggakus, Tomas, tiago, Smug, thomas, Atomic, BonertownUSA, Cory, Darklord, JdMc, Loganio810, Nick, Straight, Ultimadrago, HAREM, JOKER,{/color} {color=77acfe}Justin, Danile, Martin, Ploot, Tomas, Bob, BigTaco, Dee, Remarkably, Tschela, Nigel, R3dd, ammy, João,{/color} {color=77abfe}Erwan, A_BinQutami, Adrian, Aidan, AKAwhite5hadoW, AngelMR, Ariel, Beatz, billy, brad, christopher, Chum, Crimsomon, D3sibeli_, David, Dreamy, Heshlup, Hysterical, Isaac, Jaymcl20, jnr, JonSnuh, Lee, MagicButtCheeks, Man, Matthew, Motab, Moumen_Gun, Neo, Nickolas, niclas, Rico, Roderick, roldyebidag, Samuraiboy777,{/color} {color=76abfe}seanleonickoli, SomeRandomGuy, SpaghettiFer2, Steve, taylor, The, theoklerks, Those, warden, Zachary,{/color} {color=76aafe}kerrinmcisaac, Estefano, Joshua, Kurai, PatronofArts, Polm, Intimidated, Taratorn, Roland, Hdurjrn, Buddha, Archer, Chris, Dallas, diedmanbd45, Lykos, Reverse, serg, Lekaysh, MiloMars, Maxime, Cody, E, foxy, Jeff, MindHouse, Nic, Sfy, This, tybo, Eric, Well, blackjackjr, markus, Jens, John, Guillaume, Andreas,{/color} {color=75aafe}Anno57, Bareum, jb, Joe, Luke, Mike, Shaun,{/color} {color=75a9fe}SpecialSleeper, Things, toe, Weird, Joldi, KongFan, JDRR, Goodyear, Barbosa, BigBadBoss, cclover94, darkskies, Dominic, Francesco, Gene, idont, iTryInfinitely, Jesse, Joshua, Matthew, Mertcan, Ryan, Saizure, Sardaar, Stan, resu, Unklouni, VolFgan, AjTheCrazy, BassyProductions, draul, edubs, Hellraisers3, KyuDeathDragon, manny, Paul, Restfulsolid, Wald, Whyheythere, Yami, 奕凱,{/color} {color=74a9fe}BrownBearXIII, Zingerino, Kapu, Oxely,{/color} {color=74a8fe}Lukutakina, Kristian, XVorskullX, Adelis, Doc, kiwikj, Endless01, Omari, Rulkey, Russell, Swanson, Scooby, Andreas, Tangut, Demented, Tibor, Eistee, Brolly500, Johnnythumbs, Da_Snake_sk, Prakotkan, Christian, Thor, Jannik, Joseph, Antonio, Hugo, Andrew, bathtimefun1, BoiZangetsu, Chevrolet883, Dehacko, Domingo, Imba, jormungandr, Jose, JS1, Lance, Leon, Michael, nonthachai, Oblivious, papsikels, Robert,{/color} {color=73a8fe}warrioryX,{/color} {color=73a7fe}Winnetouch, Young_boyahawk, MondayBlues, Dead, Guimauve1309, Fabian, Edwin, Alex, Dustin, Personne, Death's, ZEUS, Ekim, Abbie, Ahmet, Blade, Christine, Curtis, DaxSix, Ein, H, habibbder15, Jonny, Juan, King, Life, LIN, Matt, Naina, Nolan, Phynix75, Ryan, Sean, Woodhaze, Wurryer, Zero, Stoniestpepper, Tom, Sean, Sebastian, Sora25, Balin, Dracus, -_-, 1st2nd,{/color} {color=73a6fe}A_Guy_W1th_A, Abraham,{/color} {color=72a6fe}Ac, ackeepscool, Adam, Admiral, Ahmad, AiToYumeNoKaze, Alex, Alexis, Alexis, alexson, Alexzun, Amadeus, Andy, Andyyyyyyyyyy, Angel, Angel, Angeline, anthony, Anthony, Arctic, Areesh, Arthur, Ashwin, Augustine, Austin, awesome, B7r, Bazhuul, ben, Ben, Bennett, Big, Bigdaddy99, Black, Black, Blackriver418, Blake, Bluski123, bonzaibull, Brad, Brandon, Brandon, Brayden,{/color} {color=72a5fe}Brian, Britney, bryathen, Bryce, C, Canadian_Bacon,{/color} {color=71a5fe}Cardinal, Carl, Carrdoom, Chance, Chih-hao, Chris, Chris, Christopher, Christopher, cjhooray, Clo4078, Colapoom, Colbyjackcheez, Corazon, Corza, Count, Craig, crazygameguy, Cristian, Dacoffeecup, dadvibes_, Dais, Daniel, Daniel, Dantalian28, DaPython82, Darkiiss, Darth, Darwin, dash169, davefalcon, David, David, Dayton, Devin, DevinM21, Devon, Dion, dipaPM,{/color} {color=71a4fe}DireSquid, Donnavan, donotello, Donovan, Draxas, Duane, Durwinatica, Easton, Edmond,{/color} {color=70a4fe}Emil, Emiliano, Endro, Euphoria69, ExoticExodus, Fahad, Faindy, Faplicious, Fay, Felpe, FierceFuzzz, Finkrod, flabbycabbage, Floyd, Foll, Fraktal, galihthetutorials, Gamer, Ganon, Gazzereth, Gekyumis, George, GG-RO-DA, Ghostfacejudas, GhostKnight095, Gino, Glendon, GODANTIVENOM, grady, greendragon139, Gsticky, GucciGod, Halyson, hamdan, Haruhi, Helene,{/color} {color=70a3fe}hornedbeetle, HUMAIID, Igors, ikraik, Indianabacca, Jacob, Jaehaerys, Jake, JaMarion, James, Jamie, Jared,{/color} {color=6fa3fe}Javier, Javon, JaxPlayz, Jdog, Jeikie, Jerrak, Jes, Jesse, Jittawat, JMRATP, Jodari, John, John, John, John, jordan, Jordan, Jordan, JORDAN, Jorge, Jorge, joseph, joshua, Juan, Juan, justanaughtyboy, Justin, K, kal, Katonari, Keith, Kendrick, kenneth,{/color} {color=6fa2fe}Kenneth, Kenny, Khai, kimilsung, King, kingkable300, Knull, Kobe, kokua, Koltaz, Kristian, KuyaMarvs, Kyle, Kymaje, Lankyspanky,{/color} {color=6ea2fe}Lennart, Lima, Lion, little, LMC, Lorenzo, Lovewowo2, LuiLui, Mabrok, Marc, Marcus, mark, Martin, mason, Mathias, Matt, Matthew, Melo, Meowfuhrer, michael, Michael, Micheal, Mihir, Mike, Mike, Mobrig, Moondawg, Moonknight, Mrutyunjaya, N,{/color} {color=6ea1fe}Narcolepsy65, Nat, Neo, Nicholas, Nightmare, NIKKO, nolsen, Nvhjjj, OGT3, Oliver, Omar, Oscar, Oudi, Paco, Palapapoum, Pantegana, Papapunpun, park, Pat,{/color} {color=6da1fe}Patryk, Paulo, Pedro, Peffzilla, Pepzen, Pleasuresbby6969, PROxSTAF, Pushdp, Rayak, Rayen, Red, Remianen, Rex, Richard, Rj, Robert, Robert, Robert, Roman, Ronnie, Ruben, Rune, SageofSixPawgs, Saksham, salem, SAMUEL,{/color} {color=6da0fe}scaredEel, ScooterV, Scott, ShadakaiSP17, Sheeraz, Shinso3555, Sir, Sleepy, SMAN, Smiles_Will, SoleIdea, Speedster, Stephan, Stephen, Steven, Steven, Steven, Tekrom0, terence, Tetratixsss, that1andonly, TheRoamingBear,{/color} {color=6ca0fe}TheRogue252, thick000boi, Thinknooodles, Thomas, Thor, Tim, Tim, Timothy, Tom, Tomaka, Tomas, Tommy, Tony, Tra, Tristan, Ty, Tyler, tysong, unknowndeath, UnlimitedGrub, Vernon, Vertonix,{/color} {color=6c9ffe}Vicente, Victor, Victor, Viet, Vincent, VLOSYROS, Void578, Vory, wdd, wesleyb, Wilburn, Witchayut, Xandir1769, xhorstx, Xoan, xxeagle22xx, YA, Yihan, YthaenL, Zach, Zachary, Zagan, Zazurm, Zen, Zenpai, سلطان,{/color} {color=6b9ffe}سوسن, علي, 振國, Dr, inri, Dante, Sgt., Terje, death, Jorge, Jumping, Mtcoin, Sylvain, Philipp, Jennifer, Cadari, Martas, Cliqz, Greg,{/color} {color=6b9efe}Lamozz, Mikey, Shong, Kadzinger, Sammmmm, Hentaioppai, Lodic, Christian, noisypineapples, Morgenstern, RussianBee, Bernard, Raven, mario, Amhiel, iox, Alexandru, Bobby, Furkan, Moose, Jay, libertin64, CreativeNutsStudios, Groll, BBhate, ces, -, Austin, bryan,{/color} {color=6a9efe}Chazz, Daniel, darkaz, DMD, Gold77, HomelessDick, Ivy934, Justice★swab, Life22i, Matt, Max, mrchubbyguts, Razor, Robinx, Smashmob, Staros,{/color} {color=6a9dfe}Taylor, WOLFGIRL16, Zack, Zaiaku, Tero, James297, Martin, Alex, Jeremy, Tyty, David, Tusmu, Kinguy, G, NetUnit, Munchman, HazRod, Edgar, Frank, Jacob, Matthew, peter, Richard, Vanessa, Nikita, Duke, Bill, Daniel, jimbob14, josh, Matt, Obivan_1000,{/color} {color=699dfe}Reddone1, tuk, Christian, Juanjo, Alan, Johnny, 07, Edgar, Gevork, Logan, Moaaz, Qwan, Teahyun,{/color} {color=699cfe}Punit, Little, Patrick, matthewlch, Jamjam, Declan, ✠, Albriel, Austin, Brian, Daas, Darcmaician, GoldenRhino, Gustavo, Ian, Ilyas, Jackson, Jacob, James, jazz0400, Jennifer, Kenneth, Leyeet, Louis, Maximiliano, Mr.Black, MrD, Muntakim, nickalas, Noah, Paul, Principe, Rem, Rodney, Ronie, Ryan,{/color} {color=689cfe}Shniggle, steve, mariioo007, Michel, Israel, drowsiie, ts3freaks, Dylan, Junior,{/color} {color=689bfe}Miguel, The, Xbox, Janz_jonas, Marco, GojiraMachina, Austin, darius, Krimzon-Raven, Theinfector2354, Lucas, Ariel, Martial, Bradley, Alonzo, ArkadyKortov, Darkcraze, Haider, Jose, Andrew, Dillan, Dustin, Florian, José, maikol, shaquille, Sìonnach, Violette, Arjun, Arkhos, Ashkore, astral, bb, Bo, Bon, Canuci, coinq, Colonel, Ellie,{/color} {color=679bfe}Henry, idontcaretbh, Jake, Jerome, Kenny, Mateo,{/color} {color=679afe}MattSmearman95, Mohammed, Reddboi989, RubMeHere, Snowey835, Trollando, Venator, Vinny, XES, Zeruis, ProxyBurst, Ryan, Eve, Mauro, ZYtre24, Marius, Avet, Casey, Darwin, Epic455, Grandpa, Hitomaru, JAYTHELAST$LIMETO, Max_Xpr, Tyrone, GUSTAVO, Aleksandr, Steven, Morty, Jimmy, TitanRG4L, LUIZ, Sven, Theo, Tom, Eric, Jarno, Simone, speedy9765, Michael, Alex, Cristian,{/color} {color=669afe}Demo, GEORGE, LawrenceIV,{/color} {color=6699fe}Loki, Marcel, Mr, Mystery, shadow, Sjtiernan, Thomas, vargh, William, Wishmacht, Dennis23, glambassador, SARGASSO, Arino, engyt, Reiner, dmshqi, Chic000, Matthias, AngeDivin777, Your, Hector, AyatoScar, mrjosu8e, Raidys, assassin.79, Duccio, Thabet, KunNiaS, el, Lukas_LP1703, Tim, Mr., Dashboarder_HD, Reuben, Inspector, The, AFluffyPanda, Aktratv,{/color} {color=6699ff}Anthony, bear, Bill, BoundlessReality, CLBRTY, Coydar,{/color} {color=6598ff}firestarter_, Hlogi, Hunter2714, Inconnu, izzy, javier, Jose, Kerosene, Laughs, Lexigame, luis, Luis, mert, Red, Velard, Xhdz, מזל, 성어, Darkkazz, BrandonRichards, Stuart, TheDragonacademy, f, Romain, علي, JoJo, Mark, Speig, Nicholas, andymill3r, Auden, baily, ismaeltroll, Yio, ricky, LT, Scotty, nope, mathew, Noel, lucas, Revan, CheeseMasta, cholo-gkssj, Jan,{/color} {color=6597ff}Murat, Maik, Mick., Rune,{/color} {color=6497ff}ChaseMcDickBall, Kergenn, Jose, Michal, Devonte, Gunterskatze, Jo, ifollow, Brent, Doğan, Nuget, Simi, Maider, MrWhiteQc, agent, ВАК, Nictherick, 『ℕ?ℕ??』, AnoP, Charles115, Christopher, David, Erica, Fabio, Folz, itzLosty, James, John, Jose, Juanito, LogisticKarma, Lovea, matrixboy, Miky, oonly, rosa, Seth, Thunderboy, Tyrone, 今井安七, Halgo,{/color} {color=6496ff}Jonathan, Harry, Javier, Patrik, StrayaCityRP, Guibow, as,{/color} {color=6396ff}Napson, Turrican91, Lucas, Jake, Guillaume, vitu, Brayan, -Kobayashi-, 😂, 3lawi, 4vg._.Shm0e, Aaron, Aaron, Abqori, Adam, Adam, Adam, Adultemblem, AiSolrac, Al, Alan, AlbatrossBaron, Alberto, Alex, Alex, Alexir, ALittleTex, Alt, Amaan, Amber, Amn3sia, ANC1, Andrew, Andrew, Andrew, Andrew, Andrewlauber77, andy,{/color} {color=6395ff}Andy, Angel, Angouleme, AngryGeorge, Anime, ann, ANONYMOUS, Anthony, arash, Archit,{/color} {color=6295ff}art, ARTHUR, Artur, Ashwanth, Aunt, AwarenessBringer, Ayhan, Aziz, Baba, Balck, Baodyloves, Barismati, Belinda, Ben, Bexon, Bi-Polarbear, Big, BigE, Bigup17, birdmauler13, Bla, Blake, Blake, Blank, bobbles7777, Boldrek, Boss-, BRALPE, Brandon, BrByBL, Breizhermine, Brod, Bruvlodski, Bryan, Bubba,{/color} {color=6294ff}BY, Bytehawks, Caldarola4ever, Calvin, Cameron, CanineLancer, Carson, Casey, Casey, Cauliflower_, Ceandte, Channon, Chaos_Untold,{/color} {color=6194ff}Charles, Chatham, cherry, Chinotastic, Chris, Chris, Chris, Chris, christian, Christian, Christian, Christian, Cincir, cjh5202001, Clara, CloudyRP, Cody, CODY, Coes, colling, Cris, Curtis, dabean, dale, Dalton, Damatrona, Damdamdamo, Daniel, Danny, Danny, DarkPimpon, Darkwolf2651,{/color} {color=6193ff}Darrin, darrius, david, David, David, David, David, Dawood, Dawson, Dennis, DeoMonte, Deshan, dev2728, Diego, Diego, DJ, Dmytro,{/color} {color=6093ff}Does, Doma, Dominic, donna, Doug, Dracnaal, Dredon, DukeCum, e, Eaves, Eclipse, Egor, ElCapital, Elieso, Emirhan, enderwarrior602, enygma, Enzo, Eran, Ereon, Eric, Erman, Essa, Ethan, evil_rooster, Eyþór, Fabio, fahmy,{/color} {color=6092ff}Felipe, FĚŁÌPĚ, ffxxstt, FNLoyalFS, Forsakenguns, Frank, Frank, Fred, Fred, Freelyn, FreshKiddo, FROSTBITE, Gabe, GarlicBreadEgg, Garry, Gary, Gavin, Gavyn, Gbo, Geekco,{/color} {color=5f92ff}Giovanni, Giuliano, Giwon, GodOnMode, Gonalu, Gordo, guga, GumCard38, Halfsweat, HannahJMChristmas2020, hassan, Hataf, Hausi, HayatoYami, Helge, hellsing12340, Henry26, Herzan, High, hildyhoff, Hize, Hokky, Horny, Husky, Hussain,{/color} {color=5f91ff}Ian0617, Icemonk, Its, J, Jabin, Jabroney, Jack, jacob, Jacob, Jaden, Jairo, Jake, James, JAMES, jamespwaa, Janitorfrog247, Jared, Jaslee883, Jason, Jason, javoni, Jawed, Jayson,{/color} {color=5e91ff}jcardec, Jedacia, Jedney, Jeff, Jeremy, Jeremy, Jerry, Jesscx, JesterGxming, jesus, jk456, Joe, Joel, Joel, John, John, John, John-Ross, JohnnyTheClown, Jonas., Jonathan,{/color} {color=5e90ff}Jonathan, jose, Jose, Jose, Jose, Jose, JOSE, Joseph, Joseph, Joseph, Joshu, joshua, Joshua, Joshua, Josiah, Jove, junior, Junior, Kaden, Kaiden, Kaleb, Karilynn, Karnbhong, keit, Keith, kelgamer, Kenshin,{/color} {color=5d90ff}Kermit_Nor, Kevin, Khaled, Killer, Klint, kody, Kody, Kostas, Kris, Kristie, Kuro, KxZ, Kyle, kyt, kyznec789, Laser, LawlerKing, leahim,{/color} {color=5d8fff}Lee, Lemon, Leo, Logan, Lord, Louis, Love, Luan, lucas, Ludwig, Luhwap, Luis, Lul, Lyle, Ma, Mahdi, mahmoud, majmuni123, Mangaminga, Marat, Marcus, Marcus, mark, Mark, Markus, Marquis, Martin, Mason, Mateo, Matthew,{/color} {color=5c8fff}Matthew, Matthewhi666, Mauricio, Max, Max, Mc, mekhi, melvin, mhmd, Michael, MicroWaveMan, Mikeplayz, Miki, millz, minecraftak01,{/color} {color=5c8eff}Mitchell, Mitsuyoshi, mmmommmo, Mobility, Mohammed, Morten, MSURIYA, Mug, munkey, Nathan, Nathaniel, NATHANIEL, Nayra, nedal, Nekoradark, Nelson, Neon, Netflix, Nick, no, Norlan, obedio, Omar, OneDEAMON, Oofpico, OrbitalOrbit, Oscar, OTAKU, Outfielder301, PATRICK, Peter, phoenixIZlbg, Phuphing, Pierre,{/color} {color=5b8eff}Plats, Prince, ProtonDan47, Prozac, Quay, Raed, RAFAEL, Rafi, RalleZockt, Rashid, Ray,{/color} {color=5b8dff}RC3133, RedAtNight, Reid, Revan, Rex, Rhadrx, Rishio, Robberto1993, Roberto, Rodolfo, Roy, RuiSuki, Russ, ryan, Ryan, Sakamoto69420, Samuel, Santiago, savvakis, Sawyer, Scottlyn, sean, Sean, Sean1766, Sebastian, Sebastian, senpai2468, Sergio, Sexy, Shameless, Shinova, Si, Simon, Simone, Skaryl, SmashTheseComics913, SmokeyDaPear,{/color} {color=5a8dff}So-Mi, Soggy, SolemnColossus, Solfrose, someone, Sonto, soundcloud56, soxfanforever,{/color} {color=5a8cff}spirit666146, Spyler, ssj2, st0rm, Stan, Stein, Steven, Steven, Steven, stres, Summer, summertime_saga_player2000, Sunpire, Sword, Syd, TajChe, Tame, TarynAtNoone, Terry, Thanh, The, thechief60, TheCopyDog, TheDudeJB, Theory, TheUnknownScholar, TheWastelander, TheWitcher120893, Thomas, Thomas, thunder, Tiago, Tien, Titian, Tivoli, TJ, TNandez, tong, Town, Trace,{/color} {color=598cff}Tre, Trevor, Trumpdog, tw1sts, Ty,{/color} {color=598bff}Tyler, u17792253, Umut225588, Unlucky_Qrow, Until, Username, Uzimaticc, Victor, Victor, Vince, Vito, Vlad, Vlad, WaflMaker, Waleed, Wang, White, William, Wladislav, Wnlas213, WolfeBayneEclipse, Woodson, Wulfric, Xanthras, xBl4ckWolfx, Xieren, Xrayraider, XxArcAngel97xX, Yash, You, Zach, zangetsu15, Zarinah, Zibril, zombiegun71, عائض, عبدالرحمن, 녕하세, 정지원, 현도, 清洁, Levente, Robert,{/color} {color=588bff}Emery, Blablabla,{/color} {color=588aff}ALEXX, Daniele, GhostFox, mil8s, Joker_007, Veeti, Alberto, yallis, , RAZOR2015, Wazz, Robin_Col, Stefan, LukasTheReptile, Hugo, asd, Mhand, jeremie, Ville, Antonio, Elouane, Chris, sa'id.{/color}",
+      "line_number": 1,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "This application contains both free and commercial third-party software",
+      "line_number": 1,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "included under a variety of licenses.",
+      "line_number": 2,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "Acme - OFL",
+      "line_number": 6,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "Copyright (c) 2011, Juan Pablo del Peral (juan@huertatipografica.com.ar),",
+      "line_number": 8,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "with Reserved Font Names \"Acme\"",
+      "line_number": 9,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "This Font Software is licensed under the SIL Open Font License, Version 1.1.",
+      "line_number": 11,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "Full license text is copied below, and is available online at:",
+      "line_number": 13,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "https://opensource.org/license/ofl-1-1",
+      "line_number": 14,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "Alphabetized Cassette Tapes - Application Licence",
+      "line_number": 18,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "© Brittney Murphy 2017",
+      "line_number": 20,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "https://www.brittneymurphydesign.com/font-commercial-licenses/",
+      "line_number": 22,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "Hash without Sine - MIT",
+      "line_number": 26,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "Copyright (c) 2014 David Hoskins.",
+      "line_number": 28,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "Full license text is copied below, and is available online at:",
+      "line_number": 30,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "https://opensource.org/license/mit",
+      "line_number": 31,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "Ren'Py - MIT, LGPL, and others",
+      "line_number": 35,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "Full license text is available in renpy/LICENSE.txt, and online at:",
+      "line_number": 37,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "http://www.renpy.org/doc/html/license.html",
+      "line_number": 38,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "Source Han Sans - OFL",
+      "line_number": 42,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "Copyright 2014-2019 Adobe (http://www.adobe.com/),",
+      "line_number": 44,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "with Reserved Font Name 'Source'. Source is a trademark of Adobe in the",
+      "line_number": 45,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "United States and/or other countries.",
+      "line_number": 46,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "This Font Software is licensed under the SIL Open Font License, Version 1.1.",
+      "line_number": 48,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "Full license text is copied below, and is available online at:",
+      "line_number": 50,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "https://opensource.org/license/ofl-1-1",
+      "line_number": 51,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "MIT License",
+      "line_number": 56,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "Permission is hereby granted, free of charge, to any person obtaining a copy of",
+      "line_number": 59,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "this software and associated documentation files (the ?Software?), to deal in",
+      "line_number": 60,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "the Software without restriction, including without limitation the rights to",
+      "line_number": 61,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies",
+      "line_number": 62,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "of the Software, and to permit persons to whom the Software is furnished to do",
+      "line_number": 63,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "so, subject to the following conditions:",
+      "line_number": 64,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "The above copyright notice and this permission notice shall be included in all",
+      "line_number": 66,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "copies or substantial portions of the Software.",
+      "line_number": 67,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "THE SOFTWARE IS PROVIDED ?AS IS?, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR",
+      "line_number": 69,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,",
+      "line_number": 70,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE",
+      "line_number": 71,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER",
+      "line_number": 72,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,",
+      "line_number": 73,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE",
+      "line_number": 74,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "SOFTWARE.",
+      "line_number": 75,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007",
+      "line_number": 78,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "PREAMBLE",
+      "line_number": 81,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "The goals of the Open Font License (OFL) are to stimulate worldwide development",
+      "line_number": 82,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "of collaborative font projects, to support the font creation efforts of",
+      "line_number": 83,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "academic and linguistic communities, and to provide a free and open framework",
+      "line_number": 84,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "in which fonts may be shared and improved in partnership with others.",
+      "line_number": 85,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "The OFL allows the licensed fonts to be used, studied, modified and",
+      "line_number": 87,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "redistributed freely as long as they are not sold by themselves. The fonts,",
+      "line_number": 88,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "including any derivative works, can be bundled, embedded, redistributed and/or",
+      "line_number": 89,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "sold with any software provided that any reserved names are not used by",
+      "line_number": 90,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "derivative works. The fonts and derivatives, however, cannot be released under",
+      "line_number": 91,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "any other type of license. The requirement for fonts to remain under this",
+      "line_number": 92,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "license does not apply to any document created using the fonts or their",
+      "line_number": 93,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "derivatives.",
+      "line_number": 94,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "DEFINITIONS",
+      "line_number": 96,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "\"Font Software\" refers to the set of files released by the Copyright Holder(s)",
+      "line_number": 97,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "under this license and clearly marked as such. This may include source files,",
+      "line_number": 98,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "build scripts and documentation.",
+      "line_number": 99,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "\"Reserved Font Name\" refers to any names specified as such after the copyright",
+      "line_number": 101,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "statement(s).",
+      "line_number": 102,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "\"Original Version\" refers to the collection of Font Software components as",
+      "line_number": 104,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "distributed by the Copyright Holder(s).",
+      "line_number": 105,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "\"Modified Version\" refers to any derivative made by adding to, deleting, or",
+      "line_number": 107,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "substituting -- in part or in whole -- any of the components of the Original",
+      "line_number": 108,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "Version, by changing formats or by porting the Font Software to a new",
+      "line_number": 109,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "environment.",
+      "line_number": 110,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "\"Author\" refers to any designer, engineer, programmer, technical writer or",
+      "line_number": 112,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "other person who contributed to the Font Software.",
+      "line_number": 113,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "PERMISSION & CONDITIONS",
+      "line_number": 115,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "Permission is hereby granted, free of charge, to any person obtaining a copy of",
+      "line_number": 116,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "the Font Software, to use, study, copy, merge, embed, modify, redistribute, and",
+      "line_number": 117,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "sell modified and unmodified copies of the Font Software, subject to the",
+      "line_number": 118,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "following conditions:",
+      "line_number": 119,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "1) Neither the Font Software nor any of its individual components, in Original",
+      "line_number": 121,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "or Modified Versions, may be sold by itself.",
+      "line_number": 122,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "2) Original or Modified Versions of the Font Software may be bundled,",
+      "line_number": 124,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "redistributed and/or sold with any software, provided that each copy",
+      "line_number": 125,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "contains the above copyright notice and this license. These can be included",
+      "line_number": 126,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "either as stand-alone text files, human-readable headers or in the",
+      "line_number": 127,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "appropriate machine-readable metadata fields within text or binary files as",
+      "line_number": 128,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "long as those fields can be easily viewed by the user.",
+      "line_number": 129,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "3) No Modified Version of the Font Software may use the Reserved Font Name(s)",
+      "line_number": 131,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "unless explicit written permission is granted by the corresponding Copyright",
+      "line_number": 132,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "Holder. This restriction only applies to the primary font name as presented",
+      "line_number": 133,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "to the users.",
+      "line_number": 134,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font Software",
+      "line_number": 136,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "shall not be used to promote, endorse or advertise any Modified Version,",
+      "line_number": 137,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "except to acknowledge the contribution(s) of the Copyright Holder(s) and the",
+      "line_number": 138,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "Author(s) or with their explicit written permission.",
+      "line_number": 139,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "5) The Font Software, modified or unmodified, in part or in whole, must be",
+      "line_number": 141,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "distributed entirely under this license, and must not be distributed under",
+      "line_number": 142,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "any other license. The requirement for fonts to remain under this license",
+      "line_number": 143,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "does not apply to any document created using the Font Software.",
+      "line_number": 144,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "TERMINATION",
+      "line_number": 146,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "This license becomes null and void if any of the above conditions are not met.",
+      "line_number": 147,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "DISCLAIMER",
+      "line_number": 149,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "THE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR",
+      "line_number": 150,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY,",
+      "line_number": 151,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT,",
+      "line_number": 152,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR",
+      "line_number": 153,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL,",
+      "line_number": 154,
+      "source": "txt"
+    },
+    {
+      "file": "summertimesaga\\game\\third-party.txt",
+      "text": "INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF",
+      "line_number": 155,
+      "source": "txt"
+    }
+  ]
+}
