@@ -142,3 +142,6 @@ PRs welcome for:
 ## 📄 License
 
 GPL-3.0-or-later (see [LICENSE](LICENSE))
+
+<img width="1919" height="1017" alt="Ekran görüntüsü 2026-01-02 155320" src="https://github.com/user-attachments/assets/3cf5e169-ead1-4a0b-9ba9-ca9a7178ef66" />
+
