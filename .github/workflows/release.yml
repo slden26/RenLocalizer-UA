@@ -1,0 +1,125 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - 'v*'  # Triggers on tags like v2.4.3, v3.0.0, etc.
+
+jobs:
+  # ============================================
+  # Linux Build
+  # ============================================
+  build-linux:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyinstaller
+          pip install -r requirements.txt
+
+      - name: Build with PyInstaller
+        run: |
+          pyinstaller RenLocalizer.spec
+
+      - name: Create archive
+        run: |
+          cd dist
+          tar -czvf ../RenLocalizer-Linux-x64.tar.gz RenLocalizer/
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: linux-build
+          path: RenLocalizer-Linux-x64.tar.gz
+
+  # ============================================
+  # macOS Build
+  # ============================================
+  build-macos:
+    runs-on: macos-13
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyinstaller
+          pip install -r requirements.txt
+
+      - name: Build with PyInstaller
+        run: |
+          pyinstaller RenLocalizer.spec
+
+      - name: Create archive
+        run: |
+          cd dist
+          zip -r ../RenLocalizer-macOS-x64.zip RenLocalizer/
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: macos-build
+          path: RenLocalizer-macOS-x64.zip
+
+  # ============================================
+  # Create GitHub Release
+  # ============================================
+  release:
+    needs: [build-linux, build-macos]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download Linux artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: linux-build
+
+      - name: Download macOS artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: macos-build
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            RenLocalizer-Linux-x64.tar.gz
+            RenLocalizer-macOS-x64.zip
+          body: |
+            ## RenLocalizer ${{ github.ref_name }}
+            
+            ### Downloads
+            - **Windows:** Download from the main release page (built separately)
+            - **Linux:** `RenLocalizer-Linux-x64.tar.gz`
+            - **macOS:** `RenLocalizer-macOS-x64.zip`
+            
+            ### Installation
+            1. Extract the archive
+            2. Run `./RenLocalizer` (Linux/Mac) or `RenLocalizer.exe` (Windows)
+            
+            ### Source Code Users
+            If you prefer running from source:
+            ```bash
+            ./RenLocalizer.sh      # GUI
+            ./RenLocalizerCLI.sh   # CLI
+            ```
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
