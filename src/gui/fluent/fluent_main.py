@@ -11,7 +11,7 @@ import logging
 from pathlib import Path
 from typing import Optional
 
-from PyQt6.QtCore import Qt, QUrl, QThread, pyqtSignal
+from PyQt6.QtCore import Qt, QUrl, QThread, pyqtSignal, QTimer
 from PyQt6.QtGui import QIcon, QDesktopServices
 from PyQt6.QtWidgets import QApplication, QMessageBox
 
@@ -68,8 +68,8 @@ class FluentMainWindow(FluentWindow):
         
         self.logger.info("FluentMainWindow initialized successfully")
         
-        # Check for updates on startup
-        self._check_for_updates()
+        # Check for updates on startup (delayed to ensure window is fully ready)
+        QTimer.singleShot(1000, self._check_for_updates)
 
     def _apply_theme_from_config(self):
         """Apply theme based on config settings, ignoring system theme."""
@@ -292,57 +292,61 @@ class FluentMainWindow(FluentWindow):
 
     def _on_update_check_finished(self, result):
         """Handle update check results."""
-        # Detect if this was a manual check (triggered from settings)
-        is_manual = getattr(self, "_manual_update_check", False)
-        self._manual_update_check = False # Reset flag
+        try:
+            # Detect if this was a manual check (triggered from settings)
+            is_manual = getattr(self, "_manual_update_check", False)
+            self._manual_update_check = False # Reset flag
 
-        if result and result.update_available:
-            self.logger.info(f"Update available: {result.latest_version}")
-            
-            # Show update notification with button
-            bar = InfoBar.info(
-                title=self.config_manager.get_ui_text("update_available_title", "Update Available"),
-                content=self.config_manager.get_ui_text("update_available_content", "A new version {version} is available.").format(version=result.latest_version),
-                orient=Qt.Orientation.Horizontal,
-                isClosable=True,
-                position=InfoBarPosition.TOP,
-                duration=-1,  # Keep visible until user acts
-                parent=self
-            )
-            
-            # Add action button to open releases
-            bar.setCustomBackgroundColor("#0078D4", "#005A9E")
-            
-            # Since qfluentwidgets InfoBar doesn't easily support adding custom buttons via API 
-            # in its simple form, we'll use a traditional message box for the actual prompt
-            # for maximum reliability, or just keep it simple with a persistent notification.
-            # However, for a better UX, let's use a standard dialog invitation if they click it.
-            
-            reply = QMessageBox.information(
-                self,
-                self.config_manager.get_ui_text("update_available_title", "Update Available"),
-                self.config_manager.get_ui_text("update_available_message", "A new version {version} is available. Download now?").format(version=result.latest_version),
-                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
-            )
-            
-            if reply == QMessageBox.StandardButton.Yes:
-                QDesktopServices.openUrl(QUrl(result.release_url))
-        elif result and not result.update_available and not result.error:
-            # If it was a manual check, show "Up to date"
-            self.logger.info(f"Already at latest version: {VERSION}")
-            if is_manual:
-                self.show_info_bar(
-                    "success",
-                    self.config_manager.get_ui_text("success", "Başarılı"),
-                    self.config_manager.get_ui_text("update_up_to_date", "Güncelsiniz (v{current})").format(current=VERSION)
+            # Safety check for None result
+            if result is None:
+                self.logger.warning("Update check returned None result")
+                if is_manual:
+                    self.show_info_bar(
+                        "error",
+                        self.config_manager.get_ui_text("error", "Hata"),
+                        self.config_manager.get_ui_text("update_check_unavailable", "Güncelleme kontrolü şu anda kullanılamıyor.")
+                    )
+                return
+
+            if result.error:
+                self.logger.warning(f"Update check failed: {result.error}")
+                if is_manual:
+                    self.show_info_bar(
+                        "error",
+                        self.config_manager.get_ui_text("error", "Hata"),
+                        self.config_manager.get_ui_text("update_check_failed", "Güncelleme kontrolü başarısız: {error}").format(error=result.error)
+                    )
+                return
+
+            if result.update_available:
+                self.logger.info(f"Update available: {result.latest_version}")
+                
+                # Show only QMessageBox (no overlapping InfoBar)
+                reply = QMessageBox.information(
+                    self,
+                    self.config_manager.get_ui_text("update_available_title", "Update Available"),
+                    self.config_manager.get_ui_text("update_available_message", "A new version {latest} is available (current: {current}). Download now?").format(latest=result.latest_version, current=VERSION),
+                    QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
                 )
-        elif result and result.error:
-            self.logger.warning(f"Update check failed: {result.error}")
-            if is_manual:
+                
+                if reply == QMessageBox.StandardButton.Yes:
+                    QDesktopServices.openUrl(QUrl(result.release_url))
+            else:
+                # No update available
+                self.logger.info(f"Already at latest version: {VERSION}")
+                if is_manual:
+                    self.show_info_bar(
+                        "success",
+                        self.config_manager.get_ui_text("success", "Başarılı"),
+                        self.config_manager.get_ui_text("update_up_to_date", "Güncelsiniz (v{current})").format(current=VERSION)
+                    )
+        except Exception as e:
+            self.logger.error(f"Error handling update check result: {e}")
+            if getattr(self, "_manual_update_check", False):
                 self.show_info_bar(
                     "error",
                     self.config_manager.get_ui_text("error", "Hata"),
-                    self.config_manager.get_ui_text("update_check_failed", "Güncelleme kontrolü başarısız: {error}").format(error=result.error)
+                    str(e)
                 )
 
     def show_info_bar(self, level: str, title: str, content: str, duration: int = 3000):

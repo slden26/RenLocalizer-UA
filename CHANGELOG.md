@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.4.6] - 2026-01-05
+### 🐛 Bug Fixes
+- **Update Checker Crash Fix:** Fixed a critical crash on startup caused by the update checker system.
+  - **QTimer Delay:** Update check now runs 1 second after window initialization to ensure all UI components are ready.
+  - **InfoBar/QMessageBox Overlap:** Removed duplicate InfoBar before QMessageBox to prevent Qt event loop conflicts.
+  - **Format Placeholder Fix:** Fixed `KeyError` caused by mismatched format placeholders (`{version}` vs `{latest}/{current}`).
+  - **Error Handling:** Added comprehensive try/except and null checks for robustness.
+
 ## [2.4.5] - 2026-01-05
 ### 🔄 Major Architecture Change: UnRPA for All Platforms
 - **Unified Extraction:** Now uses `unrpa` Python library on ALL platforms (Windows, Linux, macOS) instead of unreliable batch scripts.

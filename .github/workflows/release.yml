@@ -101,24 +101,7 @@ jobs:
           files: |
             RenLocalizer-Linux-x64.tar.gz
             RenLocalizer-macOS-x64.zip
-          body: |
-            ## RenLocalizer ${{ github.ref_name }}
-            
-            ### Downloads
-            - **Windows:** Download from the main release page (built separately)
-            - **Linux:** `RenLocalizer-Linux-x64.tar.gz`
-            - **macOS:** `RenLocalizer-macOS-x64.zip`
-            
-            ### Installation
-            1. Extract the archive
-            2. Run `./RenLocalizer` (Linux/Mac) or `RenLocalizer.exe` (Windows)
-            
-            ### Source Code Users
-            If you prefer running from source:
-            ```bash
-            ./RenLocalizer.sh      # GUI
-            ./RenLocalizerCLI.sh   # CLI
-            ```
+          body: ""
           draft: false
           prerelease: false
         env:
