@@ -212,41 +212,48 @@ class TranslationPipeline(QObject):
         include_deep_scan: bool = False,
         include_rpyc: bool = False
     ):
-        """Pipeline ayarlarını yapılandır"""
+        """Pipeline ayarlarını yapılandır.
+        
+        Args:
+            game_exe_path: Can be either:
+                - Path to game .exe file (GUI mode)
+                - Path to game directory (CLI mode)
+        """
         self.include_deep_scan = include_deep_scan
         self.include_rpyc = include_rpyc
         self.game_exe_path = game_exe_path
-        # Normalize project path: if the selected EXE is inside a 'game' folder,
-        # prefer the parent directory as the project root to match the
-        # expected structure (root/game/...)
-        candidate = os.path.dirname(game_exe_path)
-        try:
+        
+        # Determine project_path based on whether input is file or directory
+        if os.path.isdir(game_exe_path):
+            # Directory path provided (CLI mode) - use as project root
+            candidate = game_exe_path
+            # If the directory is named 'game', go up one level
             if os.path.basename(candidate).lower() == 'game':
-                # EXE located inside <project>/game/Game.exe; use project root
                 candidate = os.path.dirname(candidate)
-                self.log_message.emit('info', self.config.get_ui_text('pipeline_project_normalize_game'))
+            # If no 'game' subfolder, check if parent has one
             elif not os.path.isdir(os.path.join(candidate, 'game')):
-                # If candidate lacks a game folder but parent has it, use parent
                 parent = os.path.dirname(candidate)
                 if os.path.isdir(os.path.join(parent, 'game')):
                     candidate = parent
-                    self.log_message.emit('info', self.config.get_ui_text('pipeline_project_normalize_parent'))
-        except Exception:
-            # Defensive: if any error occurs, fall back to dirname
+        else:
+            # File path provided (GUI mode) - use parent directory
             candidate = os.path.dirname(game_exe_path)
-        # If normalization adjusted the path, notify the UI via a warning
-        original = os.path.dirname(game_exe_path)
-        self.project_path = candidate
-        if os.path.normcase(original) != os.path.normcase(candidate):
-            # Emit a friendly warning to explain what's changed
             try:
-                title = self.config.get_ui_text('warning')
-                template = self.config.get_ui_text('pipeline_project_normalized')
-                message = template.replace('{path}', str(candidate))
-                self.show_warning.emit(title, message)
+                if os.path.basename(candidate).lower() == 'game':
+                    # EXE located inside <project>/game/Game.exe; use project root
+                    candidate = os.path.dirname(candidate)
+                    self.log_message.emit('info', self.config.get_ui_text('pipeline_project_normalize_game'))
+                elif not os.path.isdir(os.path.join(candidate, 'game')):
+                    # If candidate lacks a game folder but parent has it, use parent
+                    parent = os.path.dirname(candidate)
+                    if os.path.isdir(os.path.join(parent, 'game')):
+                        candidate = parent
+                        self.log_message.emit('info', self.config.get_ui_text('pipeline_project_normalize_parent'))
             except Exception:
-                # ignore any UI failure
-                pass
+                # Defensive: if any error occurs, fall back to dirname
+                candidate = os.path.dirname(game_exe_path)
+        
+        self.project_path = candidate
         self.target_language = target_language
         self.source_language = source_language
         self.engine = engine
@@ -290,10 +297,24 @@ class TranslationPipeline(QObject):
         # 1. Doğrulama
         self._set_stage(PipelineStage.VALIDATING, self.config.get_ui_text("stage_validating"))
         
-        if not self.game_exe_path or not os.path.isfile(self.game_exe_path):
+        # game_exe_path can be either:
+        # 1. An .exe file path (traditional GUI usage)
+        # 2. A directory path (CLI usage with --mode full)
+        if not self.game_exe_path:
             return PipelineResult(
                 success=False,
                 message=self.config.get_ui_text("pipeline_invalid_exe"),
+                stage=PipelineStage.ERROR
+            )
+        
+        # Accept both file and directory paths
+        is_file = os.path.isfile(self.game_exe_path)
+        is_dir = os.path.isdir(self.game_exe_path)
+        
+        if not is_file and not is_dir:
+            return PipelineResult(
+                success=False,
+                message=self.config.get_ui_text("pipeline_invalid_exe") + f" (path does not exist: {self.game_exe_path})",
                 stage=PipelineStage.ERROR
             )
         

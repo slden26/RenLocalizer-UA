@@ -802,7 +802,8 @@ def main() -> int:
     
     # Legacy support: Add arguments directly to main parser for backwards compatibility
     # These are used when no subcommand is specified
-    parser.add_argument("input_path", nargs='?', default=None, 
+    # NOTE: Use 'legacy_input_path' to avoid argparse conflict with subparser 'input_path'
+    parser.add_argument("legacy_input_path", nargs='?', default=None, metavar='input_path',
                         help="Path to game executable, project directory, or translation file")
     parser.add_argument("--config", help="Path to JSON configuration file to override settings")
     parser.add_argument("--target-lang", "-t", default="tr", help="Target language code (default: tr)")
@@ -818,10 +819,25 @@ def main() -> int:
     
     args = parser.parse_args()
     
+    # Normalize: If using legacy mode (no subcommand), copy legacy_input_path to input_path
+    if args.command is None and hasattr(args, 'legacy_input_path'):
+        args.input_path = args.legacy_input_path
+    
     # Handle subcommands
     if args.command == 'translate':
-        # Translate subcommand uses same logic as legacy mode
-        pass  # Fall through to main translation logic
+        # Translate subcommand - input_path and other args are already in args namespace
+        # Just skip interactive mode check since we have the path
+        if args.input_path is None:
+            # User ran 'translate' without a path, use interactive
+            interactive_config = interactive_mode()
+            args.input_path = interactive_config['input_path']
+            args.target_lang = interactive_config['target_lang']
+            args.source_lang = interactive_config['source_lang']
+            args.engine = interactive_config['engine']
+            args.mode = interactive_config['mode']
+            args.proxy = interactive_config['proxy']
+            args.verbose = interactive_config['verbose']
+        # Fall through to main translation logic
     elif args.command == 'health-check':
         return run_health_check_command(args)
     elif args.command == 'font-check':
@@ -832,17 +848,18 @@ def main() -> int:
         return run_fuzzy_command(args)
     elif args.command == 'extract-glossary':
         return run_extract_glossary_command(args)
-    
-    # If no input_path provided or --interactive flag, run interactive mode
-    if args.input_path is None or args.interactive:
-        interactive_config = interactive_mode()
-        args.input_path = interactive_config['input_path']
-        args.target_lang = interactive_config['target_lang']
-        args.source_lang = interactive_config['source_lang']
-        args.engine = interactive_config['engine']
-        args.mode = interactive_config['mode']
-        args.proxy = interactive_config['proxy']
-        args.verbose = interactive_config['verbose']
+    elif args.command is None:
+        # No subcommand - legacy mode or interactive
+        # If no input_path provided or --interactive flag, run interactive mode
+        if args.input_path is None or args.interactive:
+            interactive_config = interactive_mode()
+            args.input_path = interactive_config['input_path']
+            args.target_lang = interactive_config['target_lang']
+            args.source_lang = interactive_config['source_lang']
+            args.engine = interactive_config['engine']
+            args.mode = interactive_config['mode']
+            args.proxy = interactive_config['proxy']
+            args.verbose = interactive_config['verbose']
 
     # Create config manager
     config_manager = ConfigManager()
@@ -901,13 +918,31 @@ def main() -> int:
     is_windows = sys.platform == "win32"
     mode = args.mode
     is_exe_file = os.path.isfile(input_path) and input_path.lower().endswith(".exe")
+    is_directory = os.path.isdir(input_path)
+    
+    # Check if directory contains a 'game' subfolder (Ren'Py project structure)
+    is_renpy_project = is_directory and (
+        os.path.isdir(os.path.join(input_path, 'game')) or
+        os.path.basename(input_path).lower() == 'game'
+    )
     
     if mode == "auto":
         # Heuristic detection
         if is_exe_file:
             mode = "full" if is_windows else "translate"
+        elif is_renpy_project:
+            # Directory with game/ subfolder - use full mode for RPA extraction
+            mode = "full"
         else:
+            # Assume it's a TL folder or similar
             mode = "translate"
+    
+    # If user explicitly selected 'full' mode with a directory, allow it
+    if mode == "full" and is_directory and not is_renpy_project:
+        # Check if it might still be valid (has game subfolder)
+        if not os.path.isdir(os.path.join(input_path, 'game')):
+            print(f"Warning: Directory '{input_path}' doesn't have a 'game' subfolder.")
+            print("Attempting to use it as project root anyway...")
     
     # If user provided EXE but selected translate mode, we need to handle this
     if is_exe_file and mode == "translate":

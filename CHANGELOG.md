@@ -1,5 +1,32 @@
 # Changelog
 
+## [2.4.7] - 2026-01-06
+### 🐛 Bug Fixes
+- **PyInstaller UnRPA Fix:** Fixed critical bug where RPA extraction would fail in packaged executables.
+  - **Root Cause:** `sys.executable` points to the bundled `.exe` instead of Python interpreter in frozen environments.
+  - **Solution:** Replaced subprocess-based `python -m unrpa` calls with direct `unrpa` library API.
+- **UnRPA 2.3.0 API Compatibility:** Fixed API mismatch with unrpa library.
+  - **Root Cause:** unrpa 2.3.0 doesn't have a `path` parameter - it extracts to current working directory.
+  - **Solution:** Temporarily change working directory with `os.chdir()` before extraction.
+
+### ✨ New Features
+- **Native RPA Parser Fallback:** Added built-in RPA archive parser (`rpa_parser.py`) that works without external dependencies.
+  - Automatically used when `unrpa` fails to import in frozen PyInstaller builds.
+  - Supports RPA-3.0 and RPA-2.0 formats (covers 99% of Ren'Py games).
+  - **Result:** RPA extraction is now guaranteed to work in all environments.
+
+### 🐛 CLI Fixes
+- **Fixed CLI `translate` Subcommand:** The CLI was incorrectly entering interactive mode even when path was provided.
+  - **Root Cause:** Argparse conflict between main parser and subparser `input_path` argument.
+  - **Solution:** Renamed legacy argument to avoid namespace collision.
+- **Fixed CLI Directory Path Support:** CLI now accepts both `.exe` files and directory paths for `--mode full`.
+  - **Root Cause:** Pipeline validation only accepted file paths, not directories.
+  - **Solution:** Updated `configure()` and `_run_pipeline()` to handle both file and directory inputs.
+  - **Result:** CLI can now properly extract RPA archives and translate games when given a folder path.
+- **Smart Mode Detection:** CLI now automatically detects Ren'Py projects by checking for `game/` subfolder.
+  - Directories with `game/` subfolder automatically use `full` mode (RPA extraction + translation).
+  - Other directories use `translate` mode (direct translation of existing files).
+
 ## [2.4.6] - 2026-01-05
 ### 🐛 Bug Fixes
 - **Update Checker Crash Fix:** Fixed a critical crash on startup caused by the update checker system.
