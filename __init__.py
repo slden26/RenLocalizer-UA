@@ -15,5 +15,5 @@ Date: September 2025
 License: MIT
 """
 
-__version__ = "2.4.5"
+__version__ = "2.4.8"
 __author__ = "AI Assistant"
