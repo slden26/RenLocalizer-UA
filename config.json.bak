@@ -2,11 +2,11 @@
     "translation_settings": {
         "source_language": "en",
         "target_language": "ru",
-        "max_concurrent_threads": 15,
+        "max_concurrent_threads": 58,
         "request_delay": 0.1,
         "max_batch_size": 26,
         "enable_proxy": false,
-        "max_retries": 4,
+        "max_retries": 3,
         "timeout": 30,
         "use_multi_endpoint": true,
         "enable_lingva_fallback": true,
@@ -16,9 +16,9 @@
         "critical_terms_file": "critical_terms.json",
         "translate_dialogue": true,
         "translate_menu": true,
-        "translate_ui": false,
-        "translate_config_strings": false,
-        "translate_gui_strings": false,
+        "translate_ui": true,
+        "translate_config_strings": true,
+        "translate_gui_strings": true,
         "translate_style_strings": false,
         "translate_renpy_functions": false,
         "translate_buttons": true,
@@ -32,8 +32,8 @@
         "include_engine_common": true,
         "show_debug_engines": false,
         "openrouter_model": "",
-        "openrouter_system_prompt": "You are a helpful translator. Translate the user's text while preserving placeholders.",
-        "openrouter_temperature": 0.0
+        "openrouter_system_prompt": "You are a specialized translation script. Your output is used for direct code injection. Any deviation from the syntax will break the game. \nNO TRANSLATION INSIDE BRACKETS: ABSOLUTELY DO NOT translate, transliterate, or modify text inside [] and {}.\nPUNCTUATION & SPACING: Always ensure there is exactly ONE space after every punctuation mark (periods, commas, exclamation/question marks) inside the quotes.\nMANDATORY GRAMMAR & STYLE: DIALECT: Use informal Russian (T-V distinction: ALWAYS use \"ты\", NEVER \"вы\").\nFORBIDDEN: Never use neutral \"он(а)\", \"сделал(а)\", or polite \"вы\". \nCODE INTEGRITY: Translate ONLY the content inside double quotes \"\". Keep all Ren'Py tags (e.g., mc, ren, nvl) exactly as they are. FORMAT: Return ONLY the translated code block. No chatter.",
+        "openrouter_temperature": 0.4
     },
     "api_keys": {
         "google_api_key": "",
@@ -43,12 +43,12 @@
         "openrouter_api_key": ""
     },
     "app_settings": {
-        "ui_language": "en",
+        "ui_language": "ru",
         "theme": "solarized",
         "app_theme": "dark",
         "window_width": 1200,
         "window_height": 800,
-        "last_input_directory": "",
+        "last_input_directory": "D:/Temp/RenPy/Working/Angst-0.4-pc",
         "last_output_directory": "",
         "auto_save_settings": true,
         "auto_save_translations": true,

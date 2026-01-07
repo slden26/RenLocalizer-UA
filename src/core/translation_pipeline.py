@@ -12,7 +12,7 @@ import os
 import logging
 import asyncio
 import re
-from typing import Optional, List, Dict, Callable
+from typing import Optional, List, Dict, Callable, Tuple
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path

@@ -376,7 +376,24 @@ class ToolsInterface(ScrollArea):
         """Show TL folder translation dialog."""
         try:
             from src.gui.tl_translate_dialog import TLTranslateDialog
-            dialog = TLTranslateDialog(self.config_manager, self)
+
+            # Try to obtain the active TranslationManager from the main window's home interface
+            translation_manager = None
+            try:
+                translation_manager = getattr(self.parent_window, 'home_interface', None)
+                if translation_manager is not None:
+                    translation_manager = getattr(translation_manager, 'translation_manager', None)
+            except Exception:
+                translation_manager = None
+
+            if translation_manager is None:
+                self._show_info(
+                    self.config_manager.get_ui_text("info", "Bilgi"),
+                    self.config_manager.get_ui_text("feature_not_available", "Bu özellik henüz hazır değil.")
+                )
+                return
+
+            dialog = TLTranslateDialog(self.config_manager, translation_manager, parent=self.parent_window)
             dialog.exec()
         except ImportError as e:
             self.logger.error(f"TL translate dialog import error: {e}")
