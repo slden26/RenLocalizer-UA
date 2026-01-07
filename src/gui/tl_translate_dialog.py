@@ -93,6 +93,7 @@ class TLTranslateDialog(QDialog):
         self.engine_combo = QComboBox()
         self.engine_combo.addItem(self.config.get_ui_text("translation_engines.google"), TranslationEngine.GOOGLE)
         self.engine_combo.addItem(self.config.get_ui_text("translation_engines.deepl"), TranslationEngine.DEEPL)
+        self.engine_combo.addItem(self.config.get_ui_text("translation_engines.openrouter"), TranslationEngine.OPENROUTER)
         form.addRow(self.config.get_ui_text("translation_engine_label"), self.engine_combo)
 
         # proxy

@@ -20,6 +20,7 @@ from qfluentwidgets import (
     FluentIcon as FIF, TitleLabel, BodyLabel, InfoBar, InfoBarPosition,
     qconfig, MessageBox
 )
+from qfluentwidgets import TextEdit
 
 from src.utils.config import ConfigManager, Language
 
@@ -86,14 +87,23 @@ class SettingsInterface(ScrollArea):
             parent=self.general_group
         )
         self.language_combo = ComboBox(self.language_card)
-        self.language_combo.addItems(["Türkçe", "English"])
-        self.language_combo.setFixedWidth(120)
+        # Populate languages dynamically from ConfigManager
+        # Use limited UI language options (Turkish, English, Russian)
+        all_langs = self.config_manager.get_ui_language_options()
+        self._ui_lang_codes = [item['api'] for item in all_langs]
+        ui_labels = [item['native'] for item in all_langs]
+        self.language_combo.addItems(ui_labels)
+        self.language_combo.setFixedWidth(160)
         self.language_card.hBoxLayout.addWidget(self.language_combo, 0, Qt.AlignmentFlag.AlignRight)
         self.language_card.hBoxLayout.addSpacing(16)
         
         # Set current language
         current_lang = self.config_manager.app_settings.ui_language
-        self.language_combo.setCurrentIndex(0 if current_lang == "tr" else 1)
+        try:
+            idx = self._ui_lang_codes.index(current_lang)
+        except ValueError:
+            idx = 0
+        self.language_combo.setCurrentIndex(idx)
         self.language_combo.currentIndexChanged.connect(self._on_language_changed)
         self.general_group.addSettingCard(self.language_card)
         
@@ -281,6 +291,80 @@ class SettingsInterface(ScrollArea):
         self.deepl_api_card.hBoxLayout.addSpacing(16)
         self.api_group.addSettingCard(self.deepl_api_card)
         
+        # OpenRouter API Key
+        self.openrouter_api_card = SettingCard(
+            icon=FIF.GLOBE,
+            title=self.config_manager.get_ui_text("openrouter_api_title", "OpenRouter API Key"),
+            content=self.config_manager.get_ui_text("openrouter_api_desc", "API key for OpenRouter (required for model access)"),
+            parent=self.api_group
+        )
+        self.openrouter_key_input = PasswordLineEdit(self.openrouter_api_card)
+        self.openrouter_key_input.setFixedWidth(300)
+        self.openrouter_key_input.setText(self.config_manager.api_keys.openrouter_api_key)
+        self.openrouter_key_input.textChanged.connect(lambda v: self._on_api_key_changed("openrouter", v))
+        self.openrouter_api_card.hBoxLayout.addWidget(self.openrouter_key_input, 0, Qt.AlignmentFlag.AlignRight)
+        self.openrouter_api_card.hBoxLayout.addSpacing(16)
+        self.api_group.addSettingCard(self.openrouter_api_card)
+
+        # OpenRouter Model Selection
+        self.openrouter_model_card = SettingCard(
+            icon=FIF.BOOK_SHELF,
+            title=self.config_manager.get_ui_text("openrouter_model_title", "OpenRouter Model"),
+            content=self.config_manager.get_ui_text("openrouter_model_desc", "Enter OpenRouter model (e.g. google/gemini-2.0-flash-exp:free)"),
+            parent=self.api_group
+        )
+        # Use a free-form LineEdit so user can paste their model identifier
+        self.openrouter_model_input = LineEdit(self.openrouter_model_card)
+        cur_model = getattr(self.config_manager.translation_settings, 'openrouter_model', '') or ''
+        self.openrouter_model_input.setFixedWidth(360)
+        self.openrouter_model_input.setText(cur_model)
+        self.openrouter_model_card.hBoxLayout.addWidget(self.openrouter_model_input, 0, Qt.AlignmentFlag.AlignRight)
+        self.openrouter_model_card.hBoxLayout.addSpacing(16)
+        self.openrouter_model_input.textChanged.connect(lambda v: self._on_openrouter_model_text_changed(v))
+        self.api_group.addSettingCard(self.openrouter_model_card)
+
+        # System prompt for OpenRouter
+        self.openrouter_sysprompt_card = SettingCard(
+            icon=FIF.BOOK_SHELF,
+            title=self.config_manager.get_ui_text("openrouter_system_prompt_title", "OpenRouter System Prompt"),
+            content=self.config_manager.get_ui_text("openrouter_system_prompt_desc", "Optional system prompt passed to the model (helps control behavior)."),
+            parent=self.api_group
+        )
+        self.openrouter_sysprompt_input = LineEdit(self.openrouter_sysprompt_card)
+        cur_sp = getattr(self.config_manager.translation_settings, 'openrouter_system_prompt', '') or ''
+        self.openrouter_sysprompt_input.setFixedWidth(600)
+        self.openrouter_sysprompt_input.setText(cur_sp)
+        self.openrouter_sysprompt_card.hBoxLayout.addWidget(self.openrouter_sysprompt_input, 0, Qt.AlignmentFlag.AlignRight)
+        self.openrouter_sysprompt_card.hBoxLayout.addSpacing(16)
+        self.openrouter_sysprompt_input.textChanged.connect(lambda v: self._on_openrouter_sysprompt_changed(v))
+        self.api_group.addSettingCard(self.openrouter_sysprompt_card)
+
+        # Temperature slider
+        self.openrouter_temp_card = SettingCard(
+            icon=FIF.SPEED_HIGH,
+            title=self.config_manager.get_ui_text("openrouter_temperature_title", "OpenRouter Temperature"),
+            content=self.config_manager.get_ui_text("openrouter_temperature_desc", "Sampling temperature for model (0.0 - 2.0)."),
+            parent=self.api_group
+        )
+        self.openrouter_temp_slider = Slider(Qt.Orientation.Horizontal, self.openrouter_temp_card)
+        self.openrouter_temp_slider.setRange(0, 200)
+        self.openrouter_temp_slider.setFixedWidth(200)
+        # Label to show float value
+        cur_temp = getattr(self.config_manager.translation_settings, 'openrouter_temperature', 0.0)
+        self.openrouter_temp_label = BodyLabel(str(cur_temp), self.openrouter_temp_card)
+        self.openrouter_temp_card.hBoxLayout.addWidget(self.openrouter_temp_label, 0, Qt.AlignmentFlag.AlignRight)
+        self.openrouter_temp_card.hBoxLayout.addSpacing(8)
+        self.openrouter_temp_card.hBoxLayout.addWidget(self.openrouter_temp_slider, 0, Qt.AlignmentFlag.AlignRight)
+        self.openrouter_temp_card.hBoxLayout.addSpacing(16)
+        # Initialize slider position
+        try:
+            pos = int(round(float(cur_temp) * 100))
+        except Exception:
+            pos = 0
+        self.openrouter_temp_slider.setValue(pos)
+        self.openrouter_temp_slider.valueChanged.connect(self._on_openrouter_temp_changed)
+        self.api_group.addSettingCard(self.openrouter_temp_card)
+        
         self.expand_layout.addWidget(self.api_group)
 
     def _create_proxy_group(self):
@@ -401,7 +485,11 @@ class SettingsInterface(ScrollArea):
 
     def _on_language_changed(self, index: int):
         """Handle language change."""
-        new_lang = "tr" if index == 0 else "en"
+        # Map selected index to API language code saved in config
+        try:
+            new_lang = self._ui_lang_codes[index]
+        except Exception:
+            new_lang = self.config_manager.app_settings.ui_language or 'en'
         self.config_manager.app_settings.ui_language = new_lang
         self.config_manager.save_config()
         
@@ -455,6 +543,43 @@ class SettingsInterface(ScrollArea):
     def _on_api_key_changed(self, service: str, value: str):
         """Handle API key change."""
         self.config_manager.set_api_key(service, value)
+
+    def _on_openrouter_model_changed(self, index: int, models: list):
+        """Handle OpenRouter model selection change."""
+        try:
+            model = models[index]
+        except Exception:
+            model = getattr(self.config_manager.translation_settings, 'openrouter_model', '')
+        self.config_manager.translation_settings.openrouter_model = model
+        self.config_manager.save_config()
+
+    def _on_openrouter_model_text_changed(self, text: str):
+        """Handle free-form OpenRouter model text change."""
+        try:
+            self.config_manager.translation_settings.openrouter_model = text.strip()
+            self.config_manager.save_config()
+        except Exception:
+            pass
+
+    def _on_openrouter_sysprompt_changed(self, text: str):
+        try:
+            self.config_manager.translation_settings.openrouter_system_prompt = text
+            self.config_manager.save_config()
+        except Exception:
+            pass
+
+    def _on_openrouter_temp_changed(self, value: int):
+        # slider value is 0..200 -> map to 0.00..2.00
+        temp = round(value / 100.0, 2)
+        try:
+            self.openrouter_temp_label.setText(str(temp))
+        except Exception:
+            pass
+        try:
+            self.config_manager.translation_settings.openrouter_temperature = float(temp)
+            self.config_manager.save_config()
+        except Exception:
+            pass
 
     def _on_batch_size_slider_changed(self, value: int):
         """Handle batch size slider change."""

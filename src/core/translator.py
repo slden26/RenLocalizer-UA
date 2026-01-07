@@ -81,6 +81,7 @@ class TranslationEngine(Enum):
     GOOGLE = "google"
     DEEPL = "deepl"
     PSEUDO = "pseudo"  # Pseudo-localization for UI testing
+    OPENROUTER = "openrouter"
 
 
 @dataclass
@@ -883,6 +884,205 @@ class DeepLTranslator(BaseTranslator):
 
     def get_supported_languages(self) -> Dict[str,str]:
         return {'en':'English','tr':'Turkish','de':'German','fr':'French','es':'Spanish','it':'Italian','pt':'Portuguese'}
+
+
+class OpenRouterTranslator(BaseTranslator):
+    """Simple OpenRouter client for model-based translation.
+
+    Uses the OpenRouter chat/completions endpoint. The translator sends a
+    short instruction to the model to translate the protected text from
+    source to target and restores Ren'Py placeholders after the response.
+    """
+
+    base_url = "https://openrouter.ai/api/v1"
+
+    def __init__(self, *args, model: Optional[str] = None, config_manager=None, **kwargs):
+        # api_key passed as first positional or via kwargs to BaseTranslator
+        super().__init__(*args, **kwargs)
+        # prefer explicit model param, then config value; default to empty
+        self.model = model or (getattr(config_manager, 'translation_settings', None) and getattr(config_manager.translation_settings, 'openrouter_model', None)) or ""
+        # system prompt and temperature from config if available
+        cfg = getattr(config_manager, 'translation_settings', None)
+        self.system_prompt = getattr(cfg, 'openrouter_system_prompt', "You are a helpful translator.") if cfg is not None else "You are a helpful translator."
+        # clamp temperature between 0.0 and 2.0
+        temp = getattr(cfg, 'openrouter_temperature', 0.0) if cfg is not None else 0.0
+        try:
+            self.temperature = float(temp)
+        except Exception:
+            self.temperature = 0.0
+        if self.temperature < 0.0:
+            self.temperature = 0.0
+        if self.temperature > 2.0:
+            self.temperature = 2.0
+
+    async def translate_single(self, request: TranslationRequest) -> TranslationResult:
+        if not self.api_key:
+            return TranslationResult(request.text, "", request.source_lang, request.target_lang, TranslationEngine.OPENROUTER, False, "OpenRouter API key required")
+
+        protected_text, placeholders = protect_renpy_syntax(request.text)
+
+        # Build a user prompt asking the model to translate while preserving placeholders
+        prompt = (
+            f"Translate the following text from {request.source_lang} to {request.target_lang}. "
+            "Preserve any Ren'Py variables and tags (they are represented as placeholders).\n\n"
+            f"Text:\n{protected_text}"
+        )
+
+        payload = {
+            "model": self.model,
+            "messages": [
+                {"role": "system", "content": self.system_prompt},
+                {"role": "user", "content": prompt}
+            ],
+            # Allow larger responses for long texts
+            "max_tokens": 4096,
+            "temperature": float(self.temperature)
+        }
+
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json"
+        }
+
+        try:
+            session = await self._get_session()
+            proxy = None
+            if self.use_proxy and self.proxy_manager:
+                p = self.proxy_manager.get_next_proxy()
+                if p:
+                    proxy = p.url
+
+            url = f"{self.base_url}/chat/completions"
+            async with session.post(url, json=payload, headers=headers, proxy=proxy, timeout=aiohttp.ClientTimeout(total=30)) as resp:
+                if resp.status != 200:
+                    text = await resp.text()
+                    return TranslationResult(request.text, "", request.source_lang, request.target_lang, TranslationEngine.OPENROUTER, False, f"HTTP {resp.status}: {text}")
+
+                data = await resp.json(content_type=None)
+
+                # Extract model reply (compatible with common chat completion responses)
+                translated = ""
+                try:
+                    if isinstance(data, dict):
+                        # Newer OpenRouter responses follow choices[].message.content
+                        choices = data.get('choices') or []
+                        if choices and isinstance(choices, list):
+                            first = choices[0]
+                            if isinstance(first, dict):
+                                msg = first.get('message') or first.get('content') or first
+                                if isinstance(msg, dict):
+                                    translated = msg.get('content') or msg.get('text') or ""
+                                else:
+                                    translated = str(msg)
+                        # Fallback: top-level 'output' or 'text'
+                        if not translated:
+                            translated = data.get('output') or data.get('text') or ""
+                except Exception:
+                    translated = ""
+
+                final_text = restore_renpy_syntax(translated, placeholders)
+
+                return TranslationResult(
+                    request.text,
+                    final_text,
+                    request.source_lang,
+                    request.target_lang,
+                    TranslationEngine.OPENROUTER,
+                    True,
+                    confidence=0.75,
+                    metadata=request.metadata
+                )
+
+        except Exception as e:
+            return TranslationResult(request.text, "", request.source_lang, request.target_lang, TranslationEngine.OPENROUTER, False, str(e))
+
+    def get_supported_languages(self) -> Dict[str, str]:
+        # OpenRouter is model-based; expose common languages
+        return {'auto': 'Auto', 'en': 'English', 'tr': 'Turkish', 'ru': 'Russian', 'ja': 'Japanese'}
+
+
+class OpenRouterTranslator(BaseTranslator):
+    """Simple OpenRouter integration.
+
+    Uses base URL https://openrouter.ai/api/v1 and expects a model string
+    (e.g. google/gemini-2.0-flash-exp:free). The implementation is defensive
+    and attempts to extract text from common response shapes.
+    """
+    base_url = "https://openrouter.ai/api/v1"
+
+    def __init__(self, *args, model: str = None, config_manager=None, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.model = model or (getattr(config_manager, 'translation_settings', None) and getattr(config_manager.translation_settings, 'openrouter_model', None)) or "google/gemini-2.0-flash-exp:free"
+
+    async def translate_single(self, request: TranslationRequest) -> TranslationResult:
+        if not self.api_key:
+            return TranslationResult(request.text, "", request.source_lang, request.target_lang, TranslationEngine.OPENROUTER, False, "OpenRouter API key required")
+
+        protected_text, placeholders = protect_renpy_syntax(request.text)
+
+        url = f"{self.base_url}/responses"
+        payload = {
+            "model": self.model,
+            "input": protected_text,
+            # lightweight request, rely on model defaults
+        }
+
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json"
+        }
+
+        try:
+            session = await self._get_session()
+            proxy = None
+            if self.use_proxy and self.proxy_manager:
+                p = self.proxy_manager.get_next_proxy()
+                if p:
+                    proxy = p.url
+
+            async with session.post(url, json=payload, headers=headers, proxy=proxy, timeout=aiohttp.ClientTimeout(total=20)) as resp:
+                if resp.status != 200:
+                    text = await resp.text()
+                    return TranslationResult(request.text, "", request.source_lang, request.target_lang, TranslationEngine.OPENROUTER, False, f"HTTP {resp.status}: {text}")
+
+                data = await resp.json(content_type=None)
+
+                # Try common response shapes
+                translated = None
+                # OpenRouter sometimes returns {'output': [{'content': '...'}]} or choices
+                if isinstance(data, dict):
+                    out = data.get('output') or data.get('choices') or data.get('response')
+                    if isinstance(out, list) and out:
+                        first = out[0]
+                        if isinstance(first, dict):
+                            # look for common fields
+                            translated = first.get('content') or first.get('text') or first.get('message')
+                        elif isinstance(first, str):
+                            translated = first
+                    elif isinstance(out, str):
+                        translated = out
+
+                if not translated:
+                    # Last-chance attempts
+                    if isinstance(data, list) and data:
+                        if isinstance(data[0], dict):
+                            translated = data[0].get('text') or data[0].get('content')
+                        elif isinstance(data[0], str):
+                            translated = data[0]
+
+                if not translated:
+                    # Could not parse response
+                    return TranslationResult(request.text, "", request.source_lang, request.target_lang, TranslationEngine.OPENROUTER, False, "Could not parse OpenRouter response")
+
+                final_text = restore_renpy_syntax(translated, placeholders)
+                return TranslationResult(request.text, final_text, request.source_lang, request.target_lang, TranslationEngine.OPENROUTER, True, confidence=0.85)
+
+        except Exception as e:
+            return TranslationResult(request.text, "", request.source_lang, request.target_lang, TranslationEngine.OPENROUTER, False, str(e))
+
+    def get_supported_languages(self) -> Dict[str, str]:
+        # OpenRouter uses model capabilities; provide a small helpful map
+        return {'auto': 'Auto', 'en': 'English', 'ru': 'Russian', 'tr': 'Turkish'}
 
 
 class TranslationManager:

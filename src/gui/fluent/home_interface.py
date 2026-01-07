@@ -28,7 +28,7 @@ from qfluentwidgets import (
 from qfluentwidgets import ScrollArea
 
 from src.utils.config import ConfigManager
-from src.core.translator import TranslationManager, TranslationEngine, GoogleTranslator, DeepLTranslator, PseudoTranslator
+from src.core.translator import TranslationManager, TranslationEngine, GoogleTranslator, DeepLTranslator, OpenRouterTranslator, PseudoTranslator
 from src.core.proxy_manager import ProxyManager
 
 
@@ -82,6 +82,28 @@ class HomeInterface(ScrollArea):
         if deepl_key:
             deepl_translator = DeepLTranslator(api_key=deepl_key, proxy_manager=self.proxy_manager)
             self.translation_manager.add_translator(TranslationEngine.DEEPL, deepl_translator)
+
+        # OpenRouter if API key available
+        openrouter_key = self.config_manager.get_api_key("openrouter")
+        if openrouter_key:
+            openrouter_model = getattr(self.config_manager.translation_settings, 'openrouter_model', None)
+            openrouter_system_prompt = getattr(self.config_manager.translation_settings, 'openrouter_system_prompt', None)
+            openrouter_temperature = getattr(self.config_manager.translation_settings, 'openrouter_temperature', None)
+            openrouter_translator = OpenRouterTranslator(
+                api_key=openrouter_key,
+                model=openrouter_model,
+                config_manager=self.config_manager,
+                proxy_manager=self.proxy_manager
+            )
+            # override system prompt/temperature if provided
+            if openrouter_system_prompt:
+                openrouter_translator.system_prompt = openrouter_system_prompt
+            if openrouter_temperature is not None:
+                try:
+                    openrouter_translator.temperature = float(openrouter_temperature)
+                except Exception:
+                    pass
+            self.translation_manager.add_translator(TranslationEngine.OPENROUTER, openrouter_translator)
 
     def _init_ui(self):
         """Initialize the user interface."""
@@ -270,6 +292,7 @@ class HomeInterface(ScrollArea):
         engines = [
             (TranslationEngine.GOOGLE, self.config_manager.get_ui_text("translation_engines.google", "🌐 Google Translate (Free)")),
             (TranslationEngine.DEEPL, self.config_manager.get_ui_text("translation_engines.deepl", "🔷 DeepL (API Key)")),
+            (TranslationEngine.OPENROUTER, self.config_manager.get_ui_text("translation_engines.openrouter", "OpenRouter (API - Key Required)")),
         ]
         
         # Add debug engines only if enabled in settings

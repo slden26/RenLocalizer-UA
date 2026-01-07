@@ -19,6 +19,7 @@ class Language(Enum):
     """Supported UI languages."""
     TURKISH = "tr"
     ENGLISH = "en"
+    RUSSIAN = "ru"
 
 TURKIC_PRIMARY_LANG_IDS = {
     0x1F,  # Turkish
@@ -136,6 +137,11 @@ class TranslationSettings:
     include_engine_common: bool = True
     # Debug / Test engines (e.g. Pseudo-Localization)
     show_debug_engines: bool = False
+    # OpenRouter model selection (leave empty to specify manually)
+    openrouter_model: str = ""
+    # OpenRouter system prompt and temperature
+    openrouter_system_prompt: str = "You are a helpful translator. Translate the user's text while preserving placeholders."
+    openrouter_temperature: float = 0.0
 
 @dataclass
 class ApiKeys:
@@ -144,6 +150,7 @@ class ApiKeys:
     deepl_api_key: str = ""
     bing_api_key: str = ""
     yandex_api_key: str = ""
+    openrouter_api_key: str = ""
 
 @dataclass
 class AppSettings:
@@ -218,33 +225,48 @@ class ConfigManager:
         self.load_config()
     
     def _load_language_files(self):
-        """Load language JSON files from locales directory."""
+        """Load language JSON files from locales directory.
+
+        Scans all JSON files in `locales/` and maps file stem (renpy name)
+        to the API language code using `get_renpy_to_api_map()`. This allows
+        adding `russian.json` (and others) without explicit hardcoding.
+        """
         try:
             self.logger.debug(f"Loading language files from: {self.locales_dir}")
             self.logger.debug(f"Locales directory exists: {self.locales_dir.exists()}")
-            
-            # Load Turkish
-            tr_file = self.locales_dir / "turkish.json"
-            self.logger.debug(f"Turkish file path: {tr_file}")
-            if tr_file.exists():
-                with open(tr_file, 'r', encoding='utf-8') as f:
-                    self._language_data['tr'] = json.load(f)
-                self.logger.debug("Turkish language data loaded successfully")
-            else:
-                self.logger.warning(f"Turkish language file not found: {tr_file}")
-            
-            # Load English
-            en_file = self.locales_dir / "english.json"
-            self.logger.debug(f"English file path: {en_file}")
-            if en_file.exists():
-                with open(en_file, 'r', encoding='utf-8') as f:
-                    self._language_data['en'] = json.load(f)
-                self.logger.debug("English language data loaded successfully")
-            else:
-                self.logger.warning(f"English language file not found: {en_file}")
-            
-            self.logger.info(f"Loaded {len(self._language_data)} language files")
-                
+
+            if not self.locales_dir.exists():
+                self.logger.warning(f"Locales directory not found: {self.locales_dir}")
+                return
+
+            renpy_to_api = self.get_renpy_to_api_map()
+            loaded = 0
+
+            for file_path in sorted(self.locales_dir.glob('*.json')):
+                try:
+                    stem = file_path.stem.lower()
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+
+                    # Map filename stem (e.g., 'russian') to API code (e.g., 'ru')
+                    code = None
+                    if stem in renpy_to_api:
+                        code = renpy_to_api[stem]
+                    elif stem in ('en', 'tr', 'ru'):
+                        code = stem
+                    else:
+                        # As a last resort, try common aliases
+                        alias_map = {'english': 'en', 'turkish': 'tr', 'russian': 'ru'}
+                        code = alias_map.get(stem, stem)
+
+                    self._language_data[code] = data
+                    loaded += 1
+                    self.logger.debug(f"Loaded language file {file_path.name} as '{code}'")
+                except Exception as e:
+                    self.logger.warning(f"Failed to load language file {file_path}: {e}")
+
+            self.logger.info(f"Loaded {loaded} language files")
+
         except Exception as e:
             self.logger.warning(f"Could not load language files: {e}")
             # Fallback to embedded translations if JSON files fail
@@ -514,6 +536,18 @@ class ConfigManager:
     def get_target_languages_for_ui(self) -> list:
         """Get languages for UI dropdowns as list of (renpy_code, native_name) tuples."""
         return [(item['renpy'], item['native']) for item in self.get_all_languages()]
+
+    def get_ui_language_options(self) -> list:
+        """Return a short list of language dicts to display in the Application Language dropdown.
+
+        This restricts the visible UI languages to the supported set used by the
+        application UI: Turkish (`tr`), English (`en`) and Russian (`ru`).
+        """
+        preferred = ['tr', 'en', 'ru']
+        all_langs = self.get_all_languages()
+        lang_map = {item['api']: item for item in all_langs}
+        result = [lang_map[c] for c in preferred if c in lang_map]
+        return result
     
     def get_ui_translations(self) -> Dict[str, Dict[str, Any]]:
         """Get UI translations for supported languages from JSON files."""

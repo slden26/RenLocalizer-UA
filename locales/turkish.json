@@ -916,7 +916,8 @@
   },
   "translation_engines": {
     "google": "Google Translate (WEB - Ücretsiz)",
-    "deepl": "DeepL (API - Anahtar Gerekli)"
+    "deepl": "DeepL (API - Anahtar Gerekli)",
+    "openrouter": "OpenRouter (API - Anahtar Gerekli)"
   },
   "pipeline_logs": {
     "rpymc_entry_count": "[DEBUG] .rpymc entry sayısı: {count}",
@@ -993,6 +994,14 @@
   "output_format_modern": "SIMPLE (Modern)",
   "google_api_title": "Google Translate API Anahtarı",
   "deepl_api_title": "DeepL API Anahtarı",
+  "openrouter_api_title": "OpenRouter API Anahtarı",
+  "openrouter_api_desc": "OpenRouter için API anahtarı (modellere erişim için gerekli)",
+  "openrouter_model_title": "OpenRouter Modeli",
+  "openrouter_model_desc": "OpenRouter modelini girin (ör. google/gemini-2.0-flash-exp:free)",
+  "openrouter_system_prompt_title": "OpenRouter Sistem Промпт",
+  "openrouter_system_prompt_desc": "Modele geçirilen isteğe bağlı системный промпт (davranışı kontrol etmeye yardımcı olur)",
+  "openrouter_temperature_title": "OpenRouter Sıcaklığı",
+  "openrouter_temperature_desc": "Model için örnekleme sıcaklığı (0.0 - 2.0).",
   "auto_unren": "Otomatik UnRen",
   "auto_unren_desc": "Gerektiğinde otomatik olarak UnRen çalıştır",
   "unren_path": "UnRen Yolu",
